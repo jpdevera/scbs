@@ -1,0 +1,1 @@
+SCHTASKS /create /sc minute /mo 5 /tn "message queue notification" /tr "C:\xampp\htdocs\kms\notifications_cron.bat"

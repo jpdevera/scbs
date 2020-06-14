@@ -1,0 +1,25 @@
+[Mon Jun 01 11:20:22 2020] [ERROR] [] -> Uncaught exception: [0] Call to a member function select_data() on null
+#0 C:\xampp\htdocs\sos\system\core\CodeIgniter.php(514): Order_list->get_province()
+#1 C:\xampp\htdocs\sos\index.php(293): require_once('C:\\xampp\\htdocs...')
+#2 {main}, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 715
+[Mon Jun 01 14:04:53 2020] [ERROR] [Base_Controller->rlog_error] -> 130: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'C.address_line,
+			    1 delivery_method_id,
+			    A.billing_method_id,
+			 ' at line 17: #0 C:\xampp\htdocs\sos\application\core\Base_Model.php(130): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\sos\application\systems\sos\order_list\models\Order_list_model.php(203): Base_Model->query('\r\n\t\t\tSELECT \r\n\t...', Array, true, false)
+#2 C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php(465): Order_list_model->get_orders('5')
+#3 C:\xampp\htdocs\sos\system\core\CodeIgniter.php(514): Order_list->process_modal('615032e51f405b1...', 'c82bf9bad080bd3', 'cc520634c4716a1', 'dee2e318f6bcfa7...')
+#4 C:\xampp\htdocs\sos\index.php(293): require_once('C:\\xampp\\htdocs...')
+#5 {main}, FILE: C:\xampp\htdocs\sos\application\core\Base_Controller.php, LINE: 77
+[Mon Jun 01 14:05:15 2020] [ERROR] [Base_Controller->rlog_error] -> 130: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'C.district_code' in 'field list': #0 C:\xampp\htdocs\sos\application\core\Base_Model.php(130): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\sos\application\systems\sos\order_list\models\Order_list_model.php(203): Base_Model->query('\r\n\t\t\tSELECT \r\n\t...', Array, true, false)
+#2 C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php(465): Order_list_model->get_orders('4')
+#3 C:\xampp\htdocs\sos\system\core\CodeIgniter.php(514): Order_list->process_modal('c877c1bd9ac2d97...', 'ad677ae0dd4fcfa', '89918298dd53f14', 'dee2e318f6bcfa7...')
+#4 C:\xampp\htdocs\sos\index.php(293): require_once('C:\\xampp\\htdocs...')
+#5 {main}, FILE: C:\xampp\htdocs\sos\application\core\Base_Controller.php, LINE: 77
+[Mon Jun 01 15:39:19 2020] [ERROR] [] -> Uncaught exception: [0] Call to undefined method Data_entries::validate_security()
+#0 C:\xampp\htdocs\sos\application\systems\sos\entries\controllers\Data_entries.php(119): Data_entries->_validate_form(Array)
+#1 C:\xampp\htdocs\sos\system\core\CodeIgniter.php(514): Data_entries->process_action()
+#2 C:\xampp\htdocs\sos\index.php(293): require_once('C:\\xampp\\htdocs...')
+#3 {main}, FILE: C:\xampp\htdocs\sos\application\systems\sos\entries\controllers\Data_entries.php, LINE: 256
+[Mon Jun 01 15:40:15 2020] [ERROR] [Base_Controller->rlog_error] -> Sorry, but your current action is invalid., FILE: C:\xampp\htdocs\sos\application\systems\sos\entries\controllers\Data_entries.php, LINE: 240

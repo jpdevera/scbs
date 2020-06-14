@@ -1,0 +1,3 @@
+[Fri May 29 13:51:31 2020] [WARNING] [session_destroy] -> session_destroy(): Session object destruction failed, FILE: C:\xampp\htdocs\sos\system\libraries\Session\Session.php, LINE: 609
+[Fri May 29 14:28:35 2020] [ERROR] [Base_Controller->rlog_error] -> The account you are trying to log in has active session in another device.  Please log out the account from another device and try logging in again., FILE: C:\xampp\htdocs\sos\application\controllers\Auth.php, LINE: 441
+[Fri May 29 15:10:54 2020] [WARNING] [session_destroy] -> session_destroy(): Session object destruction failed, FILE: C:\xampp\htdocs\sos\system\libraries\Session\Session.php, LINE: 609

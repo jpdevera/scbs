@@ -1,0 +1,20 @@
+[Sun Jun 07 16:17:26 2020] [ERROR] [Base_Controller->rlog_error] -> Invalid request, FILE: C:\xampp\htdocs\ocbs\application\systems\cbs\general_ledger\controllers\Type.php, LINE: 192
+[Sun Jun 07 16:17:59 2020] [ERROR] [Base_Controller->rlog_error] -> Invalid request, FILE: C:\xampp\htdocs\ocbs\application\systems\cbs\general_ledger\controllers\Type.php, LINE: 192
+[Sun Jun 07 18:26:06 2020] [ERROR] [Base_Controller->rlog_error] -> Invalid value in Position., FILE: C:\xampp\htdocs\ocbs\application\systems\cbs\general_ledger\controllers\Type.php, LINE: 357
+[Sun Jun 07 18:26:38 2020] [ERROR] [Base_Controller->rlog_error] -> Sorry, you don't have permission to access this page. Please contact the system's administrator., FILE: C:\xampp\htdocs\ocbs\application\systems\cbs\general_ledger\controllers\Type.php, LINE: 357
+[Sun Jun 07 18:27:10 2020] [ERROR] [Base_Controller->rlog_error] -> Sorry, you don't have permission to access this page. Please contact the system's administrator., FILE: C:\xampp\htdocs\ocbs\application\systems\cbs\general_ledger\controllers\Type.php, LINE: 357
+[Sun Jun 07 18:31:09 2020] [ERROR] [Base_Controller->rlog_error] -> Sorry, you don't have permission to access this page. Please contact the system's administrator., FILE: C:\xampp\htdocs\ocbs\application\systems\cbs\general_ledger\controllers\Type.php, LINE: 359
+[Sun Jun 07 18:34:18 2020] [ERROR] [Base_Controller->rlog_error] -> Sorry, you don't have permission to access this page. Please contact the system's administrator., FILE: C:\xampp\htdocs\ocbs\application\systems\cbs\general_ledger\controllers\Type.php, LINE: 359
+[Sun Jun 07 18:34:32 2020] [ERROR] [Base_Controller->rlog_error] -> Sorry, you don't have permission to access this page. Please contact the system's administrator., FILE: C:\xampp\htdocs\ocbs\application\systems\cbs\general_ledger\controllers\Type.php, LINE: 359
+[Sun Jun 07 18:35:31 2020] [ERROR] [Base_Controller->rlog_error] -> Sorry, you don't have permission to access this page. Please contact the system's administrator., FILE: C:\xampp\htdocs\ocbs\application\systems\cbs\general_ledger\controllers\Type.php, LINE: 274
+[Sun Jun 07 18:35:34 2020] [ERROR] [Base_Controller->rlog_error] -> Sorry, you don't have permission to access this page. Please contact the system's administrator., FILE: C:\xampp\htdocs\ocbs\application\systems\cbs\general_ledger\controllers\Type.php, LINE: 274
+[Sun Jun 07 18:35:55 2020] [ERROR] [Base_Controller->rlog_error] -> Sorry, you don't have permission to access this page. Please contact the system's administrator., FILE: C:\xampp\htdocs\ocbs\application\systems\cbs\general_ledger\controllers\Type.php, LINE: 275
+[Sun Jun 07 18:36:52 2020] [ERROR] [Base_Controller->rlog_error] -> Sorry, you don't have permission to access this page. Please contact the system's administrator., FILE: C:\xampp\htdocs\ocbs\application\systems\cbs\general_ledger\controllers\Type.php, LINE: 272
+[Sun Jun 07 18:43:05 2020] [ERROR] [] -> Uncaught exception: [0] Call to undefined method Type_model::get_select_data()
+#0 C:\xampp\htdocs\ocbs\system\core\CodeIgniter.php(514): Type->process_delete()
+#1 C:\xampp\htdocs\ocbs\index.php(293): require_once('C:\\xampp\\htdocs...')
+#2 {main}, FILE: C:\xampp\htdocs\ocbs\application\systems\cbs\general_ledger\controllers\Type.php, LINE: 382
+[Sun Jun 07 18:43:58 2020] [ERROR] [] -> Uncaught exception: [0] Call to undefined method Type_model::get_select_data()
+#0 C:\xampp\htdocs\ocbs\system\core\CodeIgniter.php(514): Type->process_delete()
+#1 C:\xampp\htdocs\ocbs\index.php(293): require_once('C:\\xampp\\htdocs...')
+#2 {main}, FILE: C:\xampp\htdocs\ocbs\application\systems\cbs\general_ledger\controllers\Type.php, LINE: 381

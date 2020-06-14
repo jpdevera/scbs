@@ -1,0 +1,10 @@
+[Thu May 28 15:49:24 2020] [NOTICE] [include] -> Undefined variable: security, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\views\index.php, LINE: 6
+[Thu May 28 15:49:25 2020] [WARNING] [Order_list->get_data_list] -> count(): Parameter must be an array or an object that implements Countable, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 74
+[Thu May 28 15:49:25 2020] [NOTICE] [Order_list->get_data_list] -> Undefined variable: params, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 76
+[Thu May 28 15:55:56 2020] [NOTICE] [include] -> Undefined variable: security, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\views\index.php, LINE: 6
+[Thu May 28 15:56:55 2020] [NOTICE] [include] -> Undefined variable: security, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\views\index.php, LINE: 6
+[Thu May 28 15:57:37 2020] [NOTICE] [include] -> Undefined variable: security, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\views\index.php, LINE: 6
+[Thu May 28 15:58:38 2020] [NOTICE] [include] -> Undefined variable: security, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\views\index.php, LINE: 6
+[Thu May 28 15:59:34 2020] [NOTICE] [include] -> Undefined variable: security, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\views\index.php, LINE: 6
+[Thu May 28 16:00:57 2020] [NOTICE] [include] -> Undefined variable: security, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\views\index.php, LINE: 6
+[Thu May 28 16:22:22 2020] [NOTICE] [include] -> Undefined variable: security, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\views\index.php, LINE: 6

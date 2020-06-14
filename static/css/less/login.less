@@ -1,0 +1,677 @@
+@charset "utf-8";
+@import 'helpers';
+
+body, html{
+  height:100%;
+  background: #e3e5dd url(../images/cork-wallet.png);
+  
+  #wrapper{
+    display: -webkit-flex;
+    display:flex;
+    align-items: center;
+    height:calc(100%);
+    
+    > div{
+      width:760px;
+      margin:0 auto;
+    }
+    .panel{
+      width:100%;
+      border-radius:2px;
+      height:480px;
+      display:flex;
+      display: -webkit-flex;
+      align-items: stretch;
+      
+      .right-panel{
+        flex:3;
+        background:#263447;
+        border-radius: 0 5px 5px 0;
+        padding:30px;
+        
+        #welcome-text{
+          font-size:17px;
+          margin-top:50px;
+          margin-bottom:40px;
+          text-transform:uppercase;
+          color:#677485;
+          font-weight:300;
+          
+          > span{
+            font-weight:500;
+          }
+        }
+    
+        .input-field{
+          .prefix {
+            
+            &[class^="flaticon-"]:before, &[class*=" flaticon-"]:before,
+            &[class^="flaticon-"]:after, &[class*=" flaticon-"]:after {
+              margin-left:0;
+              font-size:18px;
+            }
+            
+            ~ input,  ~ textarea, label{
+              margin-left:35px!important;
+            }
+          }
+          label{
+            width:100%;
+            top:4px;
+      left:0;
+      font-size:12px;
+      .text-uppercase;
+          }
+      
+      input[type="text"], input[type="password"], input[type="email"] {
+        color: rgba(255,255,255,0.9);
+      
+      &::-webkit-input-placeholder {
+        color:rgba(255,255,255,0.2)!important;
+      }
+      &::-moz-placeholder {
+        color:rgba(255,255,255,0.2)!important;
+      }
+      &:-moz-placeholder {
+        color:rgba(255,255,255,0.2)!important;
+      }
+      &:-ms-input-placeholder {
+        color:rgba(255,255,255,0.2)!important;
+      }
+      }
+        }
+    
+    .link {
+      color:#677485;
+      font-size:13px;
+      a {
+        border-bottom: 1px solid #57CCBD;
+      color: #fff;
+        }
+    }
+    
+    .panel-footer {
+      #submit_login {
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#64d7c5+0,5bcebf+44,2fb7ac+100 */
+      background: #64d7c5; /* Old browsers */
+      background: -moz-linear-gradient(top,  #64d7c5 0%, #5bcebf 44%, #2fb7ac 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(top,  #64d7c5 0%,#5bcebf 44%,#2fb7ac 100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom,  #64d7c5 0%,#5bcebf 44%,#2fb7ac 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#64d7c5', endColorstr='#2fb7ac',GradientType=0 ); /* IE6-9 */
+      width:auto;
+      border-radius:20px;
+      padding:0 45px!important;
+      }
+      
+      a {
+      color:#677485;
+      font-size:13px;
+      border-bottom: 1px solid #57CCBD;
+      }
+    }
+      }
+      
+      .left-panel{
+        flex:2;
+        background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.5)), url(../images/login-bg.jpg);
+        background-repeat: repeat, no-repeat;
+        background-position: top left, -100px center;
+        background-size:auto 105%;
+        border-radius:5px 0 0 5px;
+        padding:50px 20px 0;
+        
+        .logo{
+          
+          &.landscape-logo {
+            height:auto;
+            width: 70%;
+          }
+          
+          &.portait-logo {
+            height:120px;
+            width: auto;
+          }
+        }
+        
+        .title, .sub-title{
+          color:rgba(255,255,255,1);
+        }
+        
+        .title{
+          /*font-size:58px;*/
+          font-size:45px;
+          font-weight:600;
+          margin:5px 0 0px;
+          line-height:normal;
+          letter-spacing:2;
+        }
+        .sub-title{
+          font-size:14px;
+          font-weight:400;  
+          text-transform:uppercase;
+          letter-spacing:2;
+        }
+        
+        #panel-slider{
+          margin-top:65px;
+          color:rgba(255,255,255,0.9);
+          font-size:14px;
+          font-weight:300;
+          padding:0 20px;
+          p{
+            margin:0;
+          }
+          
+          .item{
+            > div{
+              position:relative;
+              padding-left:22px;
+              margin-bottom:2px;
+              [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+              [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+                font-size:13px;
+                margin:0 5px 0 0;
+                position:absolute;
+                left:0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+/* ==========================================================================
+   FORMS
+   ========================================================================== */
+    .form-basic{
+      input[type="text"], input[type="password"], input[type="email"], input[type="url"], input[type="time"], input[type="date"], input[type="datetime-local"], input[type="tel"], input[type="number"], input[type="search"], textarea.materialize-textarea{
+        border:1px solid #bcbcbc;
+        background:rgba(255,255,255,0.6);
+        padding:10px;
+        box-sizing: border-box;
+        border-radius:2px;
+        height:45px;
+        font-size:14px;
+      }
+      .selectize-dropdown, .selectize-input, .selectize-input input{
+        font-size:14px;
+        line-height:23px;
+      }
+      textarea.materialize-textarea{
+        padding:0 10px;
+      }
+      .input-field{
+        label{
+          top:14px;
+          line-height:1;
+          
+          &.active{
+            color:#333;
+            font-weight:500;
+          }
+        }
+      }
+      .label{
+        font-weight:500;
+        color:#333;
+      }
+      
+      .selectize-input{
+        border:1px solid #bcbcbc!important;
+        background:rgba(255,255,255,0.6)!important;
+        border-radius:2px!important;
+        padding:10px 35px 10px 10px!important;
+        box-shadow:none!important;
+        height:45px;
+        
+        input[type="text"]{
+          height:auto!important;
+          line-height:24px!important;
+          background:none!important;
+        }
+      }
+      
+      .form-header{
+        font-size:17px;
+      }
+      
+      .row{
+        > .col{
+          .input-field{
+            label{
+              &.active{
+                transform: translateY(-280%);
+                left:0;
+              }
+            }
+            
+            .selectize-control{
+              &.single, &.multi{
+                .selectize-input{
+                  background:none;
+                  border:1px solid #eee;
+                  box-shadow:none;
+                  padding:10px;
+                  font-size:15px;
+                  border-radius:2px;
+                }
+              }
+            }
+          }    
+        }
+      }
+    }
+    
+    .form-boxed{
+      label{
+        font-size:12px!important;
+        color:#000!important;
+        .font-semibold;
+        .text-uppercase;
+      }
+      input[type="text"], input[type="password"], input[type="email"], input[type="url"], input[type="time"], input[type="date"], input[type="datetime-local"], input[type="tel"], input[type="number"], input[type="search"], textarea.materialize-textarea{
+        border:none;
+        background:#fefefe;
+        padding:0 10px;
+        box-sizing:border-box;
+      }
+      .help-text{
+        color:#838383;
+        font-size:12px;
+        .font-thin;
+      }
+      
+      .link-underline{
+        .text-underline;
+        
+        &.small{
+          font-size:12px;
+        }
+      }
+    }
+  
+/* ==========================================================================
+   MODAL
+   ========================================================================== */
+  #modal_forgot_pw,
+  #modal_sign_up,
+  #modal_verify_account,
+  #modal_reset_pw,
+  #modal_sess_expired_log_in{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1979c5+0,1996aa+44,1bb68a+100 */
+  background: #1979c5; /* Old browsers */
+  background: -moz-linear-gradient(top,  #1979c5 0%, #1996aa 44%, #1bb68a 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #1979c5 0%,#1996aa 44%,#1bb68a 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #1979c5 0%,#1996aa 44%,#1bb68a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1979c5', endColorstr='#1bb68a',GradientType=0 ); /* IE6-9 */
+  color:#FFFFFF;
+  .password-header {
+    font-size:25px;
+    .font-thin;
+    .m-b-md;
+    span {
+      margin: 0 auto;
+      .block;
+    width:80px;
+    height:80px;
+    background: rgba(255,255,255,0.3);
+    border-radius:50em;
+    .m-b-md;
+    
+      .material-icons {
+      font-size:35px;
+      line-height:80px;
+      }
+    }
+  }
+  .password-box {
+    font-size:14px;
+  }
+  .input-field { 
+    position:relative;
+    .m-t-n;
+    .prefix {
+      top:15px;
+      color: rgba(255,255,255,0.5);
+    font-size:22px;
+    &.active {
+        color: rgba(255,255,255,0.9);
+    }
+    
+    + .parsley-error {
+      + .parsley-errors-list {
+        margin-left:3em;
+      }
+    }
+    }
+    input:not([type]), input[type="text"], input[type="password"], input[type="email"], input[type="url"], input[type="time"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="tel"], input[type="number"], input[type="search"], textarea.materialize-textarea {
+      border-bottom-color: rgba(255,255,255,0.5);
+      &:focus {
+        border-bottom-color: rgba(255,255,255,0.9);
+      box-shadow:none;
+      }
+    }
+    
+    .select-wrapper {
+      span {
+      &.caret {
+      color: rgba(255,255,255,0.5);
+      }
+    }
+    input {
+      &.select-dropdown {
+      box-sizing:border-box;
+      padding-right:20px;
+      .m-b-xs;
+      }
+    }
+    .select-dropdown {
+      li {
+        line-height: 20px;
+      min-height: 30px;
+      &.disabled, &.disabled > span, &.optgroup {
+        
+      }
+      span {
+        font-size:13px;
+        padding:5px 16px;
+        line-height:18px;
+      }
+      }
+    }
+    }
+    
+    .parsley-errors-list {
+      font-size:13px;
+    color:#FFF;
+    margin-top:5px!important;
+    }
+  }
+  .btn {
+    background:#08C4CD;
+    width:100%;
+    color:#fff!important;
+    border-radius:25px;
+    box-shadow:none;
+    height:45px;
+    line-height:45px;
+  }
+  .modal-close {
+    color: rgba(255,255,255,0.4);
+    &:hover {
+      color: rgba(255,255,255,0.6);
+    }
+  }
+  }
+
+  #modal_verify_account,
+  #modal_sess_expired_log_in{
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#5ac8b4+0,9dcf85+63,ddd51a+100 */
+  background: #5ac8b4; /* Old browsers */
+  background: -moz-linear-gradient(top,  #5ac8b4 0%, #9dcf85 63%, #ddd51a 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #5ac8b4 0%,#9dcf85 63%,#ddd51a 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #5ac8b4 0%,#9dcf85 63%,#ddd51a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5ac8b4', endColorstr='#ddd51a',GradientType=0 ); /* IE6-9 */
+  
+  input[type="text"], input[type="password"], input[type="email"] {
+    color: rgba(255,255,255,0.9);
+    
+    &::-webkit-input-placeholder {
+      color:rgba(255,255,255,0.8)!important;
+    }
+    &::-moz-placeholder {
+      color:rgba(255,255,255,0.8)!important;
+    }
+    &:-moz-placeholder {
+      color:rgba(255,255,255,0.8)!important;
+    }
+    &:-ms-input-placeholder {
+      color:rgba(255,255,255,0.8)!important;
+    }
+    }
+  }
+  #modal_sign_up{
+  /* Old browsers */
+  background: rgb(163,78,178);
+  
+  /* FF3.6-15 */
+  background:
+    -moz-linear-gradient(
+    top,  
+    rgba(163,78,178,0.75) 0%, 
+    rgba(200,94,199,0.75) 53%, 
+    rgba(229,112,231,0.75) 100%
+    ),
+    url(../images/tumblr-nature-backgrounds.jpg) no-repeat center 18%;
+    
+  /* Chrome10-25,Safari5.1-6 */ 
+  background: 
+    -webkit-linear-gradient(
+    top,  
+    rgba(163,78,178,0.75) 0%,
+    rgba(200,94,199,0.75) 53%,
+    rgba(229,112,231,0.75) 100%
+    ),
+    url(../images/tumblr-nature-backgrounds.jpg) no-repeat center 18%;
+    
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: 
+    linear-gradient(
+    to bottom,  
+    rgba(163,78,178,0.75) 0%,
+    rgba(200,94,199,0.75) 53%,
+    rgba(229,112,231,0.75) 100%
+    ),
+    url(../images/tumblr-nature-backgrounds.jpg) no-repeat center 18%;
+  
+  background-size: auto, auto 100%;
+  .modal-close-icon {
+    font-size:20px;
+  }
+  .modal-title{
+    font-size:20px;
+    .font-semibold;
+    .m-b-md;
+    color:#fff;
+  }
+  
+  input.labelauty{
+          + label{
+            width:auto;
+            display:block;
+            
+              &[for="gender_male"], &[for="gender_female"]{
+                padding:0;
+              }
+              &[for="gender_male"]{
+                background:none;
+                color:#888;
+                
+                &:hover{
+                  background:none!important;
+                  color:#333!important;
+                }
+              
+                > span{
+                  &.labelauty-unchecked, &.labelauty-checked{
+                    vertical-align:top;
+                    margin:20px 0 0 10px !important;
+                  }
+                  &.labelauty-unchecked-image, &.labelauty-checked-image{
+                    border:3px solid #fff;
+                    border-radius:50em;
+                    width:56px;
+                    height:56px;
+                  }
+                  
+                  &.labelauty-unchecked-image{
+                    background-image: url(../images/male_disabled_50x50.png );
+                  }
+                  
+                  &.labelauty-checked-image{
+                    background-image: url(../images/male_50x50.png );
+                  }
+                }
+              }
+              
+              &[for="gender_female"]{
+                background:none;
+                color:#888;
+                
+                &:hover{
+                  background:none!important;
+                  color:#333!important;
+                }
+              
+                > span{
+                  &.labelauty-unchecked, &.labelauty-checked{
+                    vertical-align:top;
+                    margin:20px 0 0 10px !important;
+                  }
+                  &.labelauty-unchecked-image, &.labelauty-checked-image{
+                    border:3px solid #fff;
+                    border-radius:50em;
+                    width:56px;
+                    height:56px;
+                  }
+                  &.labelauty-unchecked-image{
+                    background-image: url(../images/female_disabled_50x50.png );
+                  }
+                  &.labelauty-checked-image{
+                    background-image: url(../images/female_50x50.png );
+                  }
+                }
+              }
+          }
+        }
+  }
+  
+/* ==========================================================================
+   LIST STYLE
+   ========================================================================== */
+  .list-box{
+    li{
+      border:1px solid #c3c3c3;
+      background: #f8f8f8;
+      padding:20px 20px 20px 90px;
+      position:relative;
+      border-radius:2px;
+      margin-bottom:10px;
+      
+      &.active{
+        border:1px solid #a2bcc7;
+        background: #ecf7fc;
+      }
+      
+      .side{
+        position:absolute;
+        left:20px;
+        
+        .labelauty{
+          + label{
+            border-radius:50em; 
+            padding:15px;
+            
+            > .labelauty-unchecked-image{
+              + .labelauty-unchecked{
+                margin-left:0;
+              }
+            }
+            
+            > .labelauty-checked-image{
+              + .labelauty-checked{
+                margin-left:0;
+              }
+            }
+          }
+        }
+      }
+      
+      h6{
+        .font-bold;
+        font-size:16px;
+      }
+    }
+  }
+}
+
+.none{
+  display:none!important;
+}
+
+.jspVerticalBar{
+  background:none!important;
+  right:5px!important;
+  width:13px!important;
+  
+  .jspTrack{
+    background:rgba(0, 0, 0, 0.2)!important;
+    border-radius:20px!important;
+    
+    .jspDrag{
+      background:rgba(0, 0, 0, 0.4)!important;
+      border-radius:20px!important;
+    }
+  }
+}
+
+/* ==========================================================================
+   MESSAGE BOX
+   ========================================================================== */
+.message-box {
+  border-radius: 2px;
+  margin-bottom: 10px;
+  padding: 15px;
+  font-size: 13px;
+  font-weight: 300;
+  padding-left: 45px;
+  position: relative;
+  
+  .material-icons {
+    font-size: 22px;
+    vertical-align: middle;
+    position: absolute;
+    left: 15px; 
+  }
+  
+  &.error {
+    background: #f2dede;
+    border: 1px solid #e0bcbc;
+    color: #b84d46!important;
+    
+    .material-icons {
+      color: #b74d46; 
+    }
+  }
+  
+  &.info {
+    background: #daedf8;
+    border: 1px solid #bcd8e8;
+    color: #5686b0!important;
+    
+    .material-icons {
+      color: #3c86b0;
+    }
+  }
+  
+  &.success {
+    background: #e0f0d6;
+    border: 1px solid #cfdec5;
+    color: #4a883e!important;
+    
+    .material-icons {
+      color: #4a883e;
+    }
+  }
+  
+  &.warning {
+    background: #fcf8e1;
+    border: 1px solid #eae6cb;
+    color: #c9a65e!important;
+    
+    .material-icons {
+      color: #f5ce00;
+    }
+  }
+} 

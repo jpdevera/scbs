@@ -1,0 +1,156 @@
+[Mon Jun 08 13:42:18 2020] [ERROR] [Base_Controller->rlog_error] -> <b>Type Code</b> is required.<br><b>Type Name</b> is required.<br><b>Position</b> is required.<br>, FILE: C:\xampp\htdocs\ocbs\application\systems\cbs\general_ledger\controllers\Sort.php, LINE: 284
+[Mon Jun 08 13:48:53 2020] [ERROR] [Base_Controller->rlog_error] -> Sorry, you don't have permission to add this record. Please contact the system's administrator., FILE: C:\xampp\htdocs\ocbs\application\systems\cbs\general_ledger\controllers\Sort.php, LINE: 369
+[Mon Jun 08 13:53:01 2020] [ERROR] [Base_Controller->rlog_error] -> 130: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY': #0 C:\xampp\htdocs\ocbs\application\core\Base_Model.php(130): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\ocbs\application\core\Base_Model.php(387): Base_Model->query('\r\n\t            ...', Array, false, false, true)
+#2 C:\xampp\htdocs\ocbs\application\core\Common_Model.php(14): Base_Model->insert_data('gl_sorts', Array, true, false)
+#3 C:\xampp\htdocs\ocbs\application\systems\cbs\general_ledger\controllers\Sort.php(227): Common_Model->insert_data('gl_sorts', Array, true)
+#4 C:\xampp\htdocs\ocbs\system\core\CodeIgniter.php(514): Sort->process_action()
+#5 C:\xampp\htdocs\ocbs\index.php(293): require_once('C:\\xampp\\htdocs...')
+#6 {main}, FILE: C:\xampp\htdocs\ocbs\application\core\Base_Controller.php, LINE: 77
+[Mon Jun 08 13:53:16 2020] [ERROR] [Base_Controller->rlog_error] -> 130: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY': #0 C:\xampp\htdocs\ocbs\application\core\Base_Model.php(130): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\ocbs\application\core\Base_Model.php(387): Base_Model->query('\r\n\t            ...', Array, false, false, true)
+#2 C:\xampp\htdocs\ocbs\application\core\Common_Model.php(14): Base_Model->insert_data('gl_sorts', Array, true, false)
+#3 C:\xampp\htdocs\ocbs\application\systems\cbs\general_ledger\controllers\Sort.php(227): Common_Model->insert_data('gl_sorts', Array, true)
+#4 C:\xampp\htdocs\ocbs\system\core\CodeIgniter.php(514): Sort->process_action()
+#5 C:\xampp\htdocs\ocbs\index.php(293): require_once('C:\\xampp\\htdocs...')
+#6 {main}, FILE: C:\xampp\htdocs\ocbs\application\core\Base_Controller.php, LINE: 77
+[Mon Jun 08 13:54:22 2020] [ERROR] [Base_Controller->rlog_error] -> 130: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY': #0 C:\xampp\htdocs\ocbs\application\core\Base_Model.php(130): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\ocbs\application\core\Base_Model.php(387): Base_Model->query('\r\n\t            ...', Array, false, false, true)
+#2 C:\xampp\htdocs\ocbs\application\core\Common_Model.php(14): Base_Model->insert_data('gl_sorts', Array, true, false)
+#3 C:\xampp\htdocs\ocbs\application\systems\cbs\general_ledger\controllers\Sort.php(227): Common_Model->insert_data('gl_sorts', Array, true)
+#4 C:\xampp\htdocs\ocbs\system\core\CodeIgniter.php(514): Sort->process_action()
+#5 C:\xampp\htdocs\ocbs\index.php(293): require_once('C:\\xampp\\htdocs...')
+#6 {main}, FILE: C:\xampp\htdocs\ocbs\application\core\Base_Controller.php, LINE: 77
+[Mon Jun 08 14:11:41 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:11:41 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:11:41 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:11:41 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:11:41 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:11:41 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:11:41 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:11:41 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:11:41 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:11:41 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:11:41 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:11:41 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:11:41 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:11:41 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:11:45 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:11:45 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:11:45 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:11:45 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:11:45 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:11:45 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:11:45 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:11:45 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:11:45 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:11:45 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:11:45 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:11:45 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:11:45 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:11:45 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:11:59 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:11:59 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:11:59 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:11:59 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:11:59 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:11:59 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:11:59 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:11:59 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:11:59 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:11:59 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:11:59 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:11:59 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:11:59 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:11:59 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:12:16 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:12:16 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:12:16 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:12:16 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:12:16 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:12:16 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:12:16 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:12:16 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:12:16 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:12:16 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:12:16 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:12:16 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:12:16 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:12:16 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:12:30 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:12:30 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:12:30 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:12:30 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:12:30 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:12:30 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:12:30 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:12:30 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:12:30 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:12:30 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:12:30 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:12:30 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:12:30 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:12:30 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:12:36 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:12:36 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:12:36 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:12:36 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:12:36 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:12:36 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:12:36 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:12:36 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:12:36 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:12:36 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:12:36 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:12:36 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:12:36 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:12:36 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:12:40 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:12:40 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:12:40 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:12:40 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:12:40 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:12:40 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:12:40 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:12:40 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:12:40 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:12:40 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:12:40 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:12:40 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:12:40 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 14:12:40 2020] [EMERGENCY] [] -> Constant JS_FORMDEFAULTVALUE already defined, FILE: C:\xampp\htdocs\ocbs\application\systems\core\constants.php, LINE: 204
+[Mon Jun 08 15:16:50 2020] [NOTICE] [Accounts->get_data_list] -> Undefined index: acct_id, FILE: C:\xampp\htdocs\ocbs\application\systems\cbs\general_ledger\controllers\Accounts.php, LINE: 147
+[Mon Jun 08 15:16:50 2020] [NOTICE] [Accounts->get_data_list] -> Undefined index: acct_code, FILE: C:\xampp\htdocs\ocbs\application\systems\cbs\general_ledger\controllers\Accounts.php, LINE: 174
+[Mon Jun 08 15:16:50 2020] [NOTICE] [Accounts->get_data_list] -> Undefined index: acct_name, FILE: C:\xampp\htdocs\ocbs\application\systems\cbs\general_ledger\controllers\Accounts.php, LINE: 175
+[Mon Jun 08 15:19:50 2020] [NOTICE] [include] -> Undefined variable: sorts, FILE: C:\xampp\htdocs\ocbs\application\systems\cbs\general_ledger\views\modals\accounts.php, LINE: 28
+[Mon Jun 08 15:19:50 2020] [WARNING] [include] -> Invalid argument supplied for foreach(), FILE: C:\xampp\htdocs\ocbs\application\systems\cbs\general_ledger\views\modals\accounts.php, LINE: 28
+[Mon Jun 08 15:20:08 2020] [NOTICE] [include] -> Undefined variable: sorts, FILE: C:\xampp\htdocs\ocbs\application\systems\cbs\general_ledger\views\modals\accounts.php, LINE: 28
+[Mon Jun 08 15:20:08 2020] [WARNING] [include] -> Invalid argument supplied for foreach(), FILE: C:\xampp\htdocs\ocbs\application\systems\cbs\general_ledger\views\modals\accounts.php, LINE: 28
+[Mon Jun 08 15:20:12 2020] [NOTICE] [include] -> Undefined variable: sorts, FILE: C:\xampp\htdocs\ocbs\application\systems\cbs\general_ledger\views\modals\accounts.php, LINE: 28
+[Mon Jun 08 15:20:12 2020] [WARNING] [include] -> Invalid argument supplied for foreach(), FILE: C:\xampp\htdocs\ocbs\application\systems\cbs\general_ledger\views\modals\accounts.php, LINE: 28
+[Mon Jun 08 15:27:09 2020] [ERROR] [Base_Controller->rlog_error] -> 130: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'acct_id' in 'where clause': #0 C:\xampp\htdocs\ocbs\application\core\Base_Model.php(130): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\ocbs\application\core\Base_Model.php(218): Base_Model->query('\r\n\t\t\t\tSELECT *\r...', Array, true, false)
+#2 C:\xampp\htdocs\ocbs\application\core\Common_Model.php(51): Base_Model->select_data(Array, 'gl_sorts', false, Array, Array, Array)
+#3 C:\xampp\htdocs\ocbs\application\systems\cbs\general_ledger\controllers\Accounts.php(338): Common_Model->select_data(Array, 'gl_sorts', false, Array)
+#4 C:\xampp\htdocs\ocbs\system\core\CodeIgniter.php(514): Accounts->process_modal('c4434d714a4a20b...', 'c5a32db0725353e', '32ee5ff5c372a6c', '0e686bf8131c868...')
+#5 C:\xampp\htdocs\ocbs\index.php(293): require_once('C:\\xampp\\htdocs...')
+#6 {main}, FILE: C:\xampp\htdocs\ocbs\application\core\Base_Controller.php, LINE: 77
+[Mon Jun 08 15:27:09 2020] [NOTICE] [Accounts->process_modal] -> Undefined variable: modal, FILE: C:\xampp\htdocs\ocbs\application\systems\cbs\general_ledger\controllers\Accounts.php, LINE: 377
+[Mon Jun 08 15:27:09 2020] [WARNING] [header] -> Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\ocbs\application\systems\cbs\general_ledger\controllers\Accounts.php:364), FILE: C:\xampp\htdocs\ocbs\system\core\Common.php, LINE: 569
+[Mon Jun 08 15:35:28 2020] [ERROR] [Base_Controller->rlog_error] -> 130: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'acct_id' in 'where clause': #0 C:\xampp\htdocs\ocbs\application\core\Base_Model.php(130): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\ocbs\application\core\Base_Model.php(604): Base_Model->query('  \r\n\t\t\t\tDELETE ...', Array, false)
+#2 C:\xampp\htdocs\ocbs\application\core\Common_Model.php(40): Base_Model->delete_data('gl_sorts', Array)
+#3 C:\xampp\htdocs\ocbs\application\systems\cbs\general_ledger\controllers\Accounts.php(409): Common_Model->delete_data('gl_sorts', Array)
+#4 C:\xampp\htdocs\ocbs\system\core\CodeIgniter.php(514): Accounts->process_delete()
+#5 C:\xampp\htdocs\ocbs\index.php(293): require_once('C:\\xampp\\htdocs...')
+#6 {main}, FILE: C:\xampp\htdocs\ocbs\application\systems\cbs\general_ledger\controllers\Accounts.php, LINE: 437
+[Mon Jun 08 15:35:28 2020] [ERROR] [Base_Controller->rlog_error] -> 130: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'acct_id' in 'where clause': #0 C:\xampp\htdocs\ocbs\application\core\Base_Model.php(130): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\ocbs\application\core\Base_Model.php(604): Base_Model->query('  \r\n\t\t\t\tDELETE ...', Array, false)
+#2 C:\xampp\htdocs\ocbs\application\core\Common_Model.php(40): Base_Model->delete_data('gl_sorts', Array)
+#3 C:\xampp\htdocs\ocbs\application\systems\cbs\general_ledger\controllers\Accounts.php(409): Common_Model->delete_data('gl_sorts', Array)
+#4 C:\xampp\htdocs\ocbs\system\core\CodeIgniter.php(514): Accounts->process_delete()
+#5 C:\xampp\htdocs\ocbs\index.php(293): require_once('C:\\xampp\\htdocs...')
+#6 {main}, FILE: C:\xampp\htdocs\ocbs\application\core\Base_Controller.php, LINE: 77
+[Mon Jun 08 23:31:51 2020] [NOTICE] [include] -> Undefined variable: form_name, FILE: C:\xampp\htdocs\ocbs\application\systems\cbs\file_maintenance\views\holidays.php, LINE: 3
+[Mon Jun 08 23:54:57 2020] [WARNING] [Holidays->__construct] -> Use of undefined constant MODULE_FILE_MANAGER_HOLIDAYS - assumed 'MODULE_FILE_MANAGER_HOLIDAYS' (this will throw an Error in a future version of PHP), FILE: C:\xampp\htdocs\ocbs\application\systems\cbs\file_maintenance\controllers\Holidays.php, LINE: 16
+[Mon Jun 08 23:54:57 2020] [WARNING] [Holidays->__construct] -> Use of undefined constant FOLDER_FILE_MANAGER - assumed 'FOLDER_FILE_MANAGER' (this will throw an Error in a future version of PHP), FILE: C:\xampp\htdocs\ocbs\application\systems\cbs\file_maintenance\controllers\Holidays.php, LINE: 17

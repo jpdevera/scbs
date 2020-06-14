@@ -1,0 +1,7 @@
+var Dashboard = function()
+{
+	
+	return {
+		
+	}
+}();

@@ -1,0 +1,14 @@
+[Fri Jun 05 16:06:10 2020] [ERROR] [Base_Controller->rlog_error] -> 130: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1-2' for key 'PRIMARY': #0 C:\xampp\htdocs\sos\application\core\Base_Model.php(130): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\sos\application\core\Base_Model.php(387): Base_Model->query('\r\n\t            ...', Array, false, false, true)
+#2 C:\xampp\htdocs\sos\application\systems\sos\order_list\models\Order_list_model.php(137): Base_Model->insert_data('order_details', Array, true)
+#3 C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php(287): Order_list_model->insert_table('order_details', Array)
+#4 C:\xampp\htdocs\sos\system\core\CodeIgniter.php(514): Order_list->process_action()
+#5 C:\xampp\htdocs\sos\index.php(293): require_once('C:\\xampp\\htdocs...')
+#6 {main}, FILE: C:\xampp\htdocs\sos\application\core\Base_Controller.php, LINE: 77
+[Fri Jun 05 16:06:41 2020] [ERROR] [Base_Controller->rlog_error] -> 130: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '2-2' for key 'PRIMARY': #0 C:\xampp\htdocs\sos\application\core\Base_Model.php(130): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\sos\application\core\Base_Model.php(387): Base_Model->query('\r\n\t            ...', Array, false, false, true)
+#2 C:\xampp\htdocs\sos\application\systems\sos\order_list\models\Order_list_model.php(137): Base_Model->insert_data('order_details', Array, true)
+#3 C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php(287): Order_list_model->insert_table('order_details', Array)
+#4 C:\xampp\htdocs\sos\system\core\CodeIgniter.php(514): Order_list->process_action()
+#5 C:\xampp\htdocs\sos\index.php(293): require_once('C:\\xampp\\htdocs...')
+#6 {main}, FILE: C:\xampp\htdocs\sos\application\core\Base_Controller.php, LINE: 77

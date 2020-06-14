@@ -1,0 +1,1 @@
+<?php $this->view('table/queue_list', $pass_data); ?>

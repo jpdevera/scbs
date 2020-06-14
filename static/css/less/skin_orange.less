@@ -1,0 +1,365 @@
+/* ==========================================================================
+   THEME: SKIN ORANGE
+   ========================================================================== */
+/* 1. Top Header
+ * 2. Sidebar Menu (Left)
+ * 3. Typography
+ * 4. Buttons
+ * 4. Modals
+ */
+
+@skin:							#F0934E;	// Default skin color
+@skin-lighter:					#FFA86B;	// Lighter skin color
+@skin-darker:					#E08645;	// Darker skin color
+
+@white:							#FFFFFF;
+
+@topbar:						#4F4D4D;	// Top bar skin color
+@topbar-inverse:				#3C3C3C;	// Top bar skin color
+@topbar-link:					@white;		// Top bar link color
+@search-placeholder:			#969696;	// Top bar search placeholder color
+@search-placeholder-inverse:	#919191;	// Top bar search placeholder inverse color
+
+@sidebar:						@white;	// Sidebar skin color
+@sidebar-body:					rgba(0, 0, 0, 0.35);	// Sidebar sub menu skin color
+@sidebar-group-label:			rgba(255,255,255,0.9);	// Sidebar menu grouping text color
+@sidebar-text:					rgba(255,255,255,0.7);		// Sidebar default text color
+@sidebar-fonticon:				@sidebar-text;	// Sidebar font icon color
+
+body.skin_orange{
+	/* ==========================================================================
+	   1. TOP HEADER
+	   ========================================================================== */
+	.cd-main-header {
+	  background: @topbar;
+	  
+	  .cd-logo {
+		background: none;
+	  }
+	  
+	  .cd-search {
+		input {
+		  background: @topbar;
+		  
+		  &::-webkit-input-placeholder,
+		  &::-moz-placeholder,
+		  &:-moz-placeholder,
+		  &:-ms-input-placeholder {
+			color: @search-placeholder;
+		  }
+		}
+	  }
+	  
+	  .cd-nav {
+		.cd-top-nav {
+		  li {
+			a {
+			  color: @topbar-link;
+			  
+			  &:hover, &:focus {
+				color: @skin;
+			  }
+			}
+			
+			&.has-children {
+			  > ul {
+			    > li {
+				  .collection {
+				    a {
+					  color: @skin!important;
+					}
+				  }
+				}
+			  }
+			}
+			
+			&.account {
+			  background: rgba(0,0,0,0.3);
+			  
+			  > a {
+				color: rgba(255,255,255,0.7);
+			  }
+			  
+			  &.selected {
+				> a {
+				  color: @skin;
+				}
+			  }
+			}
+		  }
+		}
+	  }
+	  
+	  &.inverse{
+		background: @topbar-inverse;
+		
+		.cd-search {
+		  input {
+			background: @topbar-inverse;
+			
+			&::-webkit-input-placeholder {
+			  color: @search-placeholder-inverse;
+			}
+			&::-moz-placeholder {
+			  color: @search-placeholder-inverse;
+			}
+			&:-moz-placeholder {
+			  color: @search-placeholder-inverse;
+			}
+			&:-ms-input-placeholder {
+			  color: @search-placeholder-inverse;
+			}
+		  }
+		}
+	  
+		.cd-nav {
+		  .cd-top-nav {
+			li {
+			  
+			  a {
+				color: @topbar-link;
+			  }
+			  &.account {
+				background: rgba(255,255,255,0.1);
+				
+				> a {
+				  color: rgba(255,255,255,0.8);
+				}
+
+				&.selected {
+				  > a {
+					color: @topbar-link;
+				  }
+				}
+			  }
+			}
+		  }
+		}
+	  }
+	}
+
+	@media only screen and (min-width: 601px) {
+	  .cd-main-header {
+		background: @topbar;
+
+		.cd-logo {
+		  background: @topbar-inverse;
+		}
+	  }
+	}
+
+	/* ==========================================================================
+	   2. SIDEBAR MENU (LEFT)
+	   ========================================================================== */
+	.cd-side-nav {
+	  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ef7f2f+1,f9a652+38,f9c345+72,fcff59+100 */
+background: #ef7f2f; /* Old browsers */
+background: -moz-linear-gradient(top,  #ef7f2f 1%, #f9a652 38%, #f9c345 72%, #fcff59 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #ef7f2f 1%,#f9a652 38%,#f9c345 72%,#fcff59 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #ef7f2f 1%,#f9a652 38%,#f9c345 72%,#fcff59 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ef7f2f', endColorstr='#fcff59',GradientType=0 ); /* IE6-9 */
+
+
+	  .cd-side-app {
+		background: rgba(255,255,255,0.05);
+	  }
+	  
+	  ul {
+		li {
+		  &.cd-label {
+			color: @sidebar-group-label;
+		  }
+		  > a, > a:focus, > a:hover {
+			color: @sidebar-text;
+			
+			i {
+			  color: @sidebar-fonticon;
+			}
+		  }
+		  &.has-children {
+		    &.active{
+			  ul {
+			    background: @sidebar-body;
+			  }
+			}
+		  }
+		}
+	  }
+	}
+	.cd-nav-compact, .cd-side-nav{
+	  .active {
+		> a {
+			box-shadow: 3px 0 0 @skin inset;
+		}
+	  }
+	}
+
+	/* ==========================================================================
+	   3. TYPOGRAPHY
+	   ========================================================================== */
+	a:not(.cd-nav-trigger) {
+	  color: @skin;
+	  
+	  &:hover, &:focus {
+		color: @skin;
+	  }
+	}
+	
+	.default-skin{
+	  background: @skin;
+	}
+	
+	.default-skin-text {
+	  color: @skin;
+	}
+
+	/* ==========================================================================
+	   4. BUTTONS
+	   ========================================================================== */
+	.action-btn {
+	  a {
+		background: @skin!important;
+		color: @white;
+		&:hover, &:focus {
+		  color: @white;
+		}
+	  }
+	}
+
+	.btn, .btn-large {
+	  background: @skin;
+	  
+	  &:hover, &:focus {
+		background: @skin-lighter;
+	  }
+	}
+
+	/* ==========================================================================
+	   5. MATERIALIZE MODAL
+	   ========================================================================== */
+	.modal-materialize {
+	  &.modal-fixed-header {
+	  
+		/* CUSTOMIZE MODAL HEADER BACKGROUND COLOR */
+		.modal-header{
+		  
+		  /* CUSTOMIZE CLOSE LINK COLOR */
+		  .modal-close{
+			
+		  }
+		}
+	  }
+
+	  &.modal-closed-question {
+		.modal-header {
+		  color: @white;
+		  background: @skin;
+		}
+	  }
+	}
+	/* ==========================================================================
+	   6. FORM ELEMENTS
+	   ========================================================================== */
+	.form-classic {
+	  .input-group-btn {
+		button, 
+		input[type="button"] {
+		  background: @skin;
+		  color: @white;
+		}
+	  }
+	}
+	   
+	.selectize-control{
+	  &.single {
+		.selectize-input {
+		  &::after{
+			border-color: @skin transparent transparent!important;
+		  }
+		}
+	  }
+	}
+
+	.tabs {
+	  .indicator {
+		background: @skin;
+	  }
+	}
+	
+	input:focus:not([type]):not([readonly]), input[type="text"]:focus:not([readonly]), input[type="password"]:focus:not([readonly]), input[type="email"]:focus:not([readonly]), input[type="url"]:focus:not([readonly]), input[type="time"]:focus:not([readonly]), input[type="date"]:focus:not([readonly]), input[type="datetime"]:focus:not([readonly]), input[type="datetime-local"]:focus:not([readonly]), input[type="tel"]:focus:not([readonly]), input[type="number"]:focus:not([readonly]), input[type="search"]:focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
+	  border-bottom-color: @skin;
+	  box-shadow: 0 1px 0 0 @skin;
+	  
+	  + label {
+	    color: @skin;
+	  }
+	}
+
+	/* ==========================================================================
+	   7. TABLE
+	   ========================================================================== */
+	.table-default, .table-advanced{
+	  tbody {
+	    tr {
+		  td {
+		    &.table-actions, .table-actions{
+			  a {
+			    &:hover, &.active {
+			      background: @skin-lighter;
+			      border-color: @skin-lighter;
+				  
+				  .material-icons{
+				    color: @white;
+				  }
+				}
+			  }
+			}
+		  }
+		}
+	  }
+	}
+	
+	.dataTables_wrapper { 
+	  .dataTable {
+		thead {
+		  tr {
+			background:@skin;
+			
+			&.table-filters {
+			  border-bottom: 4px solid @skin-darker!important;
+			  
+			  td {
+			    input {border-color:@skin-darker!important;}
+				.material-select {
+				  .caret {
+				    color: @skin-darker;
+				  }
+				}
+			  }
+			}
+			
+			td {
+			  &.table-actions {
+			    a {
+				  &:hover, &.active {
+				    background: @skin-lighter;
+				    border-color: @skin-lighter;
+				    .material-icons{
+				      color: @white;
+				    }
+				  }
+				}
+			  }
+			}
+		  }
+		}
+	  }
+		  
+	  .dataTable-footer {
+		.dataTable-paginate-active {
+		  background: @skin!important;
+		  color: @white;
+		}
+	  }
+	}
+}

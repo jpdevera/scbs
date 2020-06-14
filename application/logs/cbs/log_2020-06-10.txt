@@ -1,0 +1,12 @@
+[Wed Jun 10 00:22:35 2020] [ERROR] [] -> Uncaught exception: [0] syntax error, unexpected end of file, expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF)
+#0 C:\xampp\htdocs\ocbs\application\third_party\MX\Loader.php(294): MX_Loader->_ci_load(Array)
+#1 C:\xampp\htdocs\ocbs\application\systems\cbs\file_maintenance\controllers\Branch.php(400): MX_Loader->view('branch', Array)
+#2 C:\xampp\htdocs\ocbs\system\core\CodeIgniter.php(514): Branch->process_modal('ba2ed8cab73ea5f...', '5b24bc1575a4ec8', 'f08d665adeeee45', 'c750f3de03060fc...')
+#3 C:\xampp\htdocs\ocbs\index.php(293): require_once('C:\\xampp\\htdocs...')
+#4 {main}, FILE: C:\xampp\htdocs\ocbs\application\systems\cbs\file_maintenance\views\modals\branch.php, LINE: 72
+[Wed Jun 10 00:22:39 2020] [ERROR] [] -> Uncaught exception: [0] syntax error, unexpected end of file, expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF)
+#0 C:\xampp\htdocs\ocbs\application\third_party\MX\Loader.php(294): MX_Loader->_ci_load(Array)
+#1 C:\xampp\htdocs\ocbs\application\systems\cbs\file_maintenance\controllers\Branch.php(400): MX_Loader->view('branch', Array)
+#2 C:\xampp\htdocs\ocbs\system\core\CodeIgniter.php(514): Branch->process_modal('c4434d714a4a20b...', 'c4063d476cb439d', 'ad7b5d45924b9d0', 'c750f3de03060fc...')
+#3 C:\xampp\htdocs\ocbs\index.php(293): require_once('C:\\xampp\\htdocs...')
+#4 {main}, FILE: C:\xampp\htdocs\ocbs\application\systems\cbs\file_maintenance\views\modals\branch.php, LINE: 72

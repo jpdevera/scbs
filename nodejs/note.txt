@@ -1,0 +1,8 @@
+start.js - to manually run server.js
+ - requires forever-monitor
+
+install.js - install server.js as windows service
+ - requires node-windows
+ 	- optimist
+ 	- minimist
+ 	- wordwrap

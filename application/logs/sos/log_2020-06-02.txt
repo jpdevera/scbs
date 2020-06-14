@@ -1,0 +1,163 @@
+[Tue Jun 02 16:02:33 2020] [ERROR] [Base_Controller->rlog_error] -> <b>Billing Method</b> is required.<br>, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 364
+[Tue Jun 02 16:02:36 2020] [ERROR] [Base_Controller->rlog_error] -> <b>Billing Method</b> is required.<br>, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 364
+[Tue Jun 02 16:12:54 2020] [ERROR] [] -> Uncaught exception: [0] syntax error, unexpected ';'
+#0 C:\xampp\htdocs\sos\application\third_party\MX\Loader.php(294): MX_Loader->_ci_load(Array)
+#1 C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php(674): MX_Loader->view('customers', Array, true)
+#2 C:\xampp\htdocs\sos\system\core\CodeIgniter.php(514): Order_list->form('c5ebe509142e083...', '8961c84558416cf', '1153cd7f0581038', 'bd54b24ba34a76c...')
+#3 C:\xampp\htdocs\sos\index.php(293): require_once('C:\\xampp\\htdocs...')
+#4 {main}, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\views\tabs\customers.php, LINE: 7
+[Tue Jun 02 16:13:10 2020] [ERROR] [] -> Uncaught exception: [0] syntax error, unexpected ';'
+#0 C:\xampp\htdocs\sos\application\third_party\MX\Loader.php(294): MX_Loader->_ci_load(Array)
+#1 C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php(674): MX_Loader->view('customers', Array, true)
+#2 C:\xampp\htdocs\sos\system\core\CodeIgniter.php(514): Order_list->form('c5ebe509142e083...', '8961c84558416cf', '1153cd7f0581038', 'bd54b24ba34a76c...')
+#3 C:\xampp\htdocs\sos\index.php(293): require_once('C:\\xampp\\htdocs...')
+#4 {main}, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\views\tabs\customers.php, LINE: 1
+[Tue Jun 02 16:13:21 2020] [ERROR] [] -> Uncaught exception: [0] syntax error, unexpected '?'
+#0 C:\xampp\htdocs\sos\application\third_party\MX\Loader.php(294): MX_Loader->_ci_load(Array)
+#1 C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php(674): MX_Loader->view('customers', Array, true)
+#2 C:\xampp\htdocs\sos\system\core\CodeIgniter.php(514): Order_list->form('c5ebe509142e083...', '8961c84558416cf', '1153cd7f0581038', 'bd54b24ba34a76c...')
+#3 C:\xampp\htdocs\sos\index.php(293): require_once('C:\\xampp\\htdocs...')
+#4 {main}, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\views\tabs\customers.php, LINE: 1
+[Tue Jun 02 16:13:37 2020] [ERROR] [] -> Uncaught exception: [0] syntax error, unexpected '?'
+#0 C:\xampp\htdocs\sos\application\third_party\MX\Loader.php(294): MX_Loader->_ci_load(Array)
+#1 C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php(674): MX_Loader->view('customers', Array, true)
+#2 C:\xampp\htdocs\sos\system\core\CodeIgniter.php(514): Order_list->form('c5ebe509142e083...', '8961c84558416cf', '1153cd7f0581038', 'bd54b24ba34a76c...')
+#3 C:\xampp\htdocs\sos\index.php(293): require_once('C:\\xampp\\htdocs...')
+#4 {main}, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\views\tabs\customers.php, LINE: 1
+[Tue Jun 02 16:47:16 2020] [ERROR] [] -> Uncaught exception: [0] syntax error, unexpected 'if' (T_IF)
+#0 C:\xampp\htdocs\sos\application\third_party\MX\Loader.php(294): MX_Loader->_ci_load(Array)
+#1 C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php(678): MX_Loader->view('order_details', Array, true)
+#2 C:\xampp\htdocs\sos\system\core\CodeIgniter.php(514): Order_list->form('7b11d5836961b2b...', '4f182849e4ba37f', '319302b65277548', 'bd54b24ba34a76c...')
+#3 C:\xampp\htdocs\sos\index.php(293): require_once('C:\\xampp\\htdocs...')
+#4 {main}, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\views\tabs\order_details.php, LINE: 102
+[Tue Jun 02 17:02:05 2020] [ERROR] [Base_Controller->rlog_error] -> 130: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '7-3' for key 'PRIMARY': #0 C:\xampp\htdocs\sos\application\core\Base_Model.php(130): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\sos\application\core\Base_Model.php(387): Base_Model->query('\r\n\t            ...', Array, false, false, true)
+#2 C:\xampp\htdocs\sos\application\systems\sos\order_list\models\Order_list_model.php(137): Base_Model->insert_data('order_details', Array, true)
+#3 C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php(280): Order_list_model->insert_table('order_details', Array)
+#4 C:\xampp\htdocs\sos\system\core\CodeIgniter.php(514): Order_list->process_action()
+#5 C:\xampp\htdocs\sos\index.php(293): require_once('C:\\xampp\\htdocs...')
+#6 {main}, FILE: C:\xampp\htdocs\sos\application\core\Base_Controller.php, LINE: 77
+[Tue Jun 02 17:08:55 2020] [ERROR] [Base_Controller->rlog_error] -> <b>Phone Number</b> is required.<br>, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 387
+[Tue Jun 02 17:12:07 2020] [ERROR] [Base_Controller->rlog_error] -> <b>Email Address</b> is required.<br><b>Phone Number</b> is required.<br>, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 391
+[Tue Jun 02 17:16:51 2020] [ERROR] [Base_Controller->rlog_error] -> Sorry, you don't have permission to access this page. Please contact the system's administrator., FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 391
+[Tue Jun 02 17:18:33 2020] [ERROR] [Base_Controller->rlog_error] -> Sorry, you don't have permission to access this page. Please contact the system's administrator., FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 391
+[Tue Jun 02 17:19:52 2020] [ERROR] [Base_Controller->rlog_error] -> Sorry, you don't have permission to access this page. Please contact the system's administrator., FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 388
+[Tue Jun 02 17:20:37 2020] [ERROR] [Base_Controller->rlog_error] -> 130: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`sos`.`orders`, CONSTRAINT `custom_id_fk` FOREIGN KEY (`customer_id`) REFERENCES `customers` (`customer_id`) ON DELETE NO ACTION ON UPDATE NO ACTION): #0 C:\xampp\htdocs\sos\application\core\Base_Model.php(130): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\sos\application\core\Base_Model.php(580): Base_Model->query('\r\n\t\t\t\tUPDATE or...', Array, false)
+#2 C:\xampp\htdocs\sos\application\systems\sos\order_list\models\Order_list_model.php(149): Base_Model->update_data('orders', Array, Array)
+#3 C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php(319): Order_list_model->update_table('orders', Array, Array)
+#4 C:\xampp\htdocs\sos\system\core\CodeIgniter.php(514): Order_list->process_action()
+#5 C:\xampp\htdocs\sos\index.php(293): require_once('C:\\xampp\\htdocs...')
+#6 {main}, FILE: C:\xampp\htdocs\sos\application\core\Base_Controller.php, LINE: 77
+[Tue Jun 02 17:22:19 2020] [ERROR] [Base_Controller->rlog_error] -> 130: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'order_id' cannot be null: #0 C:\xampp\htdocs\sos\application\core\Base_Model.php(130): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\sos\application\core\Base_Model.php(387): Base_Model->query('\r\n\t            ...', Array, false, false, true)
+#2 C:\xampp\htdocs\sos\application\systems\sos\order_list\models\Order_list_model.php(137): Base_Model->insert_data('order_details', Array, true)
+#3 C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php(344): Order_list_model->insert_table('order_details', Array)
+#4 C:\xampp\htdocs\sos\system\core\CodeIgniter.php(514): Order_list->process_action()
+#5 C:\xampp\htdocs\sos\index.php(293): require_once('C:\\xampp\\htdocs...')
+#6 {main}, FILE: C:\xampp\htdocs\sos\application\core\Base_Controller.php, LINE: 77
+[Tue Jun 02 17:23:20 2020] [ERROR] [Base_Controller->rlog_error] -> 130: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '10-1' for key 'PRIMARY': #0 C:\xampp\htdocs\sos\application\core\Base_Model.php(130): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\sos\application\core\Base_Model.php(387): Base_Model->query('\r\n\t            ...', Array, false, false, true)
+#2 C:\xampp\htdocs\sos\application\systems\sos\order_list\models\Order_list_model.php(137): Base_Model->insert_data('order_details', Array, true)
+#3 C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php(344): Order_list_model->insert_table('order_details', Array)
+#4 C:\xampp\htdocs\sos\system\core\CodeIgniter.php(514): Order_list->process_action()
+#5 C:\xampp\htdocs\sos\index.php(293): require_once('C:\\xampp\\htdocs...')
+#6 {main}, FILE: C:\xampp\htdocs\sos\application\core\Base_Controller.php, LINE: 77
+[Tue Jun 02 17:31:21 2020] [ERROR] [Base_Controller->rlog_error] -> 130: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`sos`.`orders`, CONSTRAINT `custom_id_fk` FOREIGN KEY (`customer_id`) REFERENCES `customers` (`customer_id`) ON DELETE NO ACTION ON UPDATE NO ACTION): #0 C:\xampp\htdocs\sos\application\core\Base_Model.php(130): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\sos\application\core\Base_Model.php(604): Base_Model->query('  \r\n\t\t\t\tDELETE ...', Array, false)
+#2 C:\xampp\htdocs\sos\application\systems\sos\order_list\models\Order_list_model.php(161): Base_Model->delete_data('customers', Array)
+#3 C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php(440): Order_list_model->delete_table('customers', Array)
+#4 C:\xampp\htdocs\sos\system\core\CodeIgniter.php(514): Order_list->process_delete()
+#5 C:\xampp\htdocs\sos\index.php(293): require_once('C:\\xampp\\htdocs...')
+#6 {main}, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 468
+[Tue Jun 02 17:31:21 2020] [ERROR] [Base_Controller->rlog_error] -> 130: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`sos`.`orders`, CONSTRAINT `custom_id_fk` FOREIGN KEY (`customer_id`) REFERENCES `customers` (`customer_id`) ON DELETE NO ACTION ON UPDATE NO ACTION): #0 C:\xampp\htdocs\sos\application\core\Base_Model.php(130): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\sos\application\core\Base_Model.php(604): Base_Model->query('  \r\n\t\t\t\tDELETE ...', Array, false)
+#2 C:\xampp\htdocs\sos\application\systems\sos\order_list\models\Order_list_model.php(161): Base_Model->delete_data('customers', Array)
+#3 C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php(440): Order_list_model->delete_table('customers', Array)
+#4 C:\xampp\htdocs\sos\system\core\CodeIgniter.php(514): Order_list->process_delete()
+#5 C:\xampp\htdocs\sos\index.php(293): require_once('C:\\xampp\\htdocs...')
+#6 {main}, FILE: C:\xampp\htdocs\sos\application\core\Base_Controller.php, LINE: 77
+[Tue Jun 02 17:31:26 2020] [ERROR] [Base_Controller->rlog_error] -> 130: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`sos`.`orders`, CONSTRAINT `custom_id_fk` FOREIGN KEY (`customer_id`) REFERENCES `customers` (`customer_id`) ON DELETE NO ACTION ON UPDATE NO ACTION): #0 C:\xampp\htdocs\sos\application\core\Base_Model.php(130): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\sos\application\core\Base_Model.php(604): Base_Model->query('  \r\n\t\t\t\tDELETE ...', Array, false)
+#2 C:\xampp\htdocs\sos\application\systems\sos\order_list\models\Order_list_model.php(161): Base_Model->delete_data('customers', Array)
+#3 C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php(440): Order_list_model->delete_table('customers', Array)
+#4 C:\xampp\htdocs\sos\system\core\CodeIgniter.php(514): Order_list->process_delete()
+#5 C:\xampp\htdocs\sos\index.php(293): require_once('C:\\xampp\\htdocs...')
+#6 {main}, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 468
+[Tue Jun 02 17:31:26 2020] [ERROR] [Base_Controller->rlog_error] -> 130: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`sos`.`orders`, CONSTRAINT `custom_id_fk` FOREIGN KEY (`customer_id`) REFERENCES `customers` (`customer_id`) ON DELETE NO ACTION ON UPDATE NO ACTION): #0 C:\xampp\htdocs\sos\application\core\Base_Model.php(130): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\sos\application\core\Base_Model.php(604): Base_Model->query('  \r\n\t\t\t\tDELETE ...', Array, false)
+#2 C:\xampp\htdocs\sos\application\systems\sos\order_list\models\Order_list_model.php(161): Base_Model->delete_data('customers', Array)
+#3 C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php(440): Order_list_model->delete_table('customers', Array)
+#4 C:\xampp\htdocs\sos\system\core\CodeIgniter.php(514): Order_list->process_delete()
+#5 C:\xampp\htdocs\sos\index.php(293): require_once('C:\\xampp\\htdocs...')
+#6 {main}, FILE: C:\xampp\htdocs\sos\application\core\Base_Controller.php, LINE: 77
+[Tue Jun 02 18:26:49 2020] [ERROR] [Base_Controller->rlog_error] -> 130: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`sos`.`orders`, CONSTRAINT `custom_id_fk` FOREIGN KEY (`customer_id`) REFERENCES `customers` (`customer_id`) ON DELETE NO ACTION ON UPDATE NO ACTION): #0 C:\xampp\htdocs\sos\application\core\Base_Model.php(130): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\sos\application\core\Base_Model.php(604): Base_Model->query('  \r\n\t\t\t\tDELETE ...', Array, false)
+#2 C:\xampp\htdocs\sos\application\systems\sos\order_list\models\Order_list_model.php(161): Base_Model->delete_data('customers', Array)
+#3 C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php(447): Order_list_model->delete_table('customers', Array)
+#4 C:\xampp\htdocs\sos\system\core\CodeIgniter.php(514): Order_list->process_delete()
+#5 C:\xampp\htdocs\sos\index.php(293): require_once('C:\\xampp\\htdocs...')
+#6 {main}, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 475
+[Tue Jun 02 18:26:49 2020] [ERROR] [Base_Controller->rlog_error] -> 130: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`sos`.`orders`, CONSTRAINT `custom_id_fk` FOREIGN KEY (`customer_id`) REFERENCES `customers` (`customer_id`) ON DELETE NO ACTION ON UPDATE NO ACTION): #0 C:\xampp\htdocs\sos\application\core\Base_Model.php(130): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\sos\application\core\Base_Model.php(604): Base_Model->query('  \r\n\t\t\t\tDELETE ...', Array, false)
+#2 C:\xampp\htdocs\sos\application\systems\sos\order_list\models\Order_list_model.php(161): Base_Model->delete_data('customers', Array)
+#3 C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php(447): Order_list_model->delete_table('customers', Array)
+#4 C:\xampp\htdocs\sos\system\core\CodeIgniter.php(514): Order_list->process_delete()
+#5 C:\xampp\htdocs\sos\index.php(293): require_once('C:\\xampp\\htdocs...')
+#6 {main}, FILE: C:\xampp\htdocs\sos\application\core\Base_Controller.php, LINE: 77
+[Tue Jun 02 18:27:14 2020] [ERROR] [Base_Controller->rlog_error] -> 130: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`sos`.`orders`, CONSTRAINT `custom_id_fk` FOREIGN KEY (`customer_id`) REFERENCES `customers` (`customer_id`) ON DELETE NO ACTION ON UPDATE NO ACTION): #0 C:\xampp\htdocs\sos\application\core\Base_Model.php(130): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\sos\application\core\Base_Model.php(604): Base_Model->query('  \r\n\t\t\t\tDELETE ...', Array, false)
+#2 C:\xampp\htdocs\sos\application\systems\sos\order_list\models\Order_list_model.php(161): Base_Model->delete_data('customers', Array)
+#3 C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php(447): Order_list_model->delete_table('customers', Array)
+#4 C:\xampp\htdocs\sos\system\core\CodeIgniter.php(514): Order_list->process_delete()
+#5 C:\xampp\htdocs\sos\index.php(293): require_once('C:\\xampp\\htdocs...')
+#6 {main}, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 474
+[Tue Jun 02 18:27:14 2020] [ERROR] [Base_Controller->rlog_error] -> 130: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`sos`.`orders`, CONSTRAINT `custom_id_fk` FOREIGN KEY (`customer_id`) REFERENCES `customers` (`customer_id`) ON DELETE NO ACTION ON UPDATE NO ACTION): #0 C:\xampp\htdocs\sos\application\core\Base_Model.php(130): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\sos\application\core\Base_Model.php(604): Base_Model->query('  \r\n\t\t\t\tDELETE ...', Array, false)
+#2 C:\xampp\htdocs\sos\application\systems\sos\order_list\models\Order_list_model.php(161): Base_Model->delete_data('customers', Array)
+#3 C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php(447): Order_list_model->delete_table('customers', Array)
+#4 C:\xampp\htdocs\sos\system\core\CodeIgniter.php(514): Order_list->process_delete()
+#5 C:\xampp\htdocs\sos\index.php(293): require_once('C:\\xampp\\htdocs...')
+#6 {main}, FILE: C:\xampp\htdocs\sos\application\core\Base_Controller.php, LINE: 77
+[Tue Jun 02 18:27:20 2020] [ERROR] [Base_Controller->rlog_error] -> 130: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`sos`.`orders`, CONSTRAINT `custom_id_fk` FOREIGN KEY (`customer_id`) REFERENCES `customers` (`customer_id`) ON DELETE NO ACTION ON UPDATE NO ACTION): #0 C:\xampp\htdocs\sos\application\core\Base_Model.php(130): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\sos\application\core\Base_Model.php(604): Base_Model->query('  \r\n\t\t\t\tDELETE ...', Array, false)
+#2 C:\xampp\htdocs\sos\application\systems\sos\order_list\models\Order_list_model.php(161): Base_Model->delete_data('customers', Array)
+#3 C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php(447): Order_list_model->delete_table('customers', Array)
+#4 C:\xampp\htdocs\sos\system\core\CodeIgniter.php(514): Order_list->process_delete()
+#5 C:\xampp\htdocs\sos\index.php(293): require_once('C:\\xampp\\htdocs...')
+#6 {main}, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 474
+[Tue Jun 02 18:27:20 2020] [ERROR] [Base_Controller->rlog_error] -> 130: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`sos`.`orders`, CONSTRAINT `custom_id_fk` FOREIGN KEY (`customer_id`) REFERENCES `customers` (`customer_id`) ON DELETE NO ACTION ON UPDATE NO ACTION): #0 C:\xampp\htdocs\sos\application\core\Base_Model.php(130): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\sos\application\core\Base_Model.php(604): Base_Model->query('  \r\n\t\t\t\tDELETE ...', Array, false)
+#2 C:\xampp\htdocs\sos\application\systems\sos\order_list\models\Order_list_model.php(161): Base_Model->delete_data('customers', Array)
+#3 C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php(447): Order_list_model->delete_table('customers', Array)
+#4 C:\xampp\htdocs\sos\system\core\CodeIgniter.php(514): Order_list->process_delete()
+#5 C:\xampp\htdocs\sos\index.php(293): require_once('C:\\xampp\\htdocs...')
+#6 {main}, FILE: C:\xampp\htdocs\sos\application\core\Base_Controller.php, LINE: 77
+[Tue Jun 02 18:27:23 2020] [ERROR] [Base_Controller->rlog_error] -> 130: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`sos`.`orders`, CONSTRAINT `custom_id_fk` FOREIGN KEY (`customer_id`) REFERENCES `customers` (`customer_id`) ON DELETE NO ACTION ON UPDATE NO ACTION): #0 C:\xampp\htdocs\sos\application\core\Base_Model.php(130): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\sos\application\core\Base_Model.php(604): Base_Model->query('  \r\n\t\t\t\tDELETE ...', Array, false)
+#2 C:\xampp\htdocs\sos\application\systems\sos\order_list\models\Order_list_model.php(161): Base_Model->delete_data('customers', Array)
+#3 C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php(447): Order_list_model->delete_table('customers', Array)
+#4 C:\xampp\htdocs\sos\system\core\CodeIgniter.php(514): Order_list->process_delete()
+#5 C:\xampp\htdocs\sos\index.php(293): require_once('C:\\xampp\\htdocs...')
+#6 {main}, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 474
+[Tue Jun 02 18:27:23 2020] [ERROR] [Base_Controller->rlog_error] -> 130: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`sos`.`orders`, CONSTRAINT `custom_id_fk` FOREIGN KEY (`customer_id`) REFERENCES `customers` (`customer_id`) ON DELETE NO ACTION ON UPDATE NO ACTION): #0 C:\xampp\htdocs\sos\application\core\Base_Model.php(130): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\sos\application\core\Base_Model.php(604): Base_Model->query('  \r\n\t\t\t\tDELETE ...', Array, false)
+#2 C:\xampp\htdocs\sos\application\systems\sos\order_list\models\Order_list_model.php(161): Base_Model->delete_data('customers', Array)
+#3 C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php(447): Order_list_model->delete_table('customers', Array)
+#4 C:\xampp\htdocs\sos\system\core\CodeIgniter.php(514): Order_list->process_delete()
+#5 C:\xampp\htdocs\sos\index.php(293): require_once('C:\\xampp\\htdocs...')
+#6 {main}, FILE: C:\xampp\htdocs\sos\application\core\Base_Controller.php, LINE: 77
+[Tue Jun 02 23:01:23 2020] [ERROR] [Base_Controller->rlog_error] -> 130: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1-1-1' for key 'PRIMARY': #0 C:\xampp\htdocs\sos\application\core\Base_Model.php(130): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\sos\application\core\Base_Model.php(580): Base_Model->query('\r\n\t\t\t\tUPDATE cu...', Array, false)
+#2 C:\xampp\htdocs\sos\application\systems\sos\order_list\models\Order_list_model.php(149): Base_Model->update_data('customer_addres...', Array, Array)
+#3 C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php(346): Order_list_model->update_table('customer_addres...', Array, Array)
+#4 C:\xampp\htdocs\sos\system\core\CodeIgniter.php(514): Order_list->process_action()
+#5 C:\xampp\htdocs\sos\index.php(293): require_once('C:\\xampp\\htdocs...')
+#6 {main}, FILE: C:\xampp\htdocs\sos\application\core\Base_Controller.php, LINE: 77
+[Tue Jun 02 23:02:44 2020] [ERROR] [Base_Controller->rlog_error] -> 130: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1-1-1' for key 'PRIMARY': #0 C:\xampp\htdocs\sos\application\core\Base_Model.php(130): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\sos\application\core\Base_Model.php(580): Base_Model->query('\r\n\t\t\t\tUPDATE cu...', Array, false)
+#2 C:\xampp\htdocs\sos\application\systems\sos\order_list\models\Order_list_model.php(149): Base_Model->update_data('customer_addres...', Array, Array)
+#3 C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php(345): Order_list_model->update_table('customer_addres...', Array, Array)
+#4 C:\xampp\htdocs\sos\system\core\CodeIgniter.php(514): Order_list->process_action()
+#5 C:\xampp\htdocs\sos\index.php(293): require_once('C:\\xampp\\htdocs...')
+#6 {main}, FILE: C:\xampp\htdocs\sos\application\core\Base_Controller.php, LINE: 77

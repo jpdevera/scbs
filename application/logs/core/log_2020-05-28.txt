@@ -1,0 +1,149 @@
+[Thu May 28 10:06:40 2020] [ERROR] [Base_Controller->rlog_error] -> 50: Invalid request: #0 C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php(72): get_params()
+#1 C:\xampp\htdocs\sos\system\core\CodeIgniter.php(514): Order_list->get_data_list()
+#2 C:\xampp\htdocs\sos\index.php(293): require_once('C:\\xampp\\htdocs...')
+#3 {main}, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 123
+[Thu May 28 10:06:52 2020] [WARNING] [Order_list->get_data_list] -> count(): Parameter must be an array or an object that implements Countable, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 74
+[Thu May 28 10:06:52 2020] [NOTICE] [Order_list->get_data_list] -> Undefined variable: params, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 76
+[Thu May 28 10:06:52 2020] [NOTICE] [Order_list->get_data_list] -> Undefined variable: result, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 78
+[Thu May 28 10:07:11 2020] [WARNING] [Order_list->get_data_list] -> count(): Parameter must be an array or an object that implements Countable, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 74
+[Thu May 28 10:07:11 2020] [NOTICE] [Order_list->get_data_list] -> Undefined variable: params, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 76
+[Thu May 28 10:07:11 2020] [NOTICE] [Order_list->get_data_list] -> Undefined variable: result, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 78
+[Thu May 28 10:07:15 2020] [WARNING] [Order_list->get_data_list] -> count(): Parameter must be an array or an object that implements Countable, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 74
+[Thu May 28 10:07:15 2020] [NOTICE] [Order_list->get_data_list] -> Undefined variable: params, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 76
+[Thu May 28 10:07:15 2020] [NOTICE] [Order_list->get_data_list] -> Undefined variable: result, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 78
+[Thu May 28 10:07:15 2020] [WARNING] [Order_list->get_data_list] -> count(): Parameter must be an array or an object that implements Countable, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 74
+[Thu May 28 10:07:15 2020] [NOTICE] [Order_list->get_data_list] -> Undefined variable: params, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 76
+[Thu May 28 10:07:15 2020] [NOTICE] [Order_list->get_data_list] -> Undefined variable: result, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 78
+[Thu May 28 10:07:15 2020] [WARNING] [Order_list->get_data_list] -> count(): Parameter must be an array or an object that implements Countable, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 74
+[Thu May 28 10:07:15 2020] [NOTICE] [Order_list->get_data_list] -> Undefined variable: params, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 76
+[Thu May 28 10:07:15 2020] [NOTICE] [Order_list->get_data_list] -> Undefined variable: result, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 78
+[Thu May 28 10:08:05 2020] [WARNING] [Order_list->get_data_list] -> count(): Parameter must be an array or an object that implements Countable, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 74
+[Thu May 28 10:08:05 2020] [NOTICE] [Order_list->get_data_list] -> Undefined variable: params, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 76
+[Thu May 28 10:08:05 2020] [NOTICE] [Order_list->get_data_list] -> Undefined variable: result, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 78
+[Thu May 28 10:08:09 2020] [WARNING] [Order_list->get_data_list] -> count(): Parameter must be an array or an object that implements Countable, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 74
+[Thu May 28 10:08:09 2020] [NOTICE] [Order_list->get_data_list] -> Undefined variable: params, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 76
+[Thu May 28 10:08:09 2020] [NOTICE] [Order_list->get_data_list] -> Undefined variable: result, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 78
+[Thu May 28 10:08:09 2020] [WARNING] [Order_list->get_data_list] -> count(): Parameter must be an array or an object that implements Countable, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 74
+[Thu May 28 10:08:09 2020] [NOTICE] [Order_list->get_data_list] -> Undefined variable: params, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 76
+[Thu May 28 10:08:09 2020] [NOTICE] [Order_list->get_data_list] -> Undefined variable: result, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 78
+[Thu May 28 10:08:09 2020] [WARNING] [Order_list->get_data_list] -> count(): Parameter must be an array or an object that implements Countable, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 74
+[Thu May 28 10:08:09 2020] [NOTICE] [Order_list->get_data_list] -> Undefined variable: params, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 76
+[Thu May 28 10:08:09 2020] [NOTICE] [Order_list->get_data_list] -> Undefined variable: result, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 78
+[Thu May 28 10:08:10 2020] [WARNING] [Order_list->get_data_list] -> count(): Parameter must be an array or an object that implements Countable, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 74
+[Thu May 28 10:08:10 2020] [NOTICE] [Order_list->get_data_list] -> Undefined variable: params, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 76
+[Thu May 28 10:08:10 2020] [NOTICE] [Order_list->get_data_list] -> Undefined variable: result, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 78
+[Thu May 28 10:11:22 2020] [NOTICE] [MX_Controller->__get] -> Undefined property: CI::$model, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Controller.php, LINE: 59
+[Thu May 28 10:11:22 2020] [ERROR] [] -> Uncaught exception: [0] Call to a member function get_data_list() on null
+#0 C:\xampp\htdocs\sos\system\core\CodeIgniter.php(514): Order_list->get_data_list()
+#1 C:\xampp\htdocs\sos\index.php(293): require_once('C:\\xampp\\htdocs...')
+#2 {main}, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 71
+[Thu May 28 10:11:37 2020] [NOTICE] [MX_Controller->__get] -> Undefined property: CI::$model, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Controller.php, LINE: 59
+[Thu May 28 10:11:37 2020] [ERROR] [] -> Uncaught exception: [0] Call to a member function get_data_list() on null
+#0 C:\xampp\htdocs\sos\system\core\CodeIgniter.php(514): Order_list->get_data_list()
+#1 C:\xampp\htdocs\sos\index.php(293): require_once('C:\\xampp\\htdocs...')
+#2 {main}, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 71
+[Thu May 28 10:12:31 2020] [WARNING] [Order_list->get_data_list] -> count(): Parameter must be an array or an object that implements Countable, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 74
+[Thu May 28 10:12:31 2020] [NOTICE] [Order_list->get_data_list] -> Undefined variable: params, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 76
+[Thu May 28 10:12:31 2020] [NOTICE] [Order_list->get_data_list] -> Undefined variable: result, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 78
+[Thu May 28 10:12:47 2020] [WARNING] [Order_list->get_data_list] -> count(): Parameter must be an array or an object that implements Countable, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 74
+[Thu May 28 10:12:47 2020] [NOTICE] [Order_list->get_data_list] -> Undefined variable: params, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 76
+[Thu May 28 10:12:47 2020] [NOTICE] [Order_list->get_data_list] -> Undefined variable: result, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 78
+[Thu May 28 10:14:26 2020] [NOTICE] [include] -> Undefined variable: security, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\views\index.php, LINE: 22
+[Thu May 28 10:14:28 2020] [WARNING] [Order_list->get_data_list] -> count(): Parameter must be an array or an object that implements Countable, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 74
+[Thu May 28 10:14:28 2020] [NOTICE] [Order_list->get_data_list] -> Undefined variable: params, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 76
+[Thu May 28 10:14:28 2020] [NOTICE] [Order_list->get_data_list] -> Undefined variable: result, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 78
+[Thu May 28 10:16:07 2020] [NOTICE] [include] -> Undefined variable: statistics, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\views\index.php, LINE: 10
+[Thu May 28 10:16:07 2020] [NOTICE] [include] -> Undefined variable: statistics, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\views\index.php, LINE: 11
+[Thu May 28 10:16:07 2020] [NOTICE] [include] -> Undefined variable: statistics, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\views\index.php, LINE: 12
+[Thu May 28 10:16:07 2020] [NOTICE] [include] -> Undefined variable: add_per, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\views\index.php, LINE: 30
+[Thu May 28 10:16:07 2020] [NOTICE] [include] -> Undefined variable: download_per, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\views\index.php, LINE: 41
+[Thu May 28 10:16:07 2020] [NOTICE] [include] -> Undefined variable: import_per, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\views\index.php, LINE: 50
+[Thu May 28 10:16:07 2020] [NOTICE] [include] -> Undefined variable: security, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\views\index.php, LINE: 114
+[Thu May 28 10:16:34 2020] [NOTICE] [include] -> Undefined variable: active, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\views\index.php, LINE: 7
+[Thu May 28 10:16:34 2020] [NOTICE] [include] -> Undefined variable: inactive, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\views\index.php, LINE: 8
+[Thu May 28 10:16:34 2020] [NOTICE] [include] -> Undefined variable: blocked, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\views\index.php, LINE: 9
+[Thu May 28 10:16:34 2020] [NOTICE] [include] -> Undefined variable: add_per, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\views\index.php, LINE: 16
+[Thu May 28 10:16:34 2020] [NOTICE] [include] -> Undefined variable: download_per, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\views\index.php, LINE: 27
+[Thu May 28 10:16:34 2020] [NOTICE] [include] -> Undefined variable: import_per, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\views\index.php, LINE: 36
+[Thu May 28 10:16:34 2020] [NOTICE] [include] -> Undefined variable: security, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\views\index.php, LINE: 100
+[Thu May 28 10:16:48 2020] [NOTICE] [include] -> Undefined variable: active, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\views\index.php, LINE: 7
+[Thu May 28 10:16:48 2020] [NOTICE] [include] -> Undefined variable: inactive, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\views\index.php, LINE: 8
+[Thu May 28 10:16:48 2020] [NOTICE] [include] -> Undefined variable: blocked, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\views\index.php, LINE: 9
+[Thu May 28 10:16:48 2020] [NOTICE] [include] -> Undefined variable: add_per, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\views\index.php, LINE: 16
+[Thu May 28 10:16:48 2020] [NOTICE] [include] -> Undefined variable: download_per, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\views\index.php, LINE: 27
+[Thu May 28 10:16:48 2020] [NOTICE] [include] -> Undefined variable: import_per, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\views\index.php, LINE: 36
+[Thu May 28 10:16:48 2020] [NOTICE] [include] -> Undefined variable: security, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\views\index.php, LINE: 100
+[Thu May 28 10:17:11 2020] [NOTICE] [include] -> Undefined variable: active, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\views\index.php, LINE: 7
+[Thu May 28 10:17:11 2020] [NOTICE] [include] -> Undefined variable: inactive, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\views\index.php, LINE: 8
+[Thu May 28 10:17:11 2020] [NOTICE] [include] -> Undefined variable: blocked, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\views\index.php, LINE: 9
+[Thu May 28 10:17:11 2020] [NOTICE] [include] -> Undefined variable: security, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\views\index.php, LINE: 16
+[Thu May 28 10:17:11 2020] [NOTICE] [include] -> Undefined variable: download_per, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\views\index.php, LINE: 23
+[Thu May 28 10:17:11 2020] [NOTICE] [include] -> Undefined variable: import_per, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\views\index.php, LINE: 32
+[Thu May 28 10:17:11 2020] [NOTICE] [include] -> Undefined variable: security, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\views\index.php, LINE: 96
+[Thu May 28 10:17:54 2020] [NOTICE] [include] -> Undefined variable: active, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\views\index.php, LINE: 7
+[Thu May 28 10:17:54 2020] [NOTICE] [include] -> Undefined variable: inactive, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\views\index.php, LINE: 8
+[Thu May 28 10:17:54 2020] [NOTICE] [include] -> Undefined variable: blocked, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\views\index.php, LINE: 9
+[Thu May 28 10:17:54 2020] [NOTICE] [include] -> Undefined variable: security, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\views\index.php, LINE: 16
+[Thu May 28 10:17:54 2020] [NOTICE] [include] -> Undefined variable: security, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\views\index.php, LINE: 73
+[Thu May 28 10:19:06 2020] [NOTICE] [include] -> Undefined variable: security, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\views\index.php, LINE: 6
+[Thu May 28 10:19:06 2020] [NOTICE] [include] -> Undefined variable: security, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\views\index.php, LINE: 59
+[Thu May 28 10:30:00 2020] [NOTICE] [include] -> Undefined variable: security, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\views\index.php, LINE: 6
+[Thu May 28 10:30:00 2020] [NOTICE] [include] -> Undefined variable: security, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\views\index.php, LINE: 59
+[Thu May 28 10:30:04 2020] [NOTICE] [include] -> Undefined variable: security, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\views\index.php, LINE: 6
+[Thu May 28 10:30:04 2020] [NOTICE] [include] -> Undefined variable: security, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\views\index.php, LINE: 59
+[Thu May 28 10:30:37 2020] [NOTICE] [include] -> Undefined variable: security, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\views\index.php, LINE: 6
+[Thu May 28 10:30:37 2020] [NOTICE] [include] -> Undefined variable: security, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\views\index.php, LINE: 28
+[Thu May 28 10:30:40 2020] [WARNING] [Order_list->get_data_list] -> count(): Parameter must be an array or an object that implements Countable, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 74
+[Thu May 28 10:30:40 2020] [NOTICE] [Order_list->get_data_list] -> Undefined variable: params, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 76
+[Thu May 28 10:30:40 2020] [NOTICE] [Order_list->get_data_list] -> Undefined variable: result, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 78
+[Thu May 28 10:30:52 2020] [NOTICE] [include] -> Undefined variable: security, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\views\index.php, LINE: 6
+[Thu May 28 10:30:55 2020] [WARNING] [Order_list->get_data_list] -> count(): Parameter must be an array or an object that implements Countable, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 74
+[Thu May 28 10:30:55 2020] [NOTICE] [Order_list->get_data_list] -> Undefined variable: params, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 76
+[Thu May 28 10:30:55 2020] [NOTICE] [Order_list->get_data_list] -> Undefined variable: result, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 78
+[Thu May 28 10:32:36 2020] [NOTICE] [include] -> Undefined variable: security, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\views\index.php, LINE: 6
+[Thu May 28 10:32:40 2020] [WARNING] [Order_list->get_data_list] -> count(): Parameter must be an array or an object that implements Countable, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 74
+[Thu May 28 10:32:40 2020] [NOTICE] [Order_list->get_data_list] -> Undefined variable: params, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 76
+[Thu May 28 10:32:48 2020] [NOTICE] [include] -> Undefined variable: security, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\views\index.php, LINE: 6
+[Thu May 28 10:32:51 2020] [WARNING] [Order_list->get_data_list] -> count(): Parameter must be an array or an object that implements Countable, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 74
+[Thu May 28 10:32:51 2020] [NOTICE] [Order_list->get_data_list] -> Undefined variable: params, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 76
+[Thu May 28 10:33:17 2020] [NOTICE] [include] -> Undefined variable: security, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\views\index.php, LINE: 6
+[Thu May 28 10:33:31 2020] [WARNING] [Order_list->get_data_list] -> count(): Parameter must be an array or an object that implements Countable, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 74
+[Thu May 28 10:33:32 2020] [NOTICE] [Order_list->get_data_list] -> Undefined variable: params, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 76
+[Thu May 28 10:34:41 2020] [NOTICE] [include] -> Undefined variable: security, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\views\index.php, LINE: 6
+[Thu May 28 10:34:46 2020] [WARNING] [Order_list->get_data_list] -> count(): Parameter must be an array or an object that implements Countable, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 74
+[Thu May 28 10:34:46 2020] [NOTICE] [Order_list->get_data_list] -> Undefined variable: params, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 76
+[Thu May 28 10:35:46 2020] [NOTICE] [include] -> Undefined variable: security, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\views\index.php, LINE: 6
+[Thu May 28 10:35:49 2020] [WARNING] [Order_list->get_data_list] -> count(): Parameter must be an array or an object that implements Countable, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 74
+[Thu May 28 10:35:49 2020] [NOTICE] [Order_list->get_data_list] -> Undefined variable: params, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 76
+[Thu May 28 10:39:48 2020] [WARNING] [Order_list->get_data_list] -> count(): Parameter must be an array or an object that implements Countable, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 74
+[Thu May 28 10:39:48 2020] [NOTICE] [Order_list->get_data_list] -> Undefined variable: params, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 76
+[Thu May 28 10:42:07 2020] [NOTICE] [include] -> Undefined variable: security, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\views\index.php, LINE: 6
+[Thu May 28 10:42:15 2020] [WARNING] [Order_list->get_data_list] -> count(): Parameter must be an array or an object that implements Countable, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 74
+[Thu May 28 10:42:15 2020] [NOTICE] [Order_list->get_data_list] -> Undefined variable: params, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 76
+[Thu May 28 13:17:02 2020] [NOTICE] [include] -> Undefined variable: security, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\views\index.php, LINE: 6
+[Thu May 28 13:17:04 2020] [WARNING] [Order_list->get_data_list] -> count(): Parameter must be an array or an object that implements Countable, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 74
+[Thu May 28 13:17:04 2020] [NOTICE] [Order_list->get_data_list] -> Undefined variable: params, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 76
+[Thu May 28 14:53:52 2020] [NOTICE] [include] -> Undefined variable: security, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\views\index.php, LINE: 6
+[Thu May 28 14:53:54 2020] [WARNING] [Order_list->get_data_list] -> count(): Parameter must be an array or an object that implements Countable, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 74
+[Thu May 28 14:53:54 2020] [NOTICE] [Order_list->get_data_list] -> Undefined variable: params, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 76
+[Thu May 28 15:21:35 2020] [WARNING] [include] -> Use of undefined constant DB_NCSOIS - assumed 'DB_NCSOIS' (this will throw an Error in a future version of PHP), FILE: C:\xampp\htdocs\sos\application\config\database.php, LINE: 97
+[Thu May 28 15:21:35 2020] [NOTICE] [include] -> Undefined variable: hostname, FILE: C:\xampp\htdocs\sos\application\config\database.php, LINE: 99
+[Thu May 28 15:21:35 2020] [NOTICE] [include] -> Undefined variable: username, FILE: C:\xampp\htdocs\sos\application\config\database.php, LINE: 100
+[Thu May 28 15:21:35 2020] [NOTICE] [include] -> Undefined variable: password, FILE: C:\xampp\htdocs\sos\application\config\database.php, LINE: 101
+[Thu May 28 15:21:35 2020] [WARNING] [include] -> Use of undefined constant DB_NCSOIS - assumed 'DB_NCSOIS' (this will throw an Error in a future version of PHP), FILE: C:\xampp\htdocs\sos\application\config\database.php, LINE: 102
+[Thu May 28 15:21:35 2020] [WARNING] [include] -> Use of undefined constant DB_NCSOIS - assumed 'DB_NCSOIS' (this will throw an Error in a future version of PHP), FILE: C:\xampp\htdocs\sos\application\config\database.php, LINE: 97
+[Thu May 28 15:21:35 2020] [NOTICE] [include] -> Undefined variable: hostname, FILE: C:\xampp\htdocs\sos\application\config\database.php, LINE: 99
+[Thu May 28 15:21:35 2020] [NOTICE] [include] -> Undefined variable: username, FILE: C:\xampp\htdocs\sos\application\config\database.php, LINE: 100
+[Thu May 28 15:21:35 2020] [NOTICE] [include] -> Undefined variable: password, FILE: C:\xampp\htdocs\sos\application\config\database.php, LINE: 101
+[Thu May 28 15:21:35 2020] [WARNING] [include] -> Use of undefined constant DB_NCSOIS - assumed 'DB_NCSOIS' (this will throw an Error in a future version of PHP), FILE: C:\xampp\htdocs\sos\application\config\database.php, LINE: 102
+[Thu May 28 15:21:35 2020] [WARNING] [header] -> Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\sos\system\core\Exceptions.php:272), FILE: C:\xampp\htdocs\sos\application\controllers\Stream.php, LINE: 16
+[Thu May 28 15:21:35 2020] [WARNING] [header] -> Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\sos\system\core\Exceptions.php:272), FILE: C:\xampp\htdocs\sos\application\controllers\Stream.php, LINE: 17
+[Thu May 28 15:22:14 2020] [NOTICE] [include] -> Undefined variable: hostname, FILE: C:\xampp\htdocs\sos\application\config\database.php, LINE: 99
+[Thu May 28 15:22:14 2020] [NOTICE] [include] -> Undefined variable: username, FILE: C:\xampp\htdocs\sos\application\config\database.php, LINE: 100
+[Thu May 28 15:22:14 2020] [NOTICE] [include] -> Undefined variable: password, FILE: C:\xampp\htdocs\sos\application\config\database.php, LINE: 101
+[Thu May 28 15:22:14 2020] [NOTICE] [include] -> Undefined variable: hostname, FILE: C:\xampp\htdocs\sos\application\config\database.php, LINE: 99
+[Thu May 28 15:22:14 2020] [NOTICE] [include] -> Undefined variable: username, FILE: C:\xampp\htdocs\sos\application\config\database.php, LINE: 100
+[Thu May 28 15:22:14 2020] [NOTICE] [include] -> Undefined variable: password, FILE: C:\xampp\htdocs\sos\application\config\database.php, LINE: 101
+[Thu May 28 15:24:35 2020] [NOTICE] [include] -> Undefined variable: security, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\views\index.php, LINE: 6
+[Thu May 28 15:24:41 2020] [WARNING] [Order_list->get_data_list] -> count(): Parameter must be an array or an object that implements Countable, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 74
+[Thu May 28 15:24:41 2020] [NOTICE] [Order_list->get_data_list] -> Undefined variable: params, FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 76

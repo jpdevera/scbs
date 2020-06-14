@@ -1,0 +1,4 @@
+[Tue Jun 09 11:58:39 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\ocbs\system\core\Security.php, LINE: 354
+[Tue Jun 09 11:59:36 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\ocbs\system\core\Security.php, LINE: 354
+[Tue Jun 09 11:59:36 2020] [ERROR] [Base_Controller->rlog_error] -> Scope for Dashboard is required., FILE: C:\xampp\htdocs\ocbs\application\systems\core\user_management\controllers\Permissions.php, LINE: 625
+[Tue Jun 09 11:59:47 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\ocbs\system\core\Security.php, LINE: 354

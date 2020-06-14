@@ -1,0 +1,98 @@
+<script>
+	var $base_url = $("#base_url").val();
+	var $user_id = $("#user_id").val();
+	var $org_code = $("#org_code").val();
+	var $user_roles = $("#user_roles").val();
+	var $host = $("#nodejs_server").val();
+	
+	var address = $host + 'alerts';
+	var details = {
+	    resource: 'socket.io'
+	};
+	
+	var alerts = io.connect(address, details);
+	
+	alerts.on('notifications', function (data) {
+		var notificationsList = "";
+		var notifications_cnt = 0;
+		var roles = $user_roles.split(',');
+		
+		if(data.notificationsArray.length !== 0){
+			$.each(data.notificationsArray, function(index, notification){
+				var notify_users = (notification.notify_users)? notification.notify_users.split(',') : [];
+					notify_orgs = (notification.notify_orgs)? notification.notify_orgs.split(',') : [];
+					notify_roles = (notification.notify_roles)? notification.notify_roles.split(',') : [];
+				
+				// notification by user_id
+				if(notify_users.length !== 0){
+					$.each(notify_users, function(i, v){
+						if($user_id == v){
+							if(!notification.read_date){
+								notifications_cnt+=1;
+							} else {
+								notifications_cnt-1;
+							}
+					
+							notificationsList += "<li class='collection-item avatar'>"
+								+ notification.notification +
+								"<p class='timestamp'>" + moment(notification.notification_date).fromNow() + "</p>" +
+								"</li>";
+						}
+					});
+				}
+				
+				// notification by org_code
+				if(notify_orgs.length !== 0){
+					$.each(notify_orgs, function(i, v){
+						if(($org_code == v) && ($user_id != notification.notified_by)){
+							if(!notification.read_date){
+								notifications_cnt+=1;
+							} else {
+								notifications_cnt-1;
+							}
+							
+							notificationsList += "<li class='collection-item avatar'>"
+								+ notification.notification +
+								"<p class='timestamp'>" + moment(notification.notification_date).fromNow() + "</p>" +
+								"</li>";
+						}
+					});
+				}	
+				
+				// notification by role_code	
+				if(notify_roles.length !== 0){
+					$.each(notify_roles, function(i, v){
+						if(($.inArray(v, roles) !== -1) && ($user_id != notification.notified_by)){
+							if(!notification.read_date){
+								notifications_cnt+=1;
+							} else {
+								notifications_cnt-1;
+							}
+							
+							notificationsList += "<li class='collection-item avatar'>"
+								+ notification.notification +
+								"<p class='timestamp'>" + moment(notification.notification_date).fromNow() + "</p>" +
+								"</li>";
+						}
+					});
+				}	
+				
+	        });
+		}	
+		
+		$("#notif_cnt_" + $user_id).val(notifications_cnt);
+		
+		if($("#notif_cnt_" + $user_id).val() > 0){
+			$('#noti_red').show();
+			$('#notif_cnt').show();
+			$('#notif_cnt').html(notifications_cnt);
+		} else {
+			notificationsList = "<li class='collection-item'><p class='center-align m-n'>No new notification...</p></li>";
+			$('#noti_red').hide();
+			$('#notif_cnt').hide();
+		}	
+		
+		$('.notif-list').html(notificationsList);
+			
+	});
+</script>

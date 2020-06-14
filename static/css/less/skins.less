@@ -1,0 +1,275 @@
+/* 
+ * THEME: SKIN DEFAULT
+ * 1. GENERIC
+ * 2. FORM ELEMENTS
+ * 3. BUTTONS
+ * 4. PANEL
+ * 5. SIDEBAR
+ * 6. TABLE LAYOUT
+ * 7. MODAL
+ * 8. DROPDOWN CONTENTS
+ */
+
+@skin:					#17BAB8;	// Default skin color
+
+@navbar:				#258382;	// Top bar skin color
+@sidebar:				#2C2C31;	// Sidebar skin color
+@sidebar-body:			#26262b;	// Sidebar sub menu skin color
+@sidebar-text:			#6C6C6F;	// Sidebar default text color
+@sub-sidebar:			#28282D;	// Sub sidebar skin color (applicable for two-column menu layout)
+@sub-sidebar-header:	#bbb;		// Sub sidebar header text color
+
+@white:					#FFFFFF;
+@black:					#000000;
+@red:					#D96452;
+
+body.default{
+
+  /*--------------------------------------------------------------
+    GENERIC
+  --------------------------------------------------------------*/
+  header, a:not(.btn), .header{
+    color:@skin;
+  }
+  
+  header{
+    &.inverse{
+      background:@skin!important;
+      border-bottom-color:@skin!important;
+      color:@white;
+      
+      .header-title{
+        color:@white!important;
+      }
+      .notif-count{
+        background:@red;
+      }
+      
+      .top-bar-notif{
+        border-right:1px solid #19C4C1;
+        border-left:1px solid #19C4C1;
+        
+        > li{
+          border-color:#23AFAB;
+          border-right:1px solid #19C4C1;
+          &:last-of-type{
+            border-color:#23AFAB;
+          }
+          > .dropdown-button, > .dropdown-button:hover{
+            color:@white!important;
+          }
+        }
+      }
+    }
+    
+    .top-bar-notif{
+      > li{
+        &:hover, &.active{
+          background:#373F52;
+          
+          .dropdown-button, .dropdown-button:hover{
+            color: @white!important;
+          }
+        }
+      }
+    }
+  }
+  
+  #breadcrumbs{
+    a{
+      &.active, &:hover{
+        color: @skin!important;
+        border-bottom:2px solid @skin;
+      }
+    }
+  }
+  
+  /*--------------------------------------------------------------
+    FORM ELEMENTS
+  --------------------------------------------------------------*/
+  
+  /*
+  .input-field{
+    .active{
+      color:@skin!important;
+    }
+    LABEL UNDERLINE FOCUS COLOR
+    input[type=text]:focus{
+      border-bottom: 1px solid @skin;
+      box-shadow: 0 1px 0 0 @skin;
+    
+      LABEL FOCUS COLOR
+      + label {
+        color: @skin;
+      }
+    }
+  }
+  */
+  
+  .form-subtitle{
+    color: @skin;  
+  }
+  
+  /*--------------------------------------------------------------
+    BUTTONS
+  --------------------------------------------------------------*/
+  .btn-group{
+    button, input[type="button"]{
+      &:hover, &:focus, &.active{
+        background: @skin;
+        color:@white;
+        border-color:@skin;
+      }
+    }
+  }
+  
+  /*--------------------------------------------------------------
+    PANEL
+  --------------------------------------------------------------*/
+  .panel{
+    &.collapsible{
+      .collapsible-header{
+        background: @skin;
+        color:@white;
+      }
+    }
+  }
+  
+  /*--------------------------------------------------------------
+    SIDEBAR
+  --------------------------------------------------------------*/
+  .has-sub-nav{
+    .side-nav{
+      box-shadow: 1px 0 10px rgba(0,0,0,0.15)!important;
+    }
+  }
+  .side-nav{
+    background:@sidebar;
+    
+    .logo{
+      background: @skin;
+      color: @white;
+      
+      &.inverse{
+          background: @navbar !important;
+      }
+    }
+    
+    [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+    [class^="flaticon-"]:after, [class*=" flaticon-"]:after{
+      color:@sidebar-text;
+    }
+    
+    .menu{
+      li{
+        .collapsible-header{
+          a{
+           color:@sidebar-text;
+          }
+        }
+        
+        .collapsible-body{
+          background:@sidebar-body;
+          
+          .menu-item{
+            li{
+              &:hover{
+                background:none;
+                a{
+                  color:@white;
+                }
+                
+              }
+              a{
+                color:@sidebar-text;
+              }
+            }
+          }
+        }
+        &.active, &:hover{
+          background:rgba(255,255,255,0.03);
+          
+          [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+          [class^="flaticon-"]:after, [class*=" flaticon-"]:after,
+          .collapsible-header a{
+            color:@white!important;
+          }
+        }
+      }
+    }
+  }
+  
+  #sub-nav{
+    background:@sub-sidebar;
+    
+    .list-basic{
+      .list-header{
+        h5{
+          color: @sub-sidebar-header!important;
+        }
+      }
+    }
+  }
+  
+  /*--------------------------------------------------------------
+    TABLE LAYOUT
+  --------------------------------------------------------------*/
+  .table-form{
+    th{
+      background:#3B4A52;
+      color: @white;
+    }
+  }
+  .table-advanced{
+    thead{
+      tr{
+        th{
+          &.col-group-header{
+            background:@skin;
+            color:@white;
+          }
+        }
+      }
+    }
+  }
+  
+  /*--------------------------------------------------------------
+    MODAL
+  --------------------------------------------------------------*/
+  .md-modal{
+    .md-header{
+      background:@skin;
+      color:@white;
+    }
+  }
+  
+  /*--------------------------------------------------------------
+    DROPDOWN CONTENTS
+  --------------------------------------------------------------*/
+  .dropdown-content{
+    > .account-details{
+      > .account-action{
+        > a{
+          [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+          [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+            color: @skin;
+          }
+        }
+      }
+    }
+    
+    > .collection{
+      .collection-item{
+        > p:not(.timestamp){
+          color: @skin;
+        }
+        
+        &.active{
+          .title{
+            color: @skin!important;
+          }
+        }
+      }
+    }
+  }
+}

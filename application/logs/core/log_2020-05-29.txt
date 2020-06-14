@@ -1,0 +1,12 @@
+[Fri May 29 12:48:00 2020] [NOTICE] [include] -> Undefined variable: module, FILE: C:\xampp\htdocs\sos\application\systems\core\user_management\views\organizations.php, LINE: 31
+[Fri May 29 14:10:01 2020] [WARNING] [in_array] -> in_array() expects parameter 2 to be array, null given, FILE: C:\xampp\htdocs\sos\application\helpers\common_helper.php, LINE: 2224
+[Fri May 29 14:10:01 2020] [WARNING] [in_array] -> in_array() expects parameter 2 to be array, null given, FILE: C:\xampp\htdocs\sos\application\helpers\common_helper.php, LINE: 2224
+[Fri May 29 14:10:01 2020] [WARNING] [in_array] -> in_array() expects parameter 2 to be array, null given, FILE: C:\xampp\htdocs\sos\application\helpers\common_helper.php, LINE: 2224
+[Fri May 29 14:10:01 2020] [NOTICE] [get_landing_systems_menu] -> Undefined variable: active_logo, FILE: C:\xampp\htdocs\sos\application\helpers\common_helper.php, LINE: 2267
+[Fri May 29 14:54:32 2020] [NOTICE] [include] -> Undefined variable: module, FILE: C:\xampp\htdocs\sos\application\systems\core\user_management\views\organizations.php, LINE: 31
+[Fri May 29 14:54:36 2020] [NOTICE] [include] -> Undefined variable: module, FILE: C:\xampp\htdocs\sos\application\systems\core\user_management\views\organizations.php, LINE: 31
+[Fri May 29 14:55:05 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\system\core\Security.php, LINE: 354
+[Fri May 29 14:55:27 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Modules.php, LINE: 83
+[Fri May 29 14:55:31 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Modules.php, LINE: 83
+[Fri May 29 14:55:32 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Modules.php, LINE: 83
+[Fri May 29 15:30:05 2020] [NOTICE] [get_landing_systems_menu] -> Undefined variable: active_logo, FILE: C:\xampp\htdocs\sos\application\helpers\common_helper.php, LINE: 2267

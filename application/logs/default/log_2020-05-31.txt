@@ -1,0 +1,1 @@
+[Sun May 31 14:46:43 2020] [WARNING] [session_destroy] -> session_destroy(): Session object destruction failed, FILE: C:\xampp\htdocs\sos\system\libraries\Session\Session.php, LINE: 609

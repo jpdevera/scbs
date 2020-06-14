@@ -1,0 +1,127 @@
+[Sat May 30 21:05:55 2020] [NOTICE] [MX_Controller->__get] -> Undefined property: CI::$permission_view, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Controller.php, LINE: 59
+[Sat May 30 21:05:55 2020] [NOTICE] [MX_Controller->__get] -> Undefined property: CI::$permission_delete, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Controller.php, LINE: 59
+[Sat May 30 21:06:29 2020] [NOTICE] [MX_Controller->__get] -> Undefined property: CI::$permission_view, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Controller.php, LINE: 59
+[Sat May 30 21:06:29 2020] [NOTICE] [MX_Controller->__get] -> Undefined property: CI::$permission_delete, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Controller.php, LINE: 59
+[Sat May 30 22:57:21 2020] [NOTICE] [MX_Controller->__get] -> Undefined property: CI::$permission_view, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Controller.php, LINE: 59
+[Sat May 30 22:57:22 2020] [NOTICE] [MX_Controller->__get] -> Undefined property: CI::$permission_delete, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Controller.php, LINE: 59
+[Sat May 30 22:57:22 2020] [NOTICE] [MX_Controller->__get] -> Undefined property: CI::$permission_view, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Controller.php, LINE: 59
+[Sat May 30 22:57:22 2020] [NOTICE] [MX_Controller->__get] -> Undefined property: CI::$permission_delete, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Controller.php, LINE: 59
+[Sat May 30 22:57:54 2020] [NOTICE] [MX_Controller->__get] -> Undefined property: CI::$permission_view, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Controller.php, LINE: 59
+[Sat May 30 22:57:54 2020] [NOTICE] [MX_Controller->__get] -> Undefined property: CI::$permission_delete, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Controller.php, LINE: 59
+[Sat May 30 22:57:54 2020] [NOTICE] [MX_Controller->__get] -> Undefined property: CI::$permission_view, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Controller.php, LINE: 59
+[Sat May 30 22:57:54 2020] [NOTICE] [MX_Controller->__get] -> Undefined property: CI::$permission_delete, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Controller.php, LINE: 59
+[Sat May 30 23:11:14 2020] [NOTICE] [MX_Controller->__get] -> Undefined property: CI::$permission_view, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Controller.php, LINE: 59
+[Sat May 30 23:11:15 2020] [NOTICE] [MX_Controller->__get] -> Undefined property: CI::$permission_delete, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Controller.php, LINE: 59
+[Sat May 30 23:11:16 2020] [NOTICE] [MX_Controller->__get] -> Undefined property: CI::$permission_view, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Controller.php, LINE: 59
+[Sat May 30 23:11:16 2020] [NOTICE] [MX_Controller->__get] -> Undefined property: CI::$permission_delete, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Controller.php, LINE: 59
+[Sat May 30 23:32:07 2020] [EMERGENCY] [] -> Constant MODULE_DASHBOARD already defined, FILE: C:\xampp\htdocs\sos\application\systems\sos\constants.php, LINE: 53
+[Sat May 30 23:32:07 2020] [EMERGENCY] [] -> Constant MODULE_DASHBOARD already defined, FILE: C:\xampp\htdocs\sos\application\systems\sos\constants.php, LINE: 53
+[Sat May 30 23:32:07 2020] [EMERGENCY] [] -> Constant MODULE_DASHBOARD already defined, FILE: C:\xampp\htdocs\sos\application\systems\sos\constants.php, LINE: 53
+[Sat May 30 23:32:07 2020] [EMERGENCY] [] -> Constant MODULE_DASHBOARD already defined, FILE: C:\xampp\htdocs\sos\application\systems\sos\constants.php, LINE: 53
+[Sat May 30 23:32:07 2020] [EMERGENCY] [] -> Constant MODULE_DASHBOARD already defined, FILE: C:\xampp\htdocs\sos\application\systems\sos\constants.php, LINE: 53
+[Sat May 30 23:32:07 2020] [EMERGENCY] [] -> Constant MODULE_DASHBOARD already defined, FILE: C:\xampp\htdocs\sos\application\systems\sos\constants.php, LINE: 53
+[Sat May 30 23:32:07 2020] [EMERGENCY] [] -> Constant MODULE_DASHBOARD already defined, FILE: C:\xampp\htdocs\sos\application\systems\sos\constants.php, LINE: 53
+[Sat May 30 23:32:07 2020] [EMERGENCY] [] -> Constant MODULE_DASHBOARD already defined, FILE: C:\xampp\htdocs\sos\application\systems\sos\constants.php, LINE: 53
+[Sat May 30 23:32:07 2020] [EMERGENCY] [] -> Constant MODULE_DASHBOARD already defined, FILE: C:\xampp\htdocs\sos\application\systems\sos\constants.php, LINE: 53
+[Sat May 30 23:32:07 2020] [EMERGENCY] [] -> Constant MODULE_DASHBOARD already defined, FILE: C:\xampp\htdocs\sos\application\systems\sos\constants.php, LINE: 53
+[Sat May 30 23:32:07 2020] [EMERGENCY] [] -> Constant MODULE_DASHBOARD already defined, FILE: C:\xampp\htdocs\sos\application\systems\sos\constants.php, LINE: 53
+[Sat May 30 23:32:07 2020] [EMERGENCY] [] -> Constant MODULE_DASHBOARD already defined, FILE: C:\xampp\htdocs\sos\application\systems\sos\constants.php, LINE: 53
+[Sat May 30 23:32:07 2020] [EMERGENCY] [] -> Constant MODULE_DASHBOARD already defined, FILE: C:\xampp\htdocs\sos\application\systems\sos\constants.php, LINE: 53
+[Sat May 30 23:32:07 2020] [EMERGENCY] [] -> Constant MODULE_DASHBOARD already defined, FILE: C:\xampp\htdocs\sos\application\systems\sos\constants.php, LINE: 53
+[Sat May 30 23:33:12 2020] [EMERGENCY] [] -> Constant MODULE_DASHBOARD already defined, FILE: C:\xampp\htdocs\sos\application\systems\sos\constants.php, LINE: 53
+[Sat May 30 23:33:12 2020] [EMERGENCY] [] -> Constant MODULE_DASHBOARD already defined, FILE: C:\xampp\htdocs\sos\application\systems\sos\constants.php, LINE: 53
+[Sat May 30 23:33:12 2020] [EMERGENCY] [] -> Constant MODULE_DASHBOARD already defined, FILE: C:\xampp\htdocs\sos\application\systems\sos\constants.php, LINE: 53
+[Sat May 30 23:33:12 2020] [EMERGENCY] [] -> Constant MODULE_DASHBOARD already defined, FILE: C:\xampp\htdocs\sos\application\systems\sos\constants.php, LINE: 53
+[Sat May 30 23:33:12 2020] [EMERGENCY] [] -> Constant MODULE_DASHBOARD already defined, FILE: C:\xampp\htdocs\sos\application\systems\sos\constants.php, LINE: 53
+[Sat May 30 23:33:12 2020] [EMERGENCY] [] -> Constant MODULE_DASHBOARD already defined, FILE: C:\xampp\htdocs\sos\application\systems\sos\constants.php, LINE: 53
+[Sat May 30 23:33:12 2020] [EMERGENCY] [] -> Constant MODULE_DASHBOARD already defined, FILE: C:\xampp\htdocs\sos\application\systems\sos\constants.php, LINE: 53
+[Sat May 30 23:33:12 2020] [EMERGENCY] [] -> Constant MODULE_DASHBOARD already defined, FILE: C:\xampp\htdocs\sos\application\systems\sos\constants.php, LINE: 53
+[Sat May 30 23:33:12 2020] [EMERGENCY] [] -> Constant MODULE_DASHBOARD already defined, FILE: C:\xampp\htdocs\sos\application\systems\sos\constants.php, LINE: 53
+[Sat May 30 23:33:12 2020] [EMERGENCY] [] -> Constant MODULE_DASHBOARD already defined, FILE: C:\xampp\htdocs\sos\application\systems\sos\constants.php, LINE: 53
+[Sat May 30 23:33:12 2020] [EMERGENCY] [] -> Constant MODULE_DASHBOARD already defined, FILE: C:\xampp\htdocs\sos\application\systems\sos\constants.php, LINE: 53
+[Sat May 30 23:33:12 2020] [EMERGENCY] [] -> Constant MODULE_DASHBOARD already defined, FILE: C:\xampp\htdocs\sos\application\systems\sos\constants.php, LINE: 53
+[Sat May 30 23:33:12 2020] [EMERGENCY] [] -> Constant MODULE_DASHBOARD already defined, FILE: C:\xampp\htdocs\sos\application\systems\sos\constants.php, LINE: 53
+[Sat May 30 23:33:12 2020] [EMERGENCY] [] -> Constant MODULE_DASHBOARD already defined, FILE: C:\xampp\htdocs\sos\application\systems\sos\constants.php, LINE: 53
+[Sat May 30 23:33:15 2020] [EMERGENCY] [] -> Constant MODULE_DASHBOARD already defined, FILE: C:\xampp\htdocs\sos\application\systems\sos\constants.php, LINE: 53
+[Sat May 30 23:33:15 2020] [EMERGENCY] [] -> Constant MODULE_DASHBOARD already defined, FILE: C:\xampp\htdocs\sos\application\systems\sos\constants.php, LINE: 53
+[Sat May 30 23:33:15 2020] [EMERGENCY] [] -> Constant MODULE_DASHBOARD already defined, FILE: C:\xampp\htdocs\sos\application\systems\sos\constants.php, LINE: 53
+[Sat May 30 23:33:15 2020] [EMERGENCY] [] -> Constant MODULE_DASHBOARD already defined, FILE: C:\xampp\htdocs\sos\application\systems\sos\constants.php, LINE: 53
+[Sat May 30 23:33:15 2020] [EMERGENCY] [] -> Constant MODULE_DASHBOARD already defined, FILE: C:\xampp\htdocs\sos\application\systems\sos\constants.php, LINE: 53
+[Sat May 30 23:33:15 2020] [EMERGENCY] [] -> Constant MODULE_DASHBOARD already defined, FILE: C:\xampp\htdocs\sos\application\systems\sos\constants.php, LINE: 53
+[Sat May 30 23:33:15 2020] [EMERGENCY] [] -> Constant MODULE_DASHBOARD already defined, FILE: C:\xampp\htdocs\sos\application\systems\sos\constants.php, LINE: 53
+[Sat May 30 23:33:15 2020] [EMERGENCY] [] -> Constant MODULE_DASHBOARD already defined, FILE: C:\xampp\htdocs\sos\application\systems\sos\constants.php, LINE: 53
+[Sat May 30 23:33:15 2020] [EMERGENCY] [] -> Constant MODULE_DASHBOARD already defined, FILE: C:\xampp\htdocs\sos\application\systems\sos\constants.php, LINE: 53
+[Sat May 30 23:33:15 2020] [EMERGENCY] [] -> Constant MODULE_DASHBOARD already defined, FILE: C:\xampp\htdocs\sos\application\systems\sos\constants.php, LINE: 53
+[Sat May 30 23:33:15 2020] [EMERGENCY] [] -> Constant MODULE_DASHBOARD already defined, FILE: C:\xampp\htdocs\sos\application\systems\sos\constants.php, LINE: 53
+[Sat May 30 23:33:15 2020] [EMERGENCY] [] -> Constant MODULE_DASHBOARD already defined, FILE: C:\xampp\htdocs\sos\application\systems\sos\constants.php, LINE: 53
+[Sat May 30 23:33:15 2020] [EMERGENCY] [] -> Constant MODULE_DASHBOARD already defined, FILE: C:\xampp\htdocs\sos\application\systems\sos\constants.php, LINE: 53
+[Sat May 30 23:33:15 2020] [EMERGENCY] [] -> Constant MODULE_DASHBOARD already defined, FILE: C:\xampp\htdocs\sos\application\systems\sos\constants.php, LINE: 53
+[Sat May 30 23:33:27 2020] [EMERGENCY] [] -> Constant MODULE_DASHBOARD already defined, FILE: C:\xampp\htdocs\sos\application\systems\sos\constants.php, LINE: 53
+[Sat May 30 23:33:27 2020] [EMERGENCY] [] -> Constant MODULE_DASHBOARD already defined, FILE: C:\xampp\htdocs\sos\application\systems\sos\constants.php, LINE: 53
+[Sat May 30 23:33:27 2020] [EMERGENCY] [] -> Constant MODULE_DASHBOARD already defined, FILE: C:\xampp\htdocs\sos\application\systems\sos\constants.php, LINE: 53
+[Sat May 30 23:33:27 2020] [EMERGENCY] [] -> Constant MODULE_DASHBOARD already defined, FILE: C:\xampp\htdocs\sos\application\systems\sos\constants.php, LINE: 53
+[Sat May 30 23:33:27 2020] [EMERGENCY] [] -> Constant MODULE_DASHBOARD already defined, FILE: C:\xampp\htdocs\sos\application\systems\sos\constants.php, LINE: 53
+[Sat May 30 23:33:27 2020] [EMERGENCY] [] -> Constant MODULE_DASHBOARD already defined, FILE: C:\xampp\htdocs\sos\application\systems\sos\constants.php, LINE: 53
+[Sat May 30 23:33:27 2020] [EMERGENCY] [] -> Constant MODULE_DASHBOARD already defined, FILE: C:\xampp\htdocs\sos\application\systems\sos\constants.php, LINE: 53
+[Sat May 30 23:33:27 2020] [EMERGENCY] [] -> Constant MODULE_DASHBOARD already defined, FILE: C:\xampp\htdocs\sos\application\systems\sos\constants.php, LINE: 53
+[Sat May 30 23:33:27 2020] [EMERGENCY] [] -> Constant MODULE_DASHBOARD already defined, FILE: C:\xampp\htdocs\sos\application\systems\sos\constants.php, LINE: 53
+[Sat May 30 23:33:27 2020] [EMERGENCY] [] -> Constant MODULE_DASHBOARD already defined, FILE: C:\xampp\htdocs\sos\application\systems\sos\constants.php, LINE: 53
+[Sat May 30 23:33:27 2020] [EMERGENCY] [] -> Constant MODULE_DASHBOARD already defined, FILE: C:\xampp\htdocs\sos\application\systems\sos\constants.php, LINE: 53
+[Sat May 30 23:33:27 2020] [EMERGENCY] [] -> Constant MODULE_DASHBOARD already defined, FILE: C:\xampp\htdocs\sos\application\systems\sos\constants.php, LINE: 53
+[Sat May 30 23:33:27 2020] [EMERGENCY] [] -> Constant MODULE_DASHBOARD already defined, FILE: C:\xampp\htdocs\sos\application\systems\sos\constants.php, LINE: 53
+[Sat May 30 23:33:27 2020] [EMERGENCY] [] -> Constant MODULE_DASHBOARD already defined, FILE: C:\xampp\htdocs\sos\application\systems\sos\constants.php, LINE: 53
+[Sat May 30 23:33:38 2020] [EMERGENCY] [] -> Constant MODULE_DASHBOARD already defined, FILE: C:\xampp\htdocs\sos\application\systems\sos\constants.php, LINE: 53
+[Sat May 30 23:33:38 2020] [EMERGENCY] [] -> Constant MODULE_DASHBOARD already defined, FILE: C:\xampp\htdocs\sos\application\systems\sos\constants.php, LINE: 53
+[Sat May 30 23:33:38 2020] [EMERGENCY] [] -> Constant MODULE_DASHBOARD already defined, FILE: C:\xampp\htdocs\sos\application\systems\sos\constants.php, LINE: 53
+[Sat May 30 23:33:38 2020] [EMERGENCY] [] -> Constant MODULE_DASHBOARD already defined, FILE: C:\xampp\htdocs\sos\application\systems\sos\constants.php, LINE: 53
+[Sat May 30 23:33:38 2020] [EMERGENCY] [] -> Constant MODULE_DASHBOARD already defined, FILE: C:\xampp\htdocs\sos\application\systems\sos\constants.php, LINE: 53
+[Sat May 30 23:33:38 2020] [EMERGENCY] [] -> Constant MODULE_DASHBOARD already defined, FILE: C:\xampp\htdocs\sos\application\systems\sos\constants.php, LINE: 53
+[Sat May 30 23:33:38 2020] [EMERGENCY] [] -> Constant MODULE_DASHBOARD already defined, FILE: C:\xampp\htdocs\sos\application\systems\sos\constants.php, LINE: 53
+[Sat May 30 23:33:38 2020] [EMERGENCY] [] -> Constant MODULE_DASHBOARD already defined, FILE: C:\xampp\htdocs\sos\application\systems\sos\constants.php, LINE: 53
+[Sat May 30 23:33:38 2020] [EMERGENCY] [] -> Constant MODULE_DASHBOARD already defined, FILE: C:\xampp\htdocs\sos\application\systems\sos\constants.php, LINE: 53
+[Sat May 30 23:33:38 2020] [EMERGENCY] [] -> Constant MODULE_DASHBOARD already defined, FILE: C:\xampp\htdocs\sos\application\systems\sos\constants.php, LINE: 53
+[Sat May 30 23:33:38 2020] [EMERGENCY] [] -> Constant MODULE_DASHBOARD already defined, FILE: C:\xampp\htdocs\sos\application\systems\sos\constants.php, LINE: 53
+[Sat May 30 23:33:38 2020] [EMERGENCY] [] -> Constant MODULE_DASHBOARD already defined, FILE: C:\xampp\htdocs\sos\application\systems\sos\constants.php, LINE: 53
+[Sat May 30 23:33:38 2020] [EMERGENCY] [] -> Constant MODULE_DASHBOARD already defined, FILE: C:\xampp\htdocs\sos\application\systems\sos\constants.php, LINE: 53
+[Sat May 30 23:33:38 2020] [EMERGENCY] [] -> Constant MODULE_DASHBOARD already defined, FILE: C:\xampp\htdocs\sos\application\systems\sos\constants.php, LINE: 53
+[Sat May 30 23:34:55 2020] [EMERGENCY] [] -> Constant MODULE_DASHBOARD already defined, FILE: C:\xampp\htdocs\sos\application\systems\sos\constants.php, LINE: 53
+[Sat May 30 23:34:55 2020] [EMERGENCY] [] -> Constant MODULE_DASHBOARD already defined, FILE: C:\xampp\htdocs\sos\application\systems\sos\constants.php, LINE: 53
+[Sat May 30 23:34:55 2020] [EMERGENCY] [] -> Constant MODULE_DASHBOARD already defined, FILE: C:\xampp\htdocs\sos\application\systems\sos\constants.php, LINE: 53
+[Sat May 30 23:34:55 2020] [EMERGENCY] [] -> Constant MODULE_DASHBOARD already defined, FILE: C:\xampp\htdocs\sos\application\systems\sos\constants.php, LINE: 53
+[Sat May 30 23:34:55 2020] [EMERGENCY] [] -> Constant MODULE_DASHBOARD already defined, FILE: C:\xampp\htdocs\sos\application\systems\sos\constants.php, LINE: 53
+[Sat May 30 23:34:55 2020] [EMERGENCY] [] -> Constant MODULE_DASHBOARD already defined, FILE: C:\xampp\htdocs\sos\application\systems\sos\constants.php, LINE: 53
+[Sat May 30 23:34:55 2020] [EMERGENCY] [] -> Constant MODULE_DASHBOARD already defined, FILE: C:\xampp\htdocs\sos\application\systems\sos\constants.php, LINE: 53
+[Sat May 30 23:34:55 2020] [EMERGENCY] [] -> Constant MODULE_DASHBOARD already defined, FILE: C:\xampp\htdocs\sos\application\systems\sos\constants.php, LINE: 53
+[Sat May 30 23:34:55 2020] [EMERGENCY] [] -> Constant MODULE_DASHBOARD already defined, FILE: C:\xampp\htdocs\sos\application\systems\sos\constants.php, LINE: 53
+[Sat May 30 23:34:55 2020] [EMERGENCY] [] -> Constant MODULE_DASHBOARD already defined, FILE: C:\xampp\htdocs\sos\application\systems\sos\constants.php, LINE: 53
+[Sat May 30 23:34:55 2020] [EMERGENCY] [] -> Constant MODULE_DASHBOARD already defined, FILE: C:\xampp\htdocs\sos\application\systems\sos\constants.php, LINE: 53
+[Sat May 30 23:34:55 2020] [EMERGENCY] [] -> Constant MODULE_DASHBOARD already defined, FILE: C:\xampp\htdocs\sos\application\systems\sos\constants.php, LINE: 53
+[Sat May 30 23:34:55 2020] [EMERGENCY] [] -> Constant MODULE_DASHBOARD already defined, FILE: C:\xampp\htdocs\sos\application\systems\sos\constants.php, LINE: 53
+[Sat May 30 23:34:55 2020] [EMERGENCY] [] -> Constant MODULE_DASHBOARD already defined, FILE: C:\xampp\htdocs\sos\application\systems\sos\constants.php, LINE: 53
+[Sat May 30 23:37:10 2020] [WARNING] [Order_list->__construct] -> Use of undefined constant MODULE_ORDER_LIST - assumed 'MODULE_ORDER_LIST' (this will throw an Error in a future version of PHP), FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 16
+[Sat May 30 23:37:13 2020] [WARNING] [Order_list->__construct] -> Use of undefined constant MODULE_ORDER_LIST - assumed 'MODULE_ORDER_LIST' (this will throw an Error in a future version of PHP), FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 16
+[Sat May 30 23:40:34 2020] [WARNING] [Order_list->__construct] -> Use of undefined constant MODULE_ORDER_LIST - assumed 'MODULE_ORDER_LIST' (this will throw an Error in a future version of PHP), FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 16
+[Sat May 30 23:40:37 2020] [WARNING] [Order_list->__construct] -> Use of undefined constant MODULE_ORDER_LIST - assumed 'MODULE_ORDER_LIST' (this will throw an Error in a future version of PHP), FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 16
+[Sat May 30 23:42:56 2020] [WARNING] [Order_list->__construct] -> Use of undefined constant MODULE_ORDER_LIST - assumed 'MODULE_ORDER_LIST' (this will throw an Error in a future version of PHP), FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 16
+[Sat May 30 23:42:58 2020] [WARNING] [Order_list->__construct] -> Use of undefined constant MODULE_ORDER_LIST - assumed 'MODULE_ORDER_LIST' (this will throw an Error in a future version of PHP), FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 16
+[Sat May 30 23:42:59 2020] [WARNING] [Order_list->__construct] -> Use of undefined constant MODULE_ORDER_LIST - assumed 'MODULE_ORDER_LIST' (this will throw an Error in a future version of PHP), FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 16
+[Sat May 30 23:43:02 2020] [WARNING] [Order_list->__construct] -> Use of undefined constant MODULE_ORDER_LIST - assumed 'MODULE_ORDER_LIST' (this will throw an Error in a future version of PHP), FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 16
+[Sat May 30 23:43:04 2020] [WARNING] [Order_list->__construct] -> Use of undefined constant MODULE_ORDER_LIST - assumed 'MODULE_ORDER_LIST' (this will throw an Error in a future version of PHP), FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 16
+[Sat May 30 23:43:11 2020] [WARNING] [Order_list->__construct] -> Use of undefined constant MODULE_ORDER_LIST - assumed 'MODULE_ORDER_LIST' (this will throw an Error in a future version of PHP), FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 16
+[Sat May 30 23:43:19 2020] [WARNING] [Order_list->__construct] -> Use of undefined constant MODULE_ORDER_LIST - assumed 'MODULE_ORDER_LIST' (this will throw an Error in a future version of PHP), FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 16
+[Sat May 30 23:44:38 2020] [WARNING] [Order_list->__construct] -> Use of undefined constant MODULE_ORDER_LIST - assumed 'MODULE_ORDER_LIST' (this will throw an Error in a future version of PHP), FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 16
+[Sat May 30 23:45:13 2020] [WARNING] [Order_list->__construct] -> Use of undefined constant MODULE_ORDER_LIST - assumed 'MODULE_ORDER_LIST' (this will throw an Error in a future version of PHP), FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 16
+[Sat May 30 23:45:59 2020] [WARNING] [Order_list->__construct] -> Use of undefined constant MODULE_ORDER_LIST - assumed 'MODULE_ORDER_LIST' (this will throw an Error in a future version of PHP), FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 16
+[Sat May 30 23:46:06 2020] [WARNING] [Order_list->__construct] -> Use of undefined constant MODULE_ORDER_LIST - assumed 'MODULE_ORDER_LIST' (this will throw an Error in a future version of PHP), FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 16
+[Sat May 30 23:47:21 2020] [WARNING] [Order_list->__construct] -> Use of undefined constant MODULE_ORDER_LIST - assumed 'MODULE_ORDER_LIST' (this will throw an Error in a future version of PHP), FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 16
+[Sat May 30 23:47:33 2020] [WARNING] [Order_list->__construct] -> Use of undefined constant MODULE_ORDER_LIST - assumed 'MODULE_ORDER_LIST' (this will throw an Error in a future version of PHP), FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 16
+[Sat May 30 23:48:23 2020] [WARNING] [Order_list->__construct] -> Use of undefined constant MODULE_ORDER_LIST - assumed 'MODULE_ORDER_LIST' (this will throw an Error in a future version of PHP), FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 16
+[Sat May 30 23:49:21 2020] [WARNING] [Order_list->__construct] -> Use of undefined constant MODULE_ORDER_LIST - assumed 'MODULE_ORDER_LIST' (this will throw an Error in a future version of PHP), FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 16
+[Sat May 30 23:49:51 2020] [WARNING] [Order_list->__construct] -> Use of undefined constant MODULE_ORDER_LIST - assumed 'MODULE_ORDER_LIST' (this will throw an Error in a future version of PHP), FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 16
+[Sat May 30 23:50:27 2020] [WARNING] [Order_list->__construct] -> Use of undefined constant MODULE_ORDER_LIST - assumed 'MODULE_ORDER_LIST' (this will throw an Error in a future version of PHP), FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 16
+[Sat May 30 23:50:30 2020] [WARNING] [Order_list->__construct] -> Use of undefined constant MODULE_ORDER_LIST - assumed 'MODULE_ORDER_LIST' (this will throw an Error in a future version of PHP), FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 16
+[Sat May 30 23:53:06 2020] [WARNING] [Order_list->__construct] -> Use of undefined constant MODULE_ORDER_LIST - assumed 'MODULE_ORDER_LIST' (this will throw an Error in a future version of PHP), FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 16
+[Sat May 30 23:58:21 2020] [WARNING] [Order_list->__construct] -> Use of undefined constant MODULE_ORDER_LIST - assumed 'MODULE_ORDER_LIST' (this will throw an Error in a future version of PHP), FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 16
+[Sat May 30 23:58:29 2020] [WARNING] [Order_list->__construct] -> Use of undefined constant MODULE_ORDER_LIST - assumed 'MODULE_ORDER_LIST' (this will throw an Error in a future version of PHP), FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 16
+[Sat May 30 23:58:31 2020] [WARNING] [Order_list->__construct] -> Use of undefined constant MODULE_ORDER_LIST - assumed 'MODULE_ORDER_LIST' (this will throw an Error in a future version of PHP), FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 16
+[Sat May 30 23:59:42 2020] [WARNING] [Order_list->__construct] -> Use of undefined constant MODULE_ORDER_LIST - assumed 'MODULE_ORDER_LIST' (this will throw an Error in a future version of PHP), FILE: C:\xampp\htdocs\sos\application\systems\sos\order_list\controllers\Order_list.php, LINE: 16

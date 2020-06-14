@@ -1,0 +1,42 @@
+[Wed Jun 03 20:01:11 2020] [ERROR] [] -> Uncaught exception: [0] Too few arguments to function Payment::index(), 0 passed in C:\xampp\htdocs\sos\system\core\CodeIgniter.php on line 514 and exactly 1 expected
+#0 C:\xampp\htdocs\sos\system\core\CodeIgniter.php(514): Payment->index()
+#1 C:\xampp\htdocs\sos\index.php(293): require_once('C:\\xampp\\htdocs...')
+#2 {main}, FILE: C:\xampp\htdocs\sos\application\systems\sos\entries\controllers\Payment.php, LINE: 27
+[Wed Jun 03 20:01:29 2020] [ERROR] [] -> Uncaught exception: [0] Too few arguments to function Payment::index(), 0 passed in C:\xampp\htdocs\sos\system\core\CodeIgniter.php on line 514 and exactly 1 expected
+#0 C:\xampp\htdocs\sos\system\core\CodeIgniter.php(514): Payment->index()
+#1 C:\xampp\htdocs\sos\index.php(293): require_once('C:\\xampp\\htdocs...')
+#2 {main}, FILE: C:\xampp\htdocs\sos\application\systems\sos\entries\controllers\Payment.php, LINE: 27
+[Wed Jun 03 20:02:40 2020] [ERROR] [] -> Uncaught exception: [0] Too few arguments to function Payment::index(), 0 passed in C:\xampp\htdocs\sos\system\core\CodeIgniter.php on line 514 and exactly 1 expected
+#0 C:\xampp\htdocs\sos\system\core\CodeIgniter.php(514): Payment->index()
+#1 C:\xampp\htdocs\sos\index.php(293): require_once('C:\\xampp\\htdocs...')
+#2 {main}, FILE: C:\xampp\htdocs\sos\application\systems\sos\entries\controllers\Payment.php, LINE: 27
+[Wed Jun 03 20:03:37 2020] [ERROR] [] -> Uncaught exception: [0] Too few arguments to function Payment::index(), 0 passed in C:\xampp\htdocs\sos\system\core\CodeIgniter.php on line 514 and exactly 1 expected
+#0 C:\xampp\htdocs\sos\system\core\CodeIgniter.php(514): Payment->index()
+#1 C:\xampp\htdocs\sos\index.php(293): require_once('C:\\xampp\\htdocs...')
+#2 {main}, FILE: C:\xampp\htdocs\sos\application\systems\sos\entries\controllers\Payment.php, LINE: 27
+[Wed Jun 03 20:03:38 2020] [ERROR] [] -> Uncaught exception: [0] Too few arguments to function Payment::index(), 0 passed in C:\xampp\htdocs\sos\system\core\CodeIgniter.php on line 514 and exactly 1 expected
+#0 C:\xampp\htdocs\sos\system\core\CodeIgniter.php(514): Payment->index()
+#1 C:\xampp\htdocs\sos\index.php(293): require_once('C:\\xampp\\htdocs...')
+#2 {main}, FILE: C:\xampp\htdocs\sos\application\systems\sos\entries\controllers\Payment.php, LINE: 27
+[Wed Jun 03 20:13:51 2020] [ERROR] [] -> Uncaught exception: [0] Too few arguments to function Payment::process_receipt(), 0 passed in C:\xampp\htdocs\sos\system\core\CodeIgniter.php on line 514 and exactly 1 expected
+#0 C:\xampp\htdocs\sos\system\core\CodeIgniter.php(514): Payment->process_receipt()
+#1 C:\xampp\htdocs\sos\index.php(293): require_once('C:\\xampp\\htdocs...')
+#2 {main}, FILE: C:\xampp\htdocs\sos\application\systems\sos\entries\controllers\Payment.php, LINE: 115
+[Wed Jun 03 20:20:30 2020] [ERROR] [] -> Uncaught exception: [0] Too few arguments to function Payment::process_receipt(), 0 passed in C:\xampp\htdocs\sos\system\core\CodeIgniter.php on line 514 and exactly 1 expected
+#0 C:\xampp\htdocs\sos\system\core\CodeIgniter.php(514): Payment->process_receipt()
+#1 C:\xampp\htdocs\sos\index.php(293): require_once('C:\\xampp\\htdocs...')
+#2 {main}, FILE: C:\xampp\htdocs\sos\application\systems\sos\entries\controllers\Payment.php, LINE: 119
+[Wed Jun 03 20:31:37 2020] [ERROR] [] -> Uncaught exception: [0] Too few arguments to function Data_entries_model::get_select_data(), 1 passed in C:\xampp\htdocs\sos\application\systems\sos\entries\controllers\Payment.php on line 105 and at least 2 expected
+#0 C:\xampp\htdocs\sos\application\systems\sos\entries\controllers\Payment.php(105): Data_entries_model->get_select_data('1')
+#1 C:\xampp\htdocs\sos\system\core\CodeIgniter.php(514): Payment->process_action()
+#2 C:\xampp\htdocs\sos\index.php(293): require_once('C:\\xampp\\htdocs...')
+#3 {main}, FILE: C:\xampp\htdocs\sos\application\systems\sos\entries\models\Data_entries_model.php, LINE: 12
+[Wed Jun 03 20:31:50 2020] [ERROR] [] -> Uncaught exception: [0] Too few arguments to function Data_entries_model::get_select_data(), 1 passed in C:\xampp\htdocs\sos\application\systems\sos\entries\controllers\Payment.php on line 105 and at least 2 expected
+#0 C:\xampp\htdocs\sos\application\systems\sos\entries\controllers\Payment.php(105): Data_entries_model->get_select_data('1')
+#1 C:\xampp\htdocs\sos\system\core\CodeIgniter.php(514): Payment->process_action()
+#2 C:\xampp\htdocs\sos\index.php(293): require_once('C:\\xampp\\htdocs...')
+#3 {main}, FILE: C:\xampp\htdocs\sos\application\systems\sos\entries\models\Data_entries_model.php, LINE: 12
+[Wed Jun 03 20:41:29 2020] [ERROR] [] -> Uncaught exception: [0] Too few arguments to function Payment::process_payment(), 0 passed in C:\xampp\htdocs\sos\system\core\CodeIgniter.php on line 514 and exactly 1 expected
+#0 C:\xampp\htdocs\sos\system\core\CodeIgniter.php(514): Payment->process_payment()
+#1 C:\xampp\htdocs\sos\index.php(293): require_once('C:\\xampp\\htdocs...')
+#2 {main}, FILE: C:\xampp\htdocs\sos\application\systems\sos\entries\controllers\Payment.php, LINE: 58

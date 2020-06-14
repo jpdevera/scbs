@@ -1,0 +1,225 @@
+@charset "utf-8";
+@import 'elements';
+@import 'helpers';
+
+/* ==========================================================================
+   6. WIZARD
+   ========================================================================== */
+
+/*form styles*/
+.wizard-form {
+  width: 70%;
+  margin: 20px auto;
+  position: relative;
+  text-align:center;
+  
+  fieldset.wcontent {
+  padding: 20px;
+  box-sizing: border-box;
+  text-align:center;
+  background: #fff;
+  box-shadow: 0 1px 4px 1px #e5e5e5;
+  width: 100%;
+  margin: 0 auto;
+  .valign-top;
+  
+  /*stacking fieldsets above each other*/
+  position: relative;
+  
+  .form-float-label {
+    .input-field {
+    label, .label {
+      font-size:13px!important;
+      .font-semibold;
+    }
+    .label {
+      color: #597B8D;
+      .font-spacing-04;
+    }
+    
+    a {
+      font-size:11px;
+    }
+    
+    .row {
+      .col {
+        label {
+          top:unset;
+        }
+      }
+    }
+    }
+  }
+  }
+}
+/*Hide all except first fieldset*/
+.wizard-form fieldset.wcontent:not(:first-of-type) {
+  display: none;
+}
+
+.title-content {
+  font-size:18px;
+  color: #00b8d4;
+  font-weight : bold;
+}
+
+.title-content-14 {
+  .title-content;
+  font-size : 14px !important;
+}
+
+.btn-rounded {
+  border-radius: 30em;
+  border: 2px solid #eceff1;
+}
+
+.btn-rounded:hover {
+  background : #f5f5f5 !important;
+}
+
+.ul-collapsible::after {
+  content : '';
+  width: 1px;
+  height:50px;
+  display: block;
+  border: 1px solid #c9c9c9;
+  margin-left : 70px;
+  background: #EBEDF2 !important;
+}
+
+.name-connector::after {
+}
+
+/*buttons*/
+.wizard-form .action-button {
+  width: 100px;
+  background: #27AE60;
+  font-weight: bold;
+  color: white;
+  border: 0 none;
+  border-radius: 1px;
+  cursor: pointer;
+  padding: 10px 5px;
+  margin: 10px 5px;
+}
+
+.wizard-form .action-button.cancel {
+  width: 100px;
+  background: #757575;
+  font-weight: bold;
+  color: white;
+  border: 0 none;
+  border-radius: 1px;
+  cursor: pointer;
+  padding: 10px 5px;
+  margin: 10px 5px;
+}
+
+.wizard-form .action-button.save-wizard {
+  width: 100px;
+  background: #27AE60;
+  font-weight: bold;
+  color: white;
+  border: 0 none;
+  border-radius: 1px;
+  cursor: pointer;
+  padding: 10px 5px;
+  margin: 10px 5px;
+}
+
+.wizard-form .action-button.previous {
+  width: 100px;
+  background: #42a5f5;
+  font-weight: bold;
+  color: white;
+  border: 0 none;
+  border-radius: 1px;
+  cursor: pointer;
+  padding: 10px 5px;
+  margin: 10px 5px;
+}
+.wizard-form .action-button:hover, .wizard-form .action-button:focus {
+  box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
+}
+/*headings*/
+.w-title {
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #2C3E50;
+  margin-bottom: 10px;
+  .font-thin;
+}
+.fs-subtitle {
+  font-weight: normal;
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 20px;
+}
+/*progressbar*/
+#progressbar {
+  margin-bottom: 30px;
+  overflow: hidden;
+  /*CSS counters to number the steps*/
+  counter-reset: step;
+}
+#progressbar li {
+  list-style-type: none;
+  color: #757575;
+  text-transform: uppercase;
+  font-size: 12px;
+  width: 25%;
+  float: left;
+  position: relative;
+  font-weight: 500;
+}
+
+#progressbar li.active {
+  color: #212121;
+  font-weight: bold;
+}
+.three-step {
+  #progressbar li {
+    width: 33.33%!important;
+  }
+}
+.five-step {
+  #progressbar li {
+    width: 20%!important;
+  }
+}
+#progressbar li:before {
+  content: counter(step);
+  counter-increment: step;
+  width: 35px;
+  height:35px;
+  line-height: 30px;
+  display: block;
+  font-size: 15px;
+  border: 2px solid #c9c9c9;
+  margin: 0 auto 5px auto;
+  border-radius:50em;
+  .font-semibold;
+  background: #EBEDF2;
+}
+/*progressbar connectors*/
+#progressbar li:after {
+  content: '';
+  width: 95%;
+  height: 2px;
+  background: #A4ADB8;
+  position: absolute;
+  left: -50%;
+  top: 16px;
+  z-index: -1; /*put it behind the numbers*/
+}
+#progressbar li:first-child:after {
+  /*connector not needed before the first step*/
+  content: none; 
+}
+/*marking active/completed steps green*/
+/*The number of the step and the connector before it = green*/
+#progressbar li.active:before,  #progressbar li.active:after{
+  background: #6DD9AA;
+  border:none;
+  color: white;
+}

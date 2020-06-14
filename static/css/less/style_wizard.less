@@ -1,0 +1,137 @@
+@charset "utf-8";
+@import 'stylev2';
+
+/* ==========================================================================
+   DEFAULT COLORS
+   ========================================================================== */
+@wizard-label:			#bfc7e7;
+@wizard-label-active: 	#fff;
+
+html,
+body {
+  height:100%;
+}
+
+body {
+  background: #363c36;
+  > .body-title{
+	color:#fff;
+	font-size:40px;	
+	text-align:center;
+	padding-top:35px;
+  }
+
+  .body-wrapper{
+    height:100%;
+    background: #ececec;
+    margin-top:60px;
+    .cd-main-content {
+      background: url(../images/abstract-bg-1.png) no-repeat bottom center;
+      background-size: 100% auto;
+      height:400px;
+    }
+
+    .wizard-form {
+      #progressbar{
+        background:#f2f2f2;
+        > li {
+		  position: relative;
+          height:70px;
+          line-height:70px;
+		  color: @wizard-label;
+          
+          &:before{
+          	width: 20px;
+		    height: 20px;
+		    line-height: 20px;
+		    font-size: 13px;
+		    border:none;
+		    .inline;
+		    color: @wizard-label;
+		    background: #E2E2EA;
+          }
+          &.active {
+            /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#fff247+0,fbb918+100 */
+			background: #fff247; /* Old browsers */
+			background: -moz-linear-gradient(left,  #fff247 0%, #fbb918 100%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(left,  #fff247 0%,#fbb918 100%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(to right,  #fff247 0%,#fbb918 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff247', endColorstr='#fbb918',GradientType=1 ); /* IE6-9 */
+			border-radius:0; 
+			color:@wizard-label-active;
+
+          	&:before {
+          	  background: #fff;
+      		  color: #fccb27;
+          	}
+
+          	&.done {
+          	  background:#fff247!important;
+          	  &:after {
+          	    width:0!important;
+          	  }
+          	}
+
+          	&:after {
+		      content: ""!important;
+		      position: absolute;
+		      background-color: transparent;
+		      right: 0px!important;
+		      height: 70px;
+		      width: 75px!important;
+		      border-radius: 50px;
+		      box-shadow: 0 -25px 0 0 #f2f2f2;
+		      transform: rotate(90deg);
+		      top: 0!important;
+		      left:unset!important;
+		      z-index:unset!important;
+          	}
+          }
+        }
+      }
+    }
+  }
+}
+
+.form-basic {
+  .title-content {
+    color:#222;
+    .text-uppercase;
+    .font-semibold;
+    font-size:25px;
+  }
+  .fs-subtitle {
+    color: #B4B4B4;
+    font-size:15px;
+  }
+  &.vertical {
+    .row {
+      .col {
+        .input-field {
+          label {
+            position:unset;
+            transform:unset;
+            line-height:47px;
+          }
+          input[type=text],
+          input[type=password],
+          input[type=email],
+          input[type=url],
+          input[type=time],
+          input[type=date],
+          input[type=datetime-local],
+          input[type=tel],
+          input[type=number],
+          input[type=search],
+          textarea.materialize-textarea {
+            background:#fff;
+            border-radius:3px;
+            border:1px solid #cfcfcf;
+            padding: 0 10px;
+            box-shadow:none;
+          }
+        }
+      }
+    }
+  }
+}

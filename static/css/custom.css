@@ -1,0 +1,191 @@
+.no-js #loader { display: none; }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	opacity: 0.7; 
+	height: 100%;
+	z-index: 9999;
+	background: url(../images/loader-64x/Preloader_3.gif) center no-repeat #fff;
+}
+
+.loader {
+    border: 10px solid #f3f3f3; /* Light grey */
+    border-top: 10px solid #F0934E; /* Orange */
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    animation: spin 2s linear infinite;
+    margin: 0 auto;
+}
+
+.colorpicker{
+  z-index: 99999 !important;
+}
+
+
+.cd-side-nav .agency-logo {
+  text-align: center!important;
+  /*background: rgba(0, 0, 0, 0.1);*/
+  padding: 10px!important;
+}
+.cd-side-nav .agency-logo img {
+  width: 90%;
+  height: 130px;
+  /*height: auto;*/
+}
+
+#org-select .select-wrapper span.caret
+{
+  display: none !important;
+}
+
+.ui-resizable-handle {
+  position: absolute;
+  font-size: 0.1px;
+  display: block;
+  -ms-touch-action: none;
+  touch-action: none;
+}
+.ui-resizable-se {
+  cursor: se-resize;
+  width: 12px;
+  height: 12px;
+  right: 1px;
+  bottom: 1px;
+}
+.ui-resizable-s {
+  cursor: s-resize;
+  height: 9px;
+  width: 100%;
+  bottom: -5px;
+  left: 0;
+}
+.ui-resizable-e {
+  cursor: e-resize;
+  width: 9px;
+  right: -5px;
+  top: 0;
+  height: 100%;
+}
+.ui-resizable-w {
+  cursor: w-resize;
+  width: 9px;
+  left: -5px;
+  top: 0;
+  height: 100%;
+}
+
+input.labelauty+label[for=user_sms_notif]
+{
+  /*background:0 0;
+  color:#888*/
+  background:0 0!important;color:#333!important;
+}
+input.labelauty+label[for=user_sms_notif]:hover
+{
+  background:0 0!important;color:#333!important
+}
+input.labelauty+label[for=user_sms_notif]>span.labelauty-unchecked-image
+{
+  background-image:url(../images/sms_disabled_50x50.png);
+  width:50px;
+  height:50px
+}
+input.labelauty+label[for=user_sms_notif]>span.labelauty-checked-image
+{
+  background-image:url(../images/sms_50x50.png);
+  width:50px;
+  height:50px
+}
+input.labelauty+label[for=user_sms_notif]>span.labelauty-checked,
+input.labelauty+label[for=user_sms_notif]>span.labelauty-unchecked
+{
+  vertical-align:top!important;margin:20px 0 0 10px!important
+}
+input.labelauty+label[for=user_email_notif]
+{
+  /*background:0 0 !important;color:#888!important;*/
+  background:0 0!important;color:#333!important;
+}
+input.labelauty+label[for=user_email_notif]:hover
+{
+  background:0 0!important;color:#333!important;
+}
+
+input.labelauty+label[for=user_email_notif]>span.labelauty-unchecked-image
+{
+  background-image:url(../images/email_notif_disabled_50x50.png);width:50px;height:50px
+}
+input.labelauty+label[for=user_email_notif]>span.labelauty-checked-image
+{
+  background-image:url(../images/email_notif_50x50.png);width:50px;height:50px
+}
+input.labelauty+label[for=user_email_notif]>span.labelauty-checked,
+input.labelauty+label[for=user_email_notif]>span.labelauty-unchecked
+{
+  vertical-align:top!important;margin:20px 0 0 10px!important
+}
+
+/* sign up approval */
+.registration-status {
+  margin: 15px 100px;
+  padding: 20px;
+  background: rgba(204, 204, 204, 0.1);
+}
+
+/* site settings */
+#maintenance-mode input.labelauty + label,
+#term-condition-mode input.labelauty + label,
+#site-info input.labelauty + label {
+  padding: 7px 12px 8px 12px !important;
+}
+
+#tab_site_settings #term_cond_val_div {
+  padding-left: 3px;
+}
+
+/* user management */
+.action-more {
+  margin-left: 3px;
+  padding: 0 !important;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: none !important;
+}
+
+.action-more a {
+  padding: 0 7px;
+  display: block;
+}
+
+.action-more a i {
+  color: #666;
+  font-size: 21px;
+  margin-right: 0;
+}
+
+.action-more ul {
+  border: 1px solid #eee;
+  width: 200px !important;
+}
+
+.action-more ul a {
+  font-size: 12px;
+}
+
+.action-more ul i {
+  margin-right: 0 !important;
+}
+
+/* groups */
+#form_modal_groups #tbl_group_members .delete {
+  padding-top: 5px;
+}
+
+/* audit trail */
+.audit-more.btn ul {
+  overflow: visible;
+}

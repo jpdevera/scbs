@@ -1,0 +1,64 @@
+[Tue Jun 09 00:20:58 2020] [NOTICE] [Holidays->process_action] -> Undefined index: holiday_desc, FILE: C:\xampp\htdocs\ocbs\application\systems\cbs\file_maintenance\controllers\Holidays.php, LINE: 224
+[Tue Jun 09 00:20:58 2020] [NOTICE] [Holidays->process_action] -> Undefined index: holiday_date, FILE: C:\xampp\htdocs\ocbs\application\systems\cbs\file_maintenance\controllers\Holidays.php, LINE: 225
+[Tue Jun 09 00:20:58 2020] [NOTICE] [Holidays->process_action] -> Undefined index: recurring_flag, FILE: C:\xampp\htdocs\ocbs\application\systems\cbs\file_maintenance\controllers\Holidays.php, LINE: 226
+[Tue Jun 09 00:20:58 2020] [ERROR] [Base_Controller->rlog_error] -> 130: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'holiday_desc' cannot be null: #0 C:\xampp\htdocs\ocbs\application\core\Base_Model.php(130): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\ocbs\application\core\Base_Model.php(387): Base_Model->query('\r\n\t            ...', Array, false, false, true)
+#2 C:\xampp\htdocs\ocbs\application\core\Common_Model.php(14): Base_Model->insert_data('args_holidays', Array, true, false)
+#3 C:\xampp\htdocs\ocbs\application\systems\cbs\file_maintenance\controllers\Holidays.php(227): Common_Model->insert_data('args_holidays', Array, true)
+#4 C:\xampp\htdocs\ocbs\system\core\CodeIgniter.php(514): Holidays->process_action()
+#5 C:\xampp\htdocs\ocbs\index.php(293): require_once('C:\\xampp\\htdocs...')
+#6 {main}, FILE: C:\xampp\htdocs\ocbs\application\core\Base_Controller.php, LINE: 77
+[Tue Jun 09 00:21:28 2020] [NOTICE] [Holidays->process_action] -> Undefined index: holiday_desc, FILE: C:\xampp\htdocs\ocbs\application\systems\cbs\file_maintenance\controllers\Holidays.php, LINE: 224
+[Tue Jun 09 00:21:28 2020] [NOTICE] [Holidays->process_action] -> Undefined index: holiday_date, FILE: C:\xampp\htdocs\ocbs\application\systems\cbs\file_maintenance\controllers\Holidays.php, LINE: 225
+[Tue Jun 09 00:21:28 2020] [NOTICE] [Holidays->process_action] -> Undefined index: recurring_flag, FILE: C:\xampp\htdocs\ocbs\application\systems\cbs\file_maintenance\controllers\Holidays.php, LINE: 226
+[Tue Jun 09 00:22:45 2020] [NOTICE] [Holidays->get_data_list] -> Undefined index: type_code, FILE: C:\xampp\htdocs\ocbs\application\systems\cbs\file_maintenance\controllers\Holidays.php, LINE: 174
+[Tue Jun 09 00:22:45 2020] [NOTICE] [Holidays->get_data_list] -> Undefined index: type_name, FILE: C:\xampp\htdocs\ocbs\application\systems\cbs\file_maintenance\controllers\Holidays.php, LINE: 175
+[Tue Jun 09 00:22:45 2020] [NOTICE] [Holidays->get_data_list] -> Undefined index: position, FILE: C:\xampp\htdocs\ocbs\application\systems\cbs\file_maintenance\controllers\Holidays.php, LINE: 176
+[Tue Jun 09 00:22:53 2020] [NOTICE] [Holidays->get_data_list] -> Undefined index: type_code, FILE: C:\xampp\htdocs\ocbs\application\systems\cbs\file_maintenance\controllers\Holidays.php, LINE: 174
+[Tue Jun 09 00:22:53 2020] [NOTICE] [Holidays->get_data_list] -> Undefined index: type_name, FILE: C:\xampp\htdocs\ocbs\application\systems\cbs\file_maintenance\controllers\Holidays.php, LINE: 175
+[Tue Jun 09 00:22:53 2020] [NOTICE] [Holidays->get_data_list] -> Undefined index: position, FILE: C:\xampp\htdocs\ocbs\application\systems\cbs\file_maintenance\controllers\Holidays.php, LINE: 176
+[Tue Jun 09 10:46:14 2020] [ERROR] [] -> Uncaught exception: [0] Undefined class constant 'CBS_TABLE_ARGS_HOLIDAYS'
+#0 C:\xampp\htdocs\ocbs\application\systems\cbs\file_maintenance\controllers\Holidays.php(139): Holidays_model->get_data_list(NULL)
+#1 C:\xampp\htdocs\ocbs\system\core\CodeIgniter.php(514): Holidays->get_data_list()
+#2 C:\xampp\htdocs\ocbs\index.php(293): require_once('C:\\xampp\\htdocs...')
+#3 {main}, FILE: C:\xampp\htdocs\ocbs\application\systems\cbs\file_maintenance\models\Holidays_model.php, LINE: 63
+[Tue Jun 09 12:00:06 2020] [ERROR] [] -> Uncaught exception: [0] Class 'Branch_model' not found
+#0 C:\xampp\htdocs\ocbs\application\systems\cbs\file_maintenance\controllers\Branch.php(66): MX_Loader->model('Branch_model', 'model')
+#1 C:\xampp\htdocs\ocbs\system\core\CodeIgniter.php(500): Branch->__construct()
+#2 C:\xampp\htdocs\ocbs\index.php(293): require_once('C:\\xampp\\htdocs...')
+#3 {main}, FILE: C:\xampp\htdocs\ocbs\application\third_party\MX\Loader.php, LINE: 225
+[Tue Jun 09 12:00:35 2020] [ERROR] [] -> Uncaught exception: [0] Class 'Branch_model' not found
+#0 C:\xampp\htdocs\ocbs\application\systems\cbs\file_maintenance\controllers\Branch.php(66): MX_Loader->model('Branch_model', 'model')
+#1 C:\xampp\htdocs\ocbs\system\core\CodeIgniter.php(500): Branch->__construct()
+#2 C:\xampp\htdocs\ocbs\index.php(293): require_once('C:\\xampp\\htdocs...')
+#3 {main}, FILE: C:\xampp\htdocs\ocbs\application\third_party\MX\Loader.php, LINE: 225
+[Tue Jun 09 12:00:40 2020] [ERROR] [] -> Uncaught exception: [0] Class 'Branch_model' not found
+#0 C:\xampp\htdocs\ocbs\application\systems\cbs\file_maintenance\controllers\Branch.php(66): MX_Loader->model('Branch_model', 'model')
+#1 C:\xampp\htdocs\ocbs\system\core\CodeIgniter.php(500): Branch->__construct()
+#2 C:\xampp\htdocs\ocbs\index.php(293): require_once('C:\\xampp\\htdocs...')
+#3 {main}, FILE: C:\xampp\htdocs\ocbs\application\third_party\MX\Loader.php, LINE: 225
+[Tue Jun 09 12:00:48 2020] [ERROR] [] -> Uncaught exception: [0] Class 'Branch_model' not found
+#0 C:\xampp\htdocs\ocbs\application\systems\cbs\file_maintenance\controllers\Branch.php(66): MX_Loader->model('Branch_model', 'model')
+#1 C:\xampp\htdocs\ocbs\system\core\CodeIgniter.php(500): Branch->__construct()
+#2 C:\xampp\htdocs\ocbs\index.php(293): require_once('C:\\xampp\\htdocs...')
+#3 {main}, FILE: C:\xampp\htdocs\ocbs\application\third_party\MX\Loader.php, LINE: 225
+[Tue Jun 09 12:01:23 2020] [ERROR] [] -> Uncaught exception: [0] Class 'Branch_model' not found
+#0 C:\xampp\htdocs\ocbs\application\systems\cbs\file_maintenance\controllers\Branch.php(66): MX_Loader->model('Branch_model', 'model')
+#1 C:\xampp\htdocs\ocbs\system\core\CodeIgniter.php(500): Branch->__construct()
+#2 C:\xampp\htdocs\ocbs\index.php(293): require_once('C:\\xampp\\htdocs...')
+#3 {main}, FILE: C:\xampp\htdocs\ocbs\application\third_party\MX\Loader.php, LINE: 225
+[Tue Jun 09 12:01:51 2020] [ERROR] [] -> Uncaught exception: [0] Class 'Branch_model' not found
+#0 C:\xampp\htdocs\ocbs\application\systems\cbs\file_maintenance\controllers\Branch.php(66): MX_Loader->model('Branch_model', 'model')
+#1 C:\xampp\htdocs\ocbs\system\core\CodeIgniter.php(500): Branch->__construct()
+#2 C:\xampp\htdocs\ocbs\index.php(293): require_once('C:\\xampp\\htdocs...')
+#3 {main}, FILE: C:\xampp\htdocs\ocbs\application\third_party\MX\Loader.php, LINE: 225
+[Tue Jun 09 12:01:55 2020] [ERROR] [] -> Uncaught exception: [0] Class 'Branch_model' not found
+#0 C:\xampp\htdocs\ocbs\application\systems\cbs\file_maintenance\controllers\Branch.php(66): MX_Loader->model('Branch_model', 'model')
+#1 C:\xampp\htdocs\ocbs\system\core\CodeIgniter.php(500): Branch->__construct()
+#2 C:\xampp\htdocs\ocbs\index.php(293): require_once('C:\\xampp\\htdocs...')
+#3 {main}, FILE: C:\xampp\htdocs\ocbs\application\third_party\MX\Loader.php, LINE: 225
+[Tue Jun 09 12:02:45 2020] [ERROR] [] -> Uncaught exception: [0] Class 'Branch_model' not found
+#0 C:\xampp\htdocs\ocbs\application\systems\cbs\file_maintenance\controllers\Branch.php(66): MX_Loader->model('Branch_model', 'model')
+#1 C:\xampp\htdocs\ocbs\system\core\CodeIgniter.php(500): Branch->__construct()
+#2 C:\xampp\htdocs\ocbs\index.php(293): require_once('C:\\xampp\\htdocs...')
+#3 {main}, FILE: C:\xampp\htdocs\ocbs\application\third_party\MX\Loader.php, LINE: 225

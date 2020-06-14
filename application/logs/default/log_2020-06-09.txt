@@ -1,0 +1,2 @@
+[Tue Jun 09 10:45:54 2020] [ERROR] [Base_Controller->rlog_error] -> The account you are trying to log in has active session in another device.  Please log out the account from another device and try logging in again., FILE: C:\xampp\htdocs\ocbs\application\controllers\Auth.php, LINE: 441
+[Tue Jun 09 10:57:56 2020] [ERROR] [Base_Controller->rlog_error] -> The account you are trying to log in has active session in another device.  Please log out the account from another device and try logging in again., FILE: C:\xampp\htdocs\ocbs\application\controllers\Auth.php, LINE: 441

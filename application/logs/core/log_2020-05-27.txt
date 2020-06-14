@@ -1,0 +1,253 @@
+[Wed May 27 16:01:03 2020] [ERROR] [] -> Uncaught exception: [1045] SQLSTATE[HY000] [1045] Access denied for user 'sos'@'localhost' (using password: YES)
+#0 C:\xampp\htdocs\sos\system\database\DB.php(211): PDO->__construct('mysql:host=127....', 'sos', 'sos')
+#1 C:\xampp\htdocs\sos\application\third_party\MX\Loader.php(107): DB(Array, NULL)
+#2 C:\xampp\htdocs\sos\application\core\Base_Model.php(60): MX_Loader->database('sos_core', true)
+#3 C:\xampp\htdocs\sos\application\core\Base_Model.php(128): Base_Model::get_connection()
+#4 C:\xampp\htdocs\sos\application\core\Base_Model.php(218): Base_Model->query('\r\n\t\t\t\tSELECT sy...', Array, true, false)
+#5 C:\xampp\htdocs\sos\application\core\Common_Model.php(51): Base_Model->select_data(Array, 'sys_param', false, Array, Array, Array)
+#6 C:\xampp\htdocs\sos\application\systems\core\common\models\Sys_param_model.php(28): Common_Model->select_data(Array, 'sys_param', false, Array)
+#7 C:\xampp\htdocs\sos\application\helpers\common_helper.php(1085): Sys_param_model->get_sys_param(Array)
+#8 C:\xampp\htdocs\sos\application\libraries\Authenticate.php(21): get_sys_param_val('LOGIN', 'LOGIN_WITH')
+#9 C:\xampp\htdocs\sos\system\core\Loader.php(1233): Authenticate->__construct()
+#10 C:\xampp\htdocs\sos\system\core\Loader.php(1028): CI_Loader->_ci_init_library('Authenticate', '', NULL, 'authenticate')
+#11 C:\xampp\htdocs\sos\application\third_party\MX\Loader.php(173): CI_Loader->_ci_load_library('Authenticate', NULL, NULL)
+#12 C:\xampp\htdocs\sos\system\core\Loader.php(1312): MX_Loader->library('authenticate')
+#13 C:\xampp\htdocs\sos\system\core\Loader.php(157): CI_Loader->_ci_autoloader()
+#14 C:\xampp\htdocs\sos\application\third_party\MX\Loader.php(65): CI_Loader->initialize()
+#15 C:\xampp\htdocs\sos\system\core\Controller.php(79): MX_Loader->initialize()
+#16 C:\xampp\htdocs\sos\application\third_party\MX\Base.php(55): CI_Controller->__construct()
+#17 C:\xampp\htdocs\sos\application\third_party\MX\Base.php(60): CI->__construct()
+#18 C:\xampp\htdocs\sos\application\third_party\MX\Controller.php(4): require('C:\\xampp\\htdocs...')
+#19 C:\xampp\htdocs\sos\application\third_party\MX\Modules.php(123): include_once('C:\\xampp\\htdocs...')
+#20 [internal function]: Modules::autoload('MX_Controller')
+#21 C:\xampp\htdocs\sos\application\core\Base_Controller.php(3): spl_autoload_call('MX_Controller')
+#22 C:\xampp\htdocs\sos\application\third_party\MX\Modules.php(132): include_once('C:\\xampp\\htdocs...')
+#23 [internal function]: Modules::autoload('Base_Controller')
+#24 C:\xampp\htdocs\sos\application\core\SYSAD_Controller.php(3): spl_autoload_call('Base_Controller')
+#25 C:\xampp\htdocs\sos\application\third_party\MX\Modules.php(132): include_once('C:\\xampp\\htdocs...')
+#26 [internal function]: Modules::autoload('SYSAD_Controlle...')
+#27 C:\xampp\htdocs\sos\application\systems\core\home\controllers\Sign_up.php(3): spl_autoload_call('SYSAD_Controlle...')
+#28 C:\xampp\htdocs\sos\system\core\CodeIgniter.php(408): require_once('C:\\xampp\\htdocs...')
+#29 C:\xampp\htdocs\sos\index.php(293): require_once('C:\\xampp\\htdocs...')
+#30 {main}, FILE: C:\xampp\htdocs\sos\system\database\DB.php, LINE: 211
+[Wed May 27 16:03:44 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\system\core\Security.php, LINE: 354
+[Wed May 27 16:07:48 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Modules.php, LINE: 83
+[Wed May 27 16:07:48 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Modules.php, LINE: 83
+[Wed May 27 16:24:31 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Modules.php, LINE: 83
+[Wed May 27 16:24:32 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Modules.php, LINE: 83
+[Wed May 27 16:26:19 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Modules.php, LINE: 83
+[Wed May 27 16:26:19 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Modules.php, LINE: 83
+[Wed May 27 16:27:08 2020] [ERROR] [] -> Uncaught exception: [0] Too few arguments to function Permissions::reset_options(), 0 passed in C:\xampp\htdocs\sos\system\core\CodeIgniter.php on line 514 and exactly 1 expected
+#0 C:\xampp\htdocs\sos\system\core\CodeIgniter.php(514): Permissions->reset_options()
+#1 C:\xampp\htdocs\sos\index.php(293): require_once('C:\\xampp\\htdocs...')
+#2 {main}, FILE: C:\xampp\htdocs\sos\application\systems\core\user_management\controllers\Permissions.php, LINE: 631
+[Wed May 27 16:47:47 2020] [ERROR] [] -> Uncaught exception: [0] Too few arguments to function Permissions::reset_options(), 0 passed in C:\xampp\htdocs\sos\system\core\CodeIgniter.php on line 514 and exactly 1 expected
+#0 C:\xampp\htdocs\sos\system\core\CodeIgniter.php(514): Permissions->reset_options()
+#1 C:\xampp\htdocs\sos\index.php(293): require_once('C:\\xampp\\htdocs...')
+#2 {main}, FILE: C:\xampp\htdocs\sos\application\systems\core\user_management\controllers\Permissions.php, LINE: 631
+[Wed May 27 16:51:36 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\system\core\Security.php, LINE: 354
+[Wed May 27 16:53:05 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Modules.php, LINE: 83
+[Wed May 27 16:53:05 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Modules.php, LINE: 83
+[Wed May 27 16:57:11 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Modules.php, LINE: 83
+[Wed May 27 16:57:12 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Modules.php, LINE: 83
+[Wed May 27 17:01:06 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Modules.php, LINE: 83
+[Wed May 27 17:01:06 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Modules.php, LINE: 83
+[Wed May 27 17:07:51 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\system\core\Security.php, LINE: 354
+[Wed May 27 17:14:51 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Modules.php, LINE: 83
+[Wed May 27 17:15:07 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Modules.php, LINE: 83
+[Wed May 27 17:15:11 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Modules.php, LINE: 83
+[Wed May 27 17:15:14 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Modules.php, LINE: 83
+[Wed May 27 17:15:15 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Modules.php, LINE: 83
+[Wed May 27 17:15:18 2020] [ERROR] [Base_Controller->rlog_error] -> 130: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sos_core.workflows' doesn't exist: #0 C:\xampp\htdocs\sos\application\core\Base_Model.php(130): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\sos\application\systems\plugins\workflow\models\Workflow_model.php(359): Base_Model->query('\r\n\t\t\t\tSELECT \tC...', Array, true, false)
+#2 C:\xampp\htdocs\sos\application\systems\plugins\workflow\controllers\Manage_workflow.php(98): Workflow_model->get_workflow_status_cnt('Y')
+#3 C:\xampp\htdocs\sos\system\core\CodeIgniter.php(514): Manage_workflow->index()
+#4 C:\xampp\htdocs\sos\index.php(293): require_once('C:\\xampp\\htdocs...')
+#5 {main}, FILE: C:\xampp\htdocs\sos\application\core\Base_Controller.php, LINE: 77
+[Wed May 27 17:15:21 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Modules.php, LINE: 83
+[Wed May 27 17:16:00 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Modules.php, LINE: 83
+[Wed May 27 17:16:02 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Modules.php, LINE: 83
+[Wed May 27 17:16:03 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Modules.php, LINE: 83
+[Wed May 27 17:16:16 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Modules.php, LINE: 83
+[Wed May 27 17:16:17 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Modules.php, LINE: 83
+[Wed May 27 17:16:18 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Modules.php, LINE: 83
+[Wed May 27 17:19:53 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Modules.php, LINE: 83
+[Wed May 27 17:19:55 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Modules.php, LINE: 83
+[Wed May 27 17:19:56 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Modules.php, LINE: 83
+[Wed May 27 17:20:18 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Modules.php, LINE: 83
+[Wed May 27 17:20:19 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Modules.php, LINE: 83
+[Wed May 27 17:20:20 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Modules.php, LINE: 83
+[Wed May 27 17:20:22 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Modules.php, LINE: 83
+[Wed May 27 17:20:23 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Modules.php, LINE: 83
+[Wed May 27 17:20:23 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Modules.php, LINE: 83
+[Wed May 27 17:20:40 2020] [NOTICE] [include] -> Undefined variable: module, FILE: C:\xampp\htdocs\sos\application\systems\core\user_management\views\organizations.php, LINE: 31
+[Wed May 27 17:22:13 2020] [NOTICE] [include] -> Undefined variable: module, FILE: C:\xampp\htdocs\sos\application\systems\core\user_management\views\organizations.php, LINE: 31
+[Wed May 27 17:23:55 2020] [NOTICE] [include] -> Undefined variable: module, FILE: C:\xampp\htdocs\sos\application\systems\core\user_management\views\organizations.php, LINE: 31
+[Wed May 27 17:24:02 2020] [NOTICE] [include] -> Undefined variable: module, FILE: C:\xampp\htdocs\sos\application\systems\core\user_management\views\organizations.php, LINE: 31
+[Wed May 27 17:38:06 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Modules.php, LINE: 83
+[Wed May 27 17:38:07 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Modules.php, LINE: 83
+[Wed May 27 17:38:08 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Modules.php, LINE: 83
+[Wed May 27 17:38:21 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Modules.php, LINE: 83
+[Wed May 27 17:38:22 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Modules.php, LINE: 83
+[Wed May 27 17:38:23 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Modules.php, LINE: 83
+[Wed May 27 17:38:31 2020] [NOTICE] [include] -> Undefined variable: module, FILE: C:\xampp\htdocs\sos\application\systems\core\user_management\views\organizations.php, LINE: 31
+[Wed May 27 17:41:10 2020] [NOTICE] [include] -> Undefined variable: module, FILE: C:\xampp\htdocs\sos\application\systems\core\user_management\views\organizations.php, LINE: 31
+[Wed May 27 17:41:15 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Modules.php, LINE: 83
+[Wed May 27 17:41:16 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Modules.php, LINE: 83
+[Wed May 27 17:41:17 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Modules.php, LINE: 83
+[Wed May 27 17:41:46 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Modules.php, LINE: 83
+[Wed May 27 17:41:54 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Modules.php, LINE: 83
+[Wed May 27 17:41:55 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Modules.php, LINE: 83
+[Wed May 27 17:41:55 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Modules.php, LINE: 83
+[Wed May 27 17:51:37 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\system\core\Security.php, LINE: 354
+[Wed May 27 17:59:56 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Modules.php, LINE: 83
+[Wed May 27 17:59:57 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Modules.php, LINE: 83
+[Wed May 27 17:59:57 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Modules.php, LINE: 83
+[Wed May 27 18:00:07 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Modules.php, LINE: 83
+[Wed May 27 18:00:10 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Modules.php, LINE: 83
+[Wed May 27 18:00:10 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Modules.php, LINE: 83
+[Wed May 27 18:00:41 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Modules.php, LINE: 83
+[Wed May 27 18:00:43 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Modules.php, LINE: 83
+[Wed May 27 18:00:43 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Modules.php, LINE: 83
+[Wed May 27 18:00:48 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Modules.php, LINE: 83
+[Wed May 27 18:00:49 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Modules.php, LINE: 83
+[Wed May 27 18:00:49 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Modules.php, LINE: 83
+[Wed May 27 18:04:08 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Modules.php, LINE: 83
+[Wed May 27 18:04:09 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Modules.php, LINE: 83
+[Wed May 27 18:04:09 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Modules.php, LINE: 83
+[Wed May 27 18:04:34 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Modules.php, LINE: 83
+[Wed May 27 18:04:35 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Modules.php, LINE: 83
+[Wed May 27 18:04:36 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Modules.php, LINE: 83
+[Wed May 27 18:04:49 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Modules.php, LINE: 83
+[Wed May 27 18:04:50 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Modules.php, LINE: 83
+[Wed May 27 18:04:51 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Modules.php, LINE: 83
+[Wed May 27 18:10:56 2020] [NOTICE] [Dashboard->index] -> Undefined variable: data, FILE: C:\xampp\htdocs\sos\application\systems\sos\order\controllers\Dashboard.php, LINE: 109
+[Wed May 27 18:10:56 2020] [NOTICE] [Dashboard->index] -> Undefined variable: resources, FILE: C:\xampp\htdocs\sos\application\systems\sos\order\controllers\Dashboard.php, LINE: 109
+[Wed May 27 18:11:03 2020] [NOTICE] [Dashboard->index] -> Undefined variable: data, FILE: C:\xampp\htdocs\sos\application\systems\sos\order\controllers\Dashboard.php, LINE: 109
+[Wed May 27 18:11:03 2020] [NOTICE] [Dashboard->index] -> Undefined variable: resources, FILE: C:\xampp\htdocs\sos\application\systems\sos\order\controllers\Dashboard.php, LINE: 109
+[Wed May 27 18:11:03 2020] [NOTICE] [include] -> Undefined variable: pending_ctr_temp, FILE: C:\xampp\htdocs\sos\application\systems\sos\order\views\dashboard.php, LINE: 20
+[Wed May 27 18:11:03 2020] [NOTICE] [include] -> Undefined variable: incomplete_ctr_temp, FILE: C:\xampp\htdocs\sos\application\systems\sos\order\views\dashboard.php, LINE: 21
+[Wed May 27 18:11:03 2020] [NOTICE] [include] -> Undefined variable: status_arr, FILE: C:\xampp\htdocs\sos\application\systems\sos\order\views\dashboard.php, LINE: 30
+[Wed May 27 18:11:03 2020] [WARNING] [include] -> Invalid argument supplied for foreach(), FILE: C:\xampp\htdocs\sos\application\systems\sos\order\views\dashboard.php, LINE: 30
+[Wed May 27 18:11:03 2020] [NOTICE] [include] -> Undefined variable: status_arr, FILE: C:\xampp\htdocs\sos\application\systems\sos\order\views\dashboard.php, LINE: 57
+[Wed May 27 18:11:03 2020] [WARNING] [include] -> Invalid argument supplied for foreach(), FILE: C:\xampp\htdocs\sos\application\systems\sos\order\views\dashboard.php, LINE: 57
+[Wed May 27 18:11:03 2020] [NOTICE] [include] -> Undefined variable: new_users, FILE: C:\xampp\htdocs\sos\application\systems\sos\order\views\dashboard.php, LINE: 76
+[Wed May 27 18:11:03 2020] [WARNING] [include] -> count(): Parameter must be an array or an object that implements Countable, FILE: C:\xampp\htdocs\sos\application\systems\sos\order\views\dashboard.php, LINE: 76
+[Wed May 27 18:11:14 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Modules.php, LINE: 83
+[Wed May 27 18:11:15 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Modules.php, LINE: 83
+[Wed May 27 18:11:16 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Modules.php, LINE: 83
+[Wed May 27 18:11:18 2020] [NOTICE] [Dashboard->index] -> Undefined variable: data, FILE: C:\xampp\htdocs\sos\application\systems\sos\order\controllers\Dashboard.php, LINE: 109
+[Wed May 27 18:11:18 2020] [NOTICE] [Dashboard->index] -> Undefined variable: resources, FILE: C:\xampp\htdocs\sos\application\systems\sos\order\controllers\Dashboard.php, LINE: 109
+[Wed May 27 18:11:18 2020] [NOTICE] [include] -> Undefined variable: pending_ctr_temp, FILE: C:\xampp\htdocs\sos\application\systems\sos\order\views\dashboard.php, LINE: 20
+[Wed May 27 18:11:18 2020] [NOTICE] [include] -> Undefined variable: incomplete_ctr_temp, FILE: C:\xampp\htdocs\sos\application\systems\sos\order\views\dashboard.php, LINE: 21
+[Wed May 27 18:11:18 2020] [NOTICE] [include] -> Undefined variable: status_arr, FILE: C:\xampp\htdocs\sos\application\systems\sos\order\views\dashboard.php, LINE: 30
+[Wed May 27 18:11:18 2020] [WARNING] [include] -> Invalid argument supplied for foreach(), FILE: C:\xampp\htdocs\sos\application\systems\sos\order\views\dashboard.php, LINE: 30
+[Wed May 27 18:11:18 2020] [NOTICE] [include] -> Undefined variable: status_arr, FILE: C:\xampp\htdocs\sos\application\systems\sos\order\views\dashboard.php, LINE: 57
+[Wed May 27 18:11:18 2020] [WARNING] [include] -> Invalid argument supplied for foreach(), FILE: C:\xampp\htdocs\sos\application\systems\sos\order\views\dashboard.php, LINE: 57
+[Wed May 27 18:11:18 2020] [NOTICE] [include] -> Undefined variable: new_users, FILE: C:\xampp\htdocs\sos\application\systems\sos\order\views\dashboard.php, LINE: 76
+[Wed May 27 18:11:18 2020] [WARNING] [include] -> count(): Parameter must be an array or an object that implements Countable, FILE: C:\xampp\htdocs\sos\application\systems\sos\order\views\dashboard.php, LINE: 76
+[Wed May 27 18:11:38 2020] [NOTICE] [MX_Controller->__get] -> Undefined property: CI::$module_code, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Controller.php, LINE: 59
+[Wed May 27 18:12:36 2020] [NOTICE] [Dashboard->index] -> Undefined variable: json_datatable_options, FILE: C:\xampp\htdocs\sos\application\systems\sos\order\controllers\Dashboard.php, LINE: 54
+[Wed May 27 18:12:37 2020] [NOTICE] [Dashboard->index] -> Undefined variable: json_datatable_options, FILE: C:\xampp\htdocs\sos\application\systems\sos\order\controllers\Dashboard.php, LINE: 55
+[Wed May 27 18:12:37 2020] [NOTICE] [Dashboard->index] -> Undefined variable: json_datatable_disappr_options, FILE: C:\xampp\htdocs\sos\application\systems\sos\order\controllers\Dashboard.php, LINE: 56
+[Wed May 27 18:12:37 2020] [NOTICE] [Dashboard->index] -> Undefined variable: json_datatable_appr_options, FILE: C:\xampp\htdocs\sos\application\systems\sos\order\controllers\Dashboard.php, LINE: 57
+[Wed May 27 18:12:37 2020] [NOTICE] [Dashboard->index] -> Undefined variable: json_datatable_inc_options, FILE: C:\xampp\htdocs\sos\application\systems\sos\order\controllers\Dashboard.php, LINE: 58
+[Wed May 27 18:12:37 2020] [NOTICE] [MX_Controller->__get] -> Undefined property: CI::$status_drop, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Controller.php, LINE: 59
+[Wed May 27 18:12:37 2020] [NOTICE] [MX_Controller->__get] -> Undefined property: CI::$dshm, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Controller.php, LINE: 59
+[Wed May 27 18:12:37 2020] [ERROR] [] -> Uncaught exception: [0] Call to a member function get_new_users() on null
+#0 C:\xampp\htdocs\sos\system\core\CodeIgniter.php(514): Dashboard->index()
+#1 C:\xampp\htdocs\sos\index.php(293): require_once('C:\\xampp\\htdocs...')
+#2 {main}, FILE: C:\xampp\htdocs\sos\application\systems\sos\order\controllers\Dashboard.php, LINE: 74
+[Wed May 27 18:12:42 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Modules.php, LINE: 83
+[Wed May 27 18:12:44 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Modules.php, LINE: 83
+[Wed May 27 18:12:44 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Modules.php, LINE: 83
+[Wed May 27 18:12:45 2020] [NOTICE] [Dashboard->index] -> Undefined variable: json_datatable_options, FILE: C:\xampp\htdocs\sos\application\systems\sos\order\controllers\Dashboard.php, LINE: 54
+[Wed May 27 18:12:45 2020] [NOTICE] [Dashboard->index] -> Undefined variable: json_datatable_options, FILE: C:\xampp\htdocs\sos\application\systems\sos\order\controllers\Dashboard.php, LINE: 55
+[Wed May 27 18:12:45 2020] [NOTICE] [Dashboard->index] -> Undefined variable: json_datatable_disappr_options, FILE: C:\xampp\htdocs\sos\application\systems\sos\order\controllers\Dashboard.php, LINE: 56
+[Wed May 27 18:12:45 2020] [NOTICE] [Dashboard->index] -> Undefined variable: json_datatable_appr_options, FILE: C:\xampp\htdocs\sos\application\systems\sos\order\controllers\Dashboard.php, LINE: 57
+[Wed May 27 18:12:45 2020] [NOTICE] [Dashboard->index] -> Undefined variable: json_datatable_inc_options, FILE: C:\xampp\htdocs\sos\application\systems\sos\order\controllers\Dashboard.php, LINE: 58
+[Wed May 27 18:12:45 2020] [NOTICE] [MX_Controller->__get] -> Undefined property: CI::$status_drop, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Controller.php, LINE: 59
+[Wed May 27 18:12:45 2020] [NOTICE] [MX_Controller->__get] -> Undefined property: CI::$dshm, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Controller.php, LINE: 59
+[Wed May 27 18:12:45 2020] [ERROR] [] -> Uncaught exception: [0] Call to a member function get_new_users() on null
+#0 C:\xampp\htdocs\sos\system\core\CodeIgniter.php(514): Dashboard->index()
+#1 C:\xampp\htdocs\sos\index.php(293): require_once('C:\\xampp\\htdocs...')
+#2 {main}, FILE: C:\xampp\htdocs\sos\application\systems\sos\order\controllers\Dashboard.php, LINE: 74
+[Wed May 27 18:13:11 2020] [NOTICE] [Dashboard->index] -> Undefined variable: json_datatable_options, FILE: C:\xampp\htdocs\sos\application\systems\sos\order\controllers\Dashboard.php, LINE: 54
+[Wed May 27 18:13:11 2020] [NOTICE] [Dashboard->index] -> Undefined variable: json_datatable_options, FILE: C:\xampp\htdocs\sos\application\systems\sos\order\controllers\Dashboard.php, LINE: 55
+[Wed May 27 18:13:12 2020] [NOTICE] [Dashboard->index] -> Undefined variable: json_datatable_disappr_options, FILE: C:\xampp\htdocs\sos\application\systems\sos\order\controllers\Dashboard.php, LINE: 56
+[Wed May 27 18:13:12 2020] [NOTICE] [Dashboard->index] -> Undefined variable: json_datatable_appr_options, FILE: C:\xampp\htdocs\sos\application\systems\sos\order\controllers\Dashboard.php, LINE: 57
+[Wed May 27 18:13:12 2020] [NOTICE] [Dashboard->index] -> Undefined variable: json_datatable_inc_options, FILE: C:\xampp\htdocs\sos\application\systems\sos\order\controllers\Dashboard.php, LINE: 58
+[Wed May 27 18:13:12 2020] [NOTICE] [MX_Controller->__get] -> Undefined property: CI::$status_drop, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Controller.php, LINE: 59
+[Wed May 27 18:13:12 2020] [NOTICE] [MX_Controller->__get] -> Undefined property: CI::$dshm, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Controller.php, LINE: 59
+[Wed May 27 18:13:12 2020] [ERROR] [] -> Uncaught exception: [0] Call to a member function get_new_users() on null
+#0 C:\xampp\htdocs\sos\system\core\CodeIgniter.php(514): Dashboard->index()
+#1 C:\xampp\htdocs\sos\index.php(293): require_once('C:\\xampp\\htdocs...')
+#2 {main}, FILE: C:\xampp\htdocs\sos\application\systems\sos\order\controllers\Dashboard.php, LINE: 74
+[Wed May 27 18:13:38 2020] [NOTICE] [include] -> Undefined variable: pending_ctr_temp, FILE: C:\xampp\htdocs\sos\application\systems\sos\order\views\dashboard.php, LINE: 20
+[Wed May 27 18:13:38 2020] [NOTICE] [include] -> Undefined variable: incomplete_ctr_temp, FILE: C:\xampp\htdocs\sos\application\systems\sos\order\views\dashboard.php, LINE: 21
+[Wed May 27 18:13:38 2020] [NOTICE] [include] -> Undefined variable: status_arr, FILE: C:\xampp\htdocs\sos\application\systems\sos\order\views\dashboard.php, LINE: 30
+[Wed May 27 18:13:38 2020] [WARNING] [include] -> Invalid argument supplied for foreach(), FILE: C:\xampp\htdocs\sos\application\systems\sos\order\views\dashboard.php, LINE: 30
+[Wed May 27 18:13:38 2020] [NOTICE] [include] -> Undefined variable: status_arr, FILE: C:\xampp\htdocs\sos\application\systems\sos\order\views\dashboard.php, LINE: 57
+[Wed May 27 18:13:38 2020] [WARNING] [include] -> Invalid argument supplied for foreach(), FILE: C:\xampp\htdocs\sos\application\systems\sos\order\views\dashboard.php, LINE: 57
+[Wed May 27 18:13:38 2020] [NOTICE] [include] -> Undefined variable: new_users, FILE: C:\xampp\htdocs\sos\application\systems\sos\order\views\dashboard.php, LINE: 76
+[Wed May 27 18:13:38 2020] [WARNING] [include] -> count(): Parameter must be an array or an object that implements Countable, FILE: C:\xampp\htdocs\sos\application\systems\sos\order\views\dashboard.php, LINE: 76
+[Wed May 27 18:23:29 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\system\core\Security.php, LINE: 354
+[Wed May 27 18:23:32 2020] [NOTICE] [include] -> Undefined variable: pending_ctr_temp, FILE: C:\xampp\htdocs\sos\application\systems\sos\order\views\dashboard.php, LINE: 20
+[Wed May 27 18:23:32 2020] [NOTICE] [include] -> Undefined variable: incomplete_ctr_temp, FILE: C:\xampp\htdocs\sos\application\systems\sos\order\views\dashboard.php, LINE: 21
+[Wed May 27 18:23:32 2020] [NOTICE] [include] -> Undefined variable: status_arr, FILE: C:\xampp\htdocs\sos\application\systems\sos\order\views\dashboard.php, LINE: 30
+[Wed May 27 18:23:32 2020] [WARNING] [include] -> Invalid argument supplied for foreach(), FILE: C:\xampp\htdocs\sos\application\systems\sos\order\views\dashboard.php, LINE: 30
+[Wed May 27 18:23:32 2020] [NOTICE] [include] -> Undefined variable: status_arr, FILE: C:\xampp\htdocs\sos\application\systems\sos\order\views\dashboard.php, LINE: 57
+[Wed May 27 18:23:32 2020] [WARNING] [include] -> Invalid argument supplied for foreach(), FILE: C:\xampp\htdocs\sos\application\systems\sos\order\views\dashboard.php, LINE: 57
+[Wed May 27 18:23:32 2020] [NOTICE] [include] -> Undefined variable: new_users, FILE: C:\xampp\htdocs\sos\application\systems\sos\order\views\dashboard.php, LINE: 76
+[Wed May 27 18:23:32 2020] [WARNING] [include] -> count(): Parameter must be an array or an object that implements Countable, FILE: C:\xampp\htdocs\sos\application\systems\sos\order\views\dashboard.php, LINE: 76
+[Wed May 27 19:14:37 2020] [NOTICE] [include] -> Undefined variable: module, FILE: C:\xampp\htdocs\sos\application\systems\core\user_management\views\organizations.php, LINE: 31
+[Wed May 27 22:53:15 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\system\core\Security.php, LINE: 354
+[Wed May 27 22:56:32 2020] [WARNING] [include] -> Use of undefined constant EMP_DASHBOARD_PAGE - assumed 'EMP_DASHBOARD_PAGE' (this will throw an Error in a future version of PHP), FILE: C:\xampp\htdocs\sos\application\systems\sos\entries\views\payment.php, LINE: 14
+[Wed May 27 22:56:32 2020] [WARNING] [get_breadcrumbs] -> count(): Parameter must be an array or an object that implements Countable, FILE: C:\xampp\htdocs\sos\application\helpers\common_helper.php, LINE: 763
+[Wed May 27 22:56:32 2020] [NOTICE] [include] -> Undefined variable: has_unliquidated, FILE: C:\xampp\htdocs\sos\application\systems\sos\entries\views\payment.php, LINE: 18
+[Wed May 27 22:56:32 2020] [NOTICE] [include] -> Undefined variable: security, FILE: C:\xampp\htdocs\sos\application\systems\sos\entries\views\payment.php, LINE: 19
+[Wed May 27 22:56:32 2020] [NOTICE] [include] -> Undefined variable: show_button, FILE: C:\xampp\htdocs\sos\application\systems\sos\entries\views\payment.php, LINE: 24
+[Wed May 27 22:56:32 2020] [NOTICE] [include] -> Undefined variable: status, FILE: C:\xampp\htdocs\sos\application\systems\sos\entries\views\payment.php, LINE: 91
+[Wed May 27 22:57:33 2020] [WARNING] [include] -> Use of undefined constant BUDGET_DASHBOARD_PAGE - assumed 'BUDGET_DASHBOARD_PAGE' (this will throw an Error in a future version of PHP), FILE: C:\xampp\htdocs\sos\application\systems\sos\entries\views\payment.php, LINE: 13
+[Wed May 27 22:57:33 2020] [WARNING] [get_breadcrumbs] -> count(): Parameter must be an array or an object that implements Countable, FILE: C:\xampp\htdocs\sos\application\helpers\common_helper.php, LINE: 763
+[Wed May 27 22:57:46 2020] [WARNING] [include] -> Use of undefined constant BUDGET_DASHBOARD_PAGE - assumed 'BUDGET_DASHBOARD_PAGE' (this will throw an Error in a future version of PHP), FILE: C:\xampp\htdocs\sos\application\systems\sos\entries\views\payment.php, LINE: 13
+[Wed May 27 22:57:46 2020] [WARNING] [get_breadcrumbs] -> count(): Parameter must be an array or an object that implements Countable, FILE: C:\xampp\htdocs\sos\application\helpers\common_helper.php, LINE: 763
+[Wed May 27 22:57:47 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Modules.php, LINE: 83
+[Wed May 27 22:57:51 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Modules.php, LINE: 83
+[Wed May 27 22:57:52 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Modules.php, LINE: 83
+[Wed May 27 22:57:55 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Modules.php, LINE: 83
+[Wed May 27 22:58:06 2020] [NOTICE] [include] -> Undefined variable: stat_code, FILE: C:\xampp\htdocs\sos\application\systems\plugins\maintenance\views\modals\statement.php, LINE: 127
+[Wed May 27 22:58:07 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\system\core\Security.php, LINE: 354
+[Wed May 27 22:58:10 2020] [ERROR] [Base_Controller->rlog_error] -> 130: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sos_core.workflows' doesn't exist: #0 C:\xampp\htdocs\sos\application\core\Base_Model.php(130): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\sos\application\systems\plugins\workflow\models\Workflow_model.php(359): Base_Model->query('\r\n\t\t\t\tSELECT \tC...', Array, true, false)
+#2 C:\xampp\htdocs\sos\application\systems\plugins\workflow\controllers\Manage_workflow.php(98): Workflow_model->get_workflow_status_cnt('Y')
+#3 C:\xampp\htdocs\sos\system\core\CodeIgniter.php(514): Manage_workflow->index()
+#4 C:\xampp\htdocs\sos\index.php(293): require_once('C:\\xampp\\htdocs...')
+#5 {main}, FILE: C:\xampp\htdocs\sos\application\core\Base_Controller.php, LINE: 77
+[Wed May 27 22:58:18 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Modules.php, LINE: 83
+[Wed May 27 22:58:20 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Modules.php, LINE: 83
+[Wed May 27 22:58:20 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Modules.php, LINE: 83
+[Wed May 27 22:58:26 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Modules.php, LINE: 83
+[Wed May 27 22:58:27 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Modules.php, LINE: 83
+[Wed May 27 22:58:28 2020] [NOTICE] [each] -> The each() function is deprecated. This message will be suppressed on further calls, FILE: C:\xampp\htdocs\sos\application\third_party\MX\Modules.php, LINE: 83
+[Wed May 27 22:59:39 2020] [NOTICE] [include] -> Undefined variable: disable_code, FILE: C:\xampp\htdocs\sos\application\systems\sos\entries\views\payment.php, LINE: 15
+[Wed May 27 22:59:39 2020] [NOTICE] [include] -> Undefined variable: system_code, FILE: C:\xampp\htdocs\sos\application\systems\sos\entries\views\payment.php, LINE: 15
+[Wed May 27 22:59:39 2020] [NOTICE] [include] -> Undefined variable: system_name, FILE: C:\xampp\htdocs\sos\application\systems\sos\entries\views\payment.php, LINE: 26
+[Wed May 27 22:59:39 2020] [NOTICE] [include] -> Undefined variable: description, FILE: C:\xampp\htdocs\sos\application\systems\sos\entries\views\payment.php, LINE: 37
+[Wed May 27 22:59:39 2020] [NOTICE] [include] -> Undefined variable: system_link, FILE: C:\xampp\htdocs\sos\application\systems\sos\entries\views\payment.php, LINE: 48
+[Wed May 27 22:59:39 2020] [NOTICE] [include] -> Undefined variable: allowed_inactive, FILE: C:\xampp\htdocs\sos\application\systems\sos\entries\views\payment.php, LINE: 56
+[Wed May 27 22:59:39 2020] [NOTICE] [include] -> Undefined variable: system_logo, FILE: C:\xampp\htdocs\sos\application\systems\sos\entries\views\payment.php, LINE: 84
+[Wed May 27 22:59:39 2020] [NOTICE] [include] -> Undefined variable: img_src, FILE: C:\xampp\htdocs\sos\application\systems\sos\entries\views\payment.php, LINE: 88
+[Wed May 27 23:00:15 2020] [NOTICE] [include] -> Undefined variable: disable_code, FILE: C:\xampp\htdocs\sos\application\systems\sos\entries\views\payment.php, LINE: 15
+[Wed May 27 23:00:15 2020] [NOTICE] [include] -> Undefined variable: system_code, FILE: C:\xampp\htdocs\sos\application\systems\sos\entries\views\payment.php, LINE: 15
+[Wed May 27 23:00:15 2020] [NOTICE] [include] -> Undefined variable: system_name, FILE: C:\xampp\htdocs\sos\application\systems\sos\entries\views\payment.php, LINE: 26
+[Wed May 27 23:00:15 2020] [NOTICE] [include] -> Undefined variable: description, FILE: C:\xampp\htdocs\sos\application\systems\sos\entries\views\payment.php, LINE: 37
+[Wed May 27 23:00:15 2020] [NOTICE] [include] -> Undefined variable: system_link, FILE: C:\xampp\htdocs\sos\application\systems\sos\entries\views\payment.php, LINE: 48
+[Wed May 27 23:00:15 2020] [NOTICE] [include] -> Undefined variable: allowed_inactive, FILE: C:\xampp\htdocs\sos\application\systems\sos\entries\views\payment.php, LINE: 56
+[Wed May 27 23:00:15 2020] [NOTICE] [include] -> Undefined variable: system_logo, FILE: C:\xampp\htdocs\sos\application\systems\sos\entries\views\payment.php, LINE: 84
+[Wed May 27 23:00:15 2020] [NOTICE] [include] -> Undefined variable: img_src, FILE: C:\xampp\htdocs\sos\application\systems\sos\entries\views\payment.php, LINE: 88
+[Wed May 27 23:03:14 2020] [NOTICE] [include] -> Undefined variable: description, FILE: C:\xampp\htdocs\sos\application\systems\sos\entries\views\payment.php, LINE: 42
+[Wed May 27 23:03:14 2020] [NOTICE] [include] -> Undefined variable: system_link, FILE: C:\xampp\htdocs\sos\application\systems\sos\entries\views\payment.php, LINE: 53
+[Wed May 27 23:03:14 2020] [NOTICE] [include] -> Undefined variable: allowed_inactive, FILE: C:\xampp\htdocs\sos\application\systems\sos\entries\views\payment.php, LINE: 61
+[Wed May 27 23:03:14 2020] [NOTICE] [include] -> Undefined variable: system_logo, FILE: C:\xampp\htdocs\sos\application\systems\sos\entries\views\payment.php, LINE: 89
+[Wed May 27 23:03:14 2020] [NOTICE] [include] -> Undefined variable: img_src, FILE: C:\xampp\htdocs\sos\application\systems\sos\entries\views\payment.php, LINE: 93
