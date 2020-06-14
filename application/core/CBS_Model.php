@@ -2,7 +2,7 @@
 
 class CBS_Model extends Common_Model {
 
-	protected static $dsn = DB_OCBS;
+	protected static $dsn = DB_SCBS;
 	protected static $system = SYSTEM_CBS;
 	
 	public function __construct() 
