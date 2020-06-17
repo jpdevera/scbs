@@ -19,28 +19,31 @@ class Customer_model extends CBS_Model
 			// If params variable is null, get the total count of records
 			if($params === NULL)
 			{
-				$select_fields	= 'COUNT(type_id) total';
+				$select_fields	= 'COUNT(customer_id) total';
 			}
 			else
 			{
 				$select_fields =  "
-					type_id,
-					type_code,
-					type_name,
-					IF(position='D', 'Debit', 'Credit') position
+					customer_id,
+					B.title_name,
+					DECRYPT(A.first_name) first_name,
+					DECRYPT(A.last_name) last_name,
+					DATE_FORMAT(DECRYPT(A.birth_date), '%b %d, %Y') birth_date
 					
 				";
 
 				$filters	= array(
-					"type_code",
-					"type_name", 
-					"position"
+					"title_name",
+					"first_name", 
+					"last_name",
+					"birth_date"
 				);
 
 				$sorts	= array(
-					"type_code",
-					"type_name", 
-					"position"
+					"title_name",
+					"first_name", 
+					"last_name",
+					"birth_date"
 				);
 
 				$filter	= $this->filtering($filters, $params, FALSE);  
@@ -59,12 +62,15 @@ class Customer_model extends CBS_Model
 				(
 					SELECT 
 						$select_fields
-					FROM ".parent::CBS_TABLE_GL_TYPES."
+					FROM ".parent::CBS_TABLE_CUSTOMERS." A
+					JOIN ".parent::CBS_TABLE_CONFIG_TITLES." B ON A.title_id=B.title_id
 				) A
 				$where
 				$order
 				$limit
 			";
+
+			// die($query);
 			
 			// If params variable is null, get the total records
 			if(empty($params))
@@ -103,22 +109,29 @@ class Customer_model extends CBS_Model
 		}
 	}
 
-	public function get_types()
+	public function get_customer_information($customer_id)
 	{
 		try
 		{
 			$query = "
-				SELECT 
-					type_id,
-					type_code,
-					type_name,
-					position,
-					active_flag
-				FROM $this->gl_types
+				SELECT
+					A.title_id, 
+					DECRYPT(A.last_name) last_name,
+					DECRYPT(A.middle_name) middle_name,
+					DECRYPT(A.first_name) first_name,
+					DECRYPT(A.ext_name) ext_name,
+				    DATE_FORMAT(DECRYPT(A.birth_date), '%m/%d/%Y') birth_date,
+				    DECRYPT(A.birth_place) birth_place,
+				    A.sex_code,
+				    A.civil_status_id,
+				    A.religion_id,
+				    A.citizenship_type,
+				    A.height,
+				    A.weight
+				FROM 
+				customers A
 			";	
-			$count = $this->query($query, NULL, TRUE, FALSE);
-			
-			return $count['cnt'];
+			return  $this->query($query, [$customer_id], TRUE, FALSE);
 		}
 		catch (PDOException $e)
 		{

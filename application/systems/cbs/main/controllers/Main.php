@@ -1,6 +1,6 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed');
 
-class Customer_business extends CBS_Controller
+class Main extends CBS_Controller
 {
 	private $module_code;
 	private $module_folder;
@@ -13,8 +13,8 @@ class Customer_business extends CBS_Controller
 	public function __construct()
 	{
 		parent::__construct();
-		$this->module_code  = MODULE_CBS_CUSTOMER;
-		$this->module_folder= FOLDER_CUSTOMER;
+		$this->module_code  = MODULE_GENERAL_LEDGER_TYPE;
+		$this->module_folder= FOLDER_GENERAL_LEDGER;
 		$this->controller 	= strtolower(__CLASS__);
 		$this->path 		= $this->module_folder.'/'.$this->controller.'/get_data_list';
 		$this->module_js    = HMVC_FOLDER .'/'. SYSTEM_CBS .'/'.  $this->module_folder.'/'.$this->controller;
@@ -63,23 +63,23 @@ class Customer_business extends CBS_Controller
 		$this->security_action_add = $encrypt_module . $this->encrypt(ACTION_ADD);
 
 		// Load Model
-		$this->load->model('customer_model', 'model');
+		// $this->load->model('type_model', 'model');
 	}
 
 	public function index()
 	{
 		try {
-			/*$data 			= array();
+			$data 			= array();
 			$resources 		= array();
 
-			$resources['load_css'] 	= array(CSS_LABELAUTY, CSS_DATATABLE_MATERIAL, CSS_SELECTIZE, CSS_DATATABLE_BUTTONS);
-			$resources['load_js'] 	= array(JS_LABELAUTY, JS_DATATABLE, JS_DATATABLE_MATERIAL, JS_BUTTON_EXPORT_EXTENSION, $this->module_js);
+			// $resources['load_css'] 	= array(CSS_LABELAUTY, CSS_DATATABLE_MATERIAL, CSS_SELECTIZE, CSS_DATATABLE_BUTTONS);
+			// $resources['load_js'] 	= array(JS_LABELAUTY, JS_DATATABLE, JS_DATATABLE_MATERIAL, JS_BUTTON_EXPORT_EXTENSION);
 
 			//Load modal
-			$resources['load_materialize_modal'] = array(
+		/*	$resources['load_materialize_modal'] = array(
 				'modal_add' => array(
 					'size' 	=> 'sm-w sm-h',
-					'title' => 'Create Customer',
+					'title' => 'Create GL Type',
 					'modal_style' => 'modal-icon',
 					'modal_header_icon' => 'library_add',
 					'module' => $this->module_folder,
@@ -89,7 +89,7 @@ class Customer_business extends CBS_Controller
 		        ),
 		        'modal_edit' => array(
 					'size' 		=> 'sm-w sm-h',
-					'title'		=> 'Edit Customer',
+					'title'		=> 'Edit GL Type',
 					'modal_style'=> 'modal-icon',
 					'modal_header_icon' => 'edit',
 					'module'		=> $this->module_folder,
@@ -99,20 +99,22 @@ class Customer_business extends CBS_Controller
 			);
 
 			$resources['loaded_init'] = array(
-				/*"Type.init();",
-				"Type.remove();"*/
-			// );
+				"Type.init();",
+				"Type.remove();"
+			);
 
-			/*$encrypt_id       = $this->encrypt(0);
+			$encrypt_id       = $this->encrypt(0);
 			$salt             = gen_salt();
 			$token            = in_salt($encrypt_id . '/' . $this->security_action_add, $salt);
 			$data['security'] 		= $encrypt_id . '/' . $salt . '/' . $token . '/' . $this->security_action_add;
 
 			$resources['datatable'] = $this->table_options;
-*/
 
-			$this->load->view('tabs/'.$this->controller, []);
-			$this->load_resources->get_resource([]);
+*/
+			$data = array();
+			// $resources = [];
+			$this->load->view($this->controller, $data);
+			$this->load_resources->get_resource($resources);
 		} catch (PDOException $e) {
 			$msg = $this->get_user_message($e);
 			$this->error_index($m);
@@ -148,7 +150,10 @@ class Customer_business extends CBS_Controller
 				$hash_id	= $this->encrypt($record[$primary_key]);
 				$salt		= gen_salt();
 				$actions	= "";
-				if($this->permission_view){}
+				if($this->permission_view)
+				{
+
+				}
 
 				if( $this->permission_edit )
 				{
@@ -202,80 +207,6 @@ class Customer_business extends CBS_Controller
 			)
 		);
  	}
-
- 	public function form($hash_id, $salt, $token, $security_action)
-	{
-		try {
-			$data 			= array();
-			$resources 		= array();
-
-			$data 		= $resources = array();
-			$security 	= "";
-			$id 		= $this->decrypt($hash_id);
-
-			// | Load resources
-			$resources['load_css']	= array(CSS_SELECTIZE ,CSS_LABELAUTY, CSS_DATETIMEPICKER, CSS_UPLOAD);
-			$resources['load_js']	= array(JS_SELECTIZE, JS_LABELAUTY,JS_DATETIMEPICKER, JS_UPLOAD, $this->module_js);
-
-			// | Loaded Init
-			$resources['loaded_init'] = array(
-				/*"Branch.init();",
-				"Branch.save();"*/
-			);
-
-			switch($security_action)
-			{
-				case $this->security_action_add:
-					if( ! empty($id) )
-						throw new Exception($this->lang->line('err_unauthorized_add'));
-
-					if($this->permission_add === FALSE)
-						throw new Exception($this->lang->line('err_unauthorized_add'));
-
-					$data['title'] = 'Create Customer';
-				break;
-
-				case $this->security_action_edit:
-					if( empty($id) )
-						throw new Exception($this->lang->line('err_unauthorized_add'));
-
-					if($this->permission_edit === FALSE)
-						throw new Exception($this->lang->line('err_unauthorized_add'));
-
-					$data['title']    = 'Edit Customer';
-				break;
-
-				case $this->security_action_view:
-					if( empty($id) )
-						throw new Exception($this->lang->line('err_unauthorized_add'));
-
-					if($this->permission_view === FALSE)
-						throw new Exception($this->lang->line('err_unauthorized_add'));
-
-					$data['title'] = 'View Customer';
-				break;
-
-			}
-
-			// | START: Regenerate security variables
-			$salt			 = gen_salt();
-			$token			 = in_salt($hash_id . '/' . $security_action, $salt);
-			$security		 = $hash_id . '/' . $salt . '/' . $token . '/' . $security_action;
-			$data['security']= $security;
-			
-			// | Load form
-			$this->template->load('forms/'.$this->controller, $data, $resources);
-		} catch (PDOException $e) {
-			$msg = $this->get_user_message($e);
-			$this->error_index($m);
-		} catch (Exception $e) {
-			$msg = $this->rlog_error($e, TRUE);
-
-			$this->error_index($msg);
-		}
-
-	}
-
 
  	public function process_action() 
 	{
@@ -364,8 +295,7 @@ class Customer_business extends CBS_Controller
 			array(
 				'status'	=> $status,
 				'msg'		=> $msg,
-				'datatable'	=> $this->table_options,
-				'messenger'=>$messenger
+				'datatable'	=> $this->table_options
 			)
 		);
 	}

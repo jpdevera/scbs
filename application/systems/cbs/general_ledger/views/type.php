@@ -13,7 +13,8 @@
 	</div>
 </div>
 
-<div class="m-md">
+<div class="view-content p-md">
+	<div class="flat-tbl">
 	<div>
 		<table cellpadding="0" cellspacing="0" class="table table-default table-layout-auto" id="tbl_data_list">
 			<thead>
@@ -21,7 +22,7 @@
 					<th width="25%">Type Code</th>
 					<th width="30%">Type Name</th>
 					<th width="30%">Position</th>
-					<th width="15%" class="center-align"></th>
+					<th width="15%" class="center-align">Actions</th>
 				</tr>
 				<tr class="table-filters">
 					<td width="25%"><input name="type_code" class="form-filter"></td>
@@ -35,4 +36,5 @@
 			</thead>
 		</table>
 	</div>
+</div>
 </div>

@@ -303,7 +303,7 @@ class Customer_employment extends CBS_Controller
 
 					$msg = $this->lang->line('data_saved');
 					$audit_action[] = AUDIT_INSERT;
-					$audit_schema[] = DB_CBS;
+					$audit_schema[] = DB_SCBS;
 					$audit_table[] = CBS_Model::CBS_TABLE_GL_TYPES;
 					$prev_detail[] = array();
 					$curr_detail[] = array($fields);
@@ -332,7 +332,7 @@ class Customer_employment extends CBS_Controller
 					// Audit trail
 					$msg = $this->lang->line('data_saved');
 					$audit_action[] = AUDIT_INSERT;
-					$audit_schema[] = DB_CBS;
+					$audit_schema[] = DB_SCBS;
 					$audit_table[] = CBS_Model::CBS_TABLE_GL_TYPES;
 					$prev_detail[] = array($previous);
 					$curr_detail[] = array($fields);
@@ -489,7 +489,7 @@ class Customer_employment extends CBS_Controller
 
 			$audit_action[]	= AUDIT_DELETE;
 			$audit_table[]	= CBS_Model::CBS_TABLE_GL_TYPES;
-			$audit_schema[]	= DB_CBS;
+			$audit_schema[]	= DB_SCBS;
 			$prev_detail[]	= array($record);
 			$curr_detail[]	= array();
 			$activity		= $record["type_name"] . " has been deleted in the system.";

@@ -198,7 +198,7 @@ define('JS_AUDIO_PLAYER', serialize(
 ));
 
 /* FORM DEFAULT VALUES */
-define('JS_FORMDEFAULTVALUE', 'form.default.value');
+define('JS_FORMDEFAULTVALUE', 'cbs.form.default.value');
 
 /*
  |---------------------------------------------------------------------

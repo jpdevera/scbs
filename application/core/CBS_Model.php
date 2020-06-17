@@ -26,6 +26,7 @@ class CBS_Model extends Common_Model {
 	const CBS_TABLE_CONFIG_TITLES     	= 'config_titles';
 	const CBS_TABLE_CONFIG_BLOOD_TYPES  = 'config_blood_types';
 	const CBS_TABLE_CONFIG_RELIGIONS    = 'config_religions';
+	const CBS_TABLE_CONFIG_RELATIONSHIP_TYPES = 'config_relationship_types';
 
 	/*
 	| Location Tables

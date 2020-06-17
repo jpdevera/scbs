@@ -4,8 +4,6 @@
   </div>
 </div>
 
-
-
   <div class="row">
 
    <div class="col s3 p-l-n">
@@ -32,31 +30,31 @@
     <p class="clear-both"></p>
   </div>
       <div class="tabs-wrapper v-wrap">
-        <ul class="tabs m-t-sm">
-          <li class="tab"><a id="" class="active" href="#tab_customer_information" onclick="load_index('tab_customer_information', 'customer_information', '<?php echo 'customer'?>')">
+        <ul class="tabs m-t-sm customer">
+          <li class="tab"><a id="customer_information" class="" href="#tab_customer_information" onclick="load_index('tab_customer_information', 'customer_information/index/<?=$customer_id?>', '<?php echo 'customer'?>')">
             <i class="material-icons">person</i> Profile Information</a></li>
           <li class="tab">
-            <a id="" class="" href="#tab_customer_relationships" onclick="//load_index('tab_customer_relationships', 'customer_relationships', 'customer')">
+            <a id="customer_relationships" class="" href="#tab_customer_relationships"onclick="load_index('tab_customer_relationships', 'customer_relationships/index/<?=$customer_id?>', '<?php echo 'customer'?>')">
               <i class="material-icons">accessibility</i> Relationship
             </a>
           </li>
           <li class="tab">
-            <a id="" class="" href="#tab_customer_codes" onclick="//load_index('tab_customer_codes', 'customer_codes', 'customer')">
+            <a id="customer_codes" class="" href="#tab_customer_codes" onclick="//load_index('tab_customer_codes', 'customer_codes', 'customer')">
               <i class="material-icons">code</i> Customer Codes
             </a>
           </li>
           <li class="tab">
-            <a id="" class="" href="#tab_customer_employment" onclick="//load_index('tab_customer_employment', 'customer_employment', 'customer')">
+            <a id="customer_employment" class="" href="#tab_customer_employment" onclick="//load_index('tab_customer_employment', 'customer_employment', 'customer')">
               <i class="material-icons">folder_open</i> Employment
             </a>
           </li>
           <li class="tab">
-            <a id="" class="" href="#tab_customer_business" onclick="//load_index('tab_customer_business', 'customer_business', 'customer')">
+            <a id="customer_business" class="" href="#tab_customer_business" onclick="//load_index('tab_customer_business', 'customer_business', 'customer')">
               <i class="material-icons">business_center</i> Business
             </a>
           </li>
           <li class="tab">
-              <a id="" class="" href="#tab_customer_ids" onclick="//load_index('tab_customer_ids', 'customer_ids', 'customer')">
+              <a id="customer_ids" class="" href="#tab_customer_ids" onclick="//load_index('tab_customer_ids', 'customer_ids', 'customer')">
                 <i class="material-icons">account_box</i> Issued IDS
               </a>
           </li>
@@ -67,7 +65,7 @@
 
   <div class="col s9 p-l-n">
       <div id="tab_customer_information" class="tab-col"></div>
-      <div id="tab_customer_relationships" class="tab-col"><?=$customer_relationships?></div>
+      <div id="tab_customer_relationships" class="tab-col"></div>
       <div id="tab_customer_codes" class="tab-col"><?=$customer_codes?></div>
       <div id="tab_customer_employment" class="tab-col"><?=$customer_employment?></div>
       <div id="tab_customer_business" class="tab-col"><?=$customer_business?></div>

@@ -79,7 +79,7 @@ class Holidays extends CBS_Controller
 			$resources['load_materialize_modal'] = array(
 				'modal_add' => array(
 					'size' 	=> 'sm-w sm-h',
-					'title' => 'Create GL Holidays',
+					'title' => 'Create Holidays',
 					'modal_style' => 'modal-icon',
 					'modal_header_icon' => 'library_add',
 					'module' => $this->module_folder,
@@ -89,7 +89,7 @@ class Holidays extends CBS_Controller
 		        ),
 		        'modal_edit' => array(
 					'size' 		=> 'sm-w sm-h',
-					'title'		=> 'Edit GL Holidays',
+					'title'		=> 'Edit Holidays',
 					'modal_style'=> 'modal-icon',
 					'modal_header_icon' => 'edit',
 					'module'		=> $this->module_folder,
@@ -229,7 +229,7 @@ class Holidays extends CBS_Controller
 
 					$msg = $this->lang->line('data_saved');
 					$audit_action[] = AUDIT_INSERT;
-					$audit_schema[] = DB_CBS;
+					$audit_schema[] = DB_SCBS;
 					$audit_table[] = CBS_Model::CBS_TABLE_CONFIG_HOLIDAYS;
 					$prev_detail[] = array();
 					$curr_detail[] = array($fields);
@@ -258,7 +258,7 @@ class Holidays extends CBS_Controller
 					// Audit trail
 					$msg = $this->lang->line('data_saved');
 					$audit_action[] = AUDIT_INSERT;
-					$audit_schema[] = DB_CBS;
+					$audit_schema[] = DB_SCBS;
 					$audit_table[] = CBS_Model::CBS_TABLE_CONFIG_HOLIDAYS;
 					$prev_detail[] = array($previous);
 					$curr_detail[] = array($fields);
@@ -360,7 +360,6 @@ class Holidays extends CBS_Controller
 			}
 			catch(PDOException $e)
 			{
-				print_r($e);
 				$data['exception']	= $e;
 				$data['message']	= $this->get_user_message($e);
 			}
@@ -417,7 +416,7 @@ class Holidays extends CBS_Controller
 
 			$audit_action[]	= AUDIT_DELETE;
 			$audit_table[]	= CBS_Model::CBS_TABLE_CONFIG_HOLIDAYS;
-			$audit_schema[]	= DB_CBS;
+			$audit_schema[]	= DB_SCBS;
 			$prev_detail[]	= array($record);
 			$curr_detail[]	= array();
 			$activity		= $record["holiday_title"] . " has been deleted in the system.";

@@ -138,82 +138,180 @@ if( !EMPTY( $lp_background ) )
   <script src="<?php echo base_url().PATH_JS ?>jquery-3.1.0.min.js"></script>
   <script src="<?php echo base_url().PATH_JS ?>jquery-ui.min.js" type="text/javascript"></script>
   <style type="text/css">
-  	 	html,body {
-            height: 100%;
-        }
-        html {
-            display: table;
-            margin: auto;
-        }
-         body {
-            display: table-cell;
-            vertical-align: middle;
-        }
-        body .input-field .show-hide-btn,
-		html .input-field .show-hide-btn {
-		    background: rgba(255, 255, 255, .4);
-		    border: none;
-		    border-radius: 2px;
-		    padding: 6px;
-		    font-size: 11px;
-		    font-weight: 500!important;
-		    text-transform: uppercase;
-		    color: rgba(0, 0, 0, .8);
-		    margin-right: 15px
-		}
+  	<?php 
+  		if( $check_lp ) :
+  	?>
+  	body 
+  	{
+  		background-image: url('<?php echo $path_url_lp_bg ?>') !important;
+  	}
+  	<?php 
+  		endif;
+  	?>
+  	body .input-field .show-hide-btn,
+	html .input-field .show-hide-btn {
+	    background: rgba(255, 255, 255, .4);
+	    border: none;
+	    border-radius: 2px;
+	    padding: 6px;
+	    font-size: 11px;
+	    font-weight: 500!important;
+	    text-transform: uppercase;
+	    color: rgba(0, 0, 0, .8);
+	    margin-right: 15px
+	}
   </style>
 </head>
 <body class="default">
-	<input type="hidden" id="base_url" value="<?php echo base_url() ?>">
-	<form id="login_form">
-
-		<input type="hidden" id="base_url" value="<?php echo base_url() ?>"/>
-		<input type="hidden" id="home_page" value="<?php echo CORE_HOME_PAGE ?>"/>
-		<input class="none" type="password" />
-		<div class="card-panel z-depth-5">
-
-			<div class="row margin" style="margin-bottom: 20px;">
-				<div class="col s12 m12 l12 center">
-		   			<img src="<?php echo $system_logo_src ?>" class="responsive-img circle" style="width:100px;"/>
-					<div class="title"><?php echo $title ?></div>
-					<div class="sub-title"><?php// echo $tagline ?></div>
-					<div class="sub-title font-xs m-t-xs"><?php// echo $site_description; ?></div>
-				</div>
-			</div>
-
-			<div class="col s12 m12 l12">
-				<div class="input-field">
-					<i class="material-icons prefix">person</i>
-			    	<input id="icon_username" name="username" type="text" value="<?php echo $pass_username ?>" class="validate" placeholder="Enter username" />
-					<label for="username">Username</label>
-				</div>
-			</div>
-
-			<div class="col m12 l12">
-				<div class="input-field">
-					<i class="material-icons prefix">lock</i>
-					<input id="icon_password" name="password" type="password" class="validate" placeholder="Enter password" />
-					<label for="password">Password</label>
-				</div>
-			</div>
-
-			<div class="left">
-				<input type="checkbox" id="checkbox">
-				<label for="checkbox">Remember Me</label>
-			</div>
-			<br><br>
-
-			<div class="center">
-				<button style="width:100%;" type="button" id="submit_login" class="btn waves-effect waves-light" data-btn-action="<?php echo BTN_LOGGING_IN ?>">LOG IN</button>
-			</div>
-
-			<div class="" style="font-size:14px;"><br>
-				<a class="m-l-sm" onclick="modal_forgot_pw_init()" href="#modal_forgot_pw">Forgot your password?</a>
-			</div><br>
-		</div>
-	</form>
+  <input type="hidden" id="base_url" value="<?php echo base_url() ?>">
+  <div id="wrapper">
+    <div>
+    	<?php 
+	  		if( !EMPTY( $logout_inactivity ) ) :
+	  	?>
+	  		<?php 
+	  			if( $logout_inactivity == 'inactivity' ) :
+	  		?>
+			<div class="message-box error">
+    			<i class="material-icons">timer</i>
+		  		You have been logged out due to inactivity.
+		  	</div>
+	  		<?php 
+	  			endif;
+	  		?>
+	  	<?php 
+	  		endif;
+	  	?>
+	  	
+	  	
+	  	<?php 
+	  		if( !EMPTY( $maintenance_mode ) ) :
+	  	?>
+	  	<div class="message-box info" style="position: absolute; top: 0; left: 0; width: 100%; text-align: center;">
+	  		<i class="material-icons" style="position: relative; left: 0; top: -2px;">info_outline</i>
+			MAINTENACE: MODE: We apologize for the inconvenience. Our site is currently undergoing scheduled maintenance and upgrades. We will be back shortly.
+	  	</div>
+	  	<?php 
+	  		endif;
+	  	?>
+    <div class="panel">
+	  
+	  <div class="left-panel center-align none">
+	    <img src="<?php echo $system_logo_src ?>" class="logo <?php echo $logo_class ?>"/>
+		<div class="title"><?php echo $title ?></div>
+		<div class="sub-title"><?php echo $tagline ?></div>
+		<div class="sub-title font-xs m-t-xs"><?php echo $site_description; ?></div>
+	    
+		<div id="panel-slider" class="owl-carousel" style="width:290px;">
+		 <!--  <div class="item"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus efficitur odio eu nisi vestibulum eleifend.</p></div>
+		 <div class="item">For inquiries, please email Asiagate Networks Inc. at <a href="mailto:inquiries@asiagate.com">inquiries@asiagate.com</a></div> -->
+	    </div>
+	  </div>
+	  <div class="right-panel">
+	    <div id="welcome-text"><span>Welcome.</span> Please login</div>
 		
+		<form id="login_form">
+		  <input type="hidden" id="base_url" value="<?php echo base_url() ?>"/>
+		  <input type="hidden" id="home_page" value="<?php echo CORE_HOME_PAGE ?>"/>
+		  <input class="none" type="password" />
 		  
+		  <?php 
+			$login_via = get_setting(LOGIN, "login_via");
+			$type = "text";
+			
+			switch($login_via){
+				case 'USERNAME_EMAIL':
+					$field_title = "Username or Email or Mobile no"; 
+				break;
+				case 'EMAIL':
+					$field_title = ucwords(strtolower($login_via));
+					$type = strtolower($login_via);
+				break;
+				case 'MOBILE_NO':
+					$field_title = ucwords(strtolower(str_replace('_', ' ', $login_via)));
+					// $type = strtolower($login_via);
+				break;
+				default:
+					$field_title = ucwords(strtolower($login_via));
+			}
+		  ?>
+		  
+		  <div class="input-field">
+		    <input id="icon_username" name="username" type="<?php echo $type ?>" value="<?php echo $pass_username ?>" class="validate" placeholder="Enter <?php echo strtolower($field_title) ?>" />
+		    <label for="icon_username" class="active"><?php echo $field_title ?></label>
+		  </div>
+		  <div class="input-field">
+		    <input id="icon_password" name="password" type="password" class="validate" placeholder="Enter password" />
+		    <label for="icon_password" class="active">Password</label>
+		  </div>
+		  <?php 
+			$account_creator = get_setting(ACCOUNT, "account_creator");
+		  
+			if($account_creator == VISITOR
+				OR $account_creator == VISITOR_NOT_APPROVAL
+			){  ?>
+			  <div class="link m-b-lg">
+				Not yet a member? 
+
+				<?php 
+					// if( $check_has_agreement_text ) :
+				?>
+				<!-- <a onclick="modal_term_condition_init('', this)" data-modal_post='<?php echo $sign_up_arr_json ?>' href="#modal_term_condition">Sign up now!</a>
+				<a onclick="modal_sign_up_init('', this)" id="modal_sign_up_link" style="display:none !important;" data-modal_post='<?php echo $sign_up_arr_json ?>' href="#modal_sign_up">Sign up now!</a> -->
+				<?php 
+					// else :
+				?>
+				<!-- aes_mname -->
+				<a  data-modal_post='<?php echo $sign_up_arr_json ?>' href="<?php echo base_url() ?>Auth/sign_up_form">Sign up now!</a>
+				<?php 
+					// endif;
+				?>
+				
+			  </div>
+		  <?php } ?>
+		  
+		  <div class="table-display panel-footer">
+			<div class="table-cell s5 valign-middle">
+			  <div class="input-field m-n">
+				<button type="button" id="submit_login" class="btn waves-effect" data-btn-action="<?php echo BTN_LOGGING_IN ?>"><?php echo BTN_LOG_IN ?></button>
+			  </div>
+			</div>
+			<div class="table-cell s7 valign-middle">
+			  <a class=" m-l-sm" onclick="modal_forgot_pw_init()" href="#modal_forgot_pw">Forgot your password?</a>
+			
+			</div>
+		  </div>
+		  <div class="table-display panel-footer p-t-md">
+		  	<div class="table-cell s12 valign-middle none">
+			  <div class="input-field m-n">
+			  	<?php 
+			  		if( $ch_login_sys_param ) :
+			  	?>
+			  	<?php 
+					if( in_array( VIA_FACEBOOK, $login_with_arr_a ) ) :
+				?>
+			  	<a class="btn sm blue bg white-text" href="<?php echo $login_api_route ?>" >Login via Facebook</a>
+			  	<?php 
+			  		endif;
+			  	?>
+			  	<?php 
+					if( in_array( VIA_GOOGLE, $login_with_arr_a ) ) :
+				?>
+				<a class="btn sm red bg white-text" href="<?php echo $login_api_route.'1' ?>" >Login via Google</a>
+				<?php 
+					endif;
+				?>
+				<?php 
+					endif;
+				?>
+			  </div>
+		  </div>
+	    </form>
+	  </div>
+    </div>
+    <div id="overlay-wrapper"></div>
+  </div>
+  
   <!-- NOTIFICATION SECTION -->
   <div class="notify success none"><div class="success"><h4><span>Success</span></h4><p></p></div></div>
   <div class="notify error none"><div class="error"><h4><span>Error</span></h4><p></p></div></div>
@@ -277,14 +375,14 @@ if( !EMPTY( $lp_background ) )
 		singleItem : true
       });
 
-	/*$('#icon_password').hidePassword('focus', {
+	$('#icon_password').hidePassword('focus', {
 	  toggle: { className: 'show-hide-btn' }
 	});
 	$('#icon_password').focus(function() {
 		$('label[for="icon_password"]').addClass('active-link');
 	}).focusout(function() {
 		$('label[for="icon_password"]').removeClass('active-link');
-	});*/
+	});
 
     });
 

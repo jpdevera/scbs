@@ -97,6 +97,7 @@ define('MODULE_FILE_MAINTENANCE_HOLIDAYS', 'FILE_MAINTENANCE_HOLIDAYS');
  |
  */
  define('PATH_UPLOAD_BRANCH', PATH_UPLOADS.SYSTEM_CBS.'/branch/');
+ define('PATH_UPLOAD_CUSTOMER', PATH_UPLOADS.SYSTEM_CBS.'/customer/');
  define('MAX_FILE_SIZE', 25);
  define('LOGO_ALLOWED_TYPES', "jpg,jpeg,png");
  // define('LOGO_ALLOWED_TYPES', "pdf,doc,docx,xls,xlsx,png,jpg,jpeg,gif,bmp,tiff");

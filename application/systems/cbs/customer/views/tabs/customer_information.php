@@ -1,7 +1,4 @@
 <div class="form-basic panel m-md p-md">
-	<form id="form_customer_information" class="form-vertical form-styled">
-		<input type="hidden" name="employee_id" value="0" />
-		<input type="hidden" name="security" value="<?=$security?>" />
 		<input type="hidden" name="checker_citizenship_type" value="<?php //print $record['citizenship_type']; ?>" />
 
 		<div class="table-display">
@@ -23,7 +20,7 @@
 								<option value="<?=$value['title_id']?>"><?=$value['title_name']?></option>
 								<?php endforeach;?>
 							</select>
-							<div class="font-thin m-t-xs">Blood Type</div>
+							<!-- <div class="font-thin m-t-xs">Title</div> -->
 						</div>
 					</div>
 				</div>
@@ -578,8 +575,8 @@
 <div class="table-display form-button m-t-md p-t-md b-t b-dashed b-light-gray">
 	<div class="table-cell s8 valign-middle"></div>
 	<div class="table-cell s4 valign-middle right-align">
-		<button type="submit" name="submit_customer_information" id="submit_customer_information" class="btn green lighten-1"
-		data-btn-action="Save">Save</button>
+		<button name="btn_customer_information" id="btn_customer_information" class="btn lighten-1"
+		data-btn-action="Save">Next</button>
 	</div>
 </div>
 </form>

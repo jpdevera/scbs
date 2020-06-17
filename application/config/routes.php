@@ -49,26 +49,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | Examples:	my-controller/index	-> my_controller/index
 |		my-controller/my-method	-> my_controller/my_method
 */
-// $route['default_controller'] = 'auth';
-
-require_once (BASEPATH .'database/DB.php');
-$db 		=& DB();
-
-
-$sql 		= "SELECT setting_value FROM ".DB_CORE.".site_settings WHERE setting_type='".GENERAL."' AND setting_name = 'maintenance_mode'";
-$query 		= $db->query($sql);
-$result 	= $query->fetch(PDO::FETCH_ASSOC);
-
-if( !EMPTY( $result ) AND !EMPTY( $result['setting_value'] ) )
-{
-	$route['default_controller'] = 'maintenances';
-}
-else
-{
-	$route['default_controller'] = 'auth';
-}
-
-$route['app_login'] = 'auth';
-
+$route['default_controller'] = 'auth';
+// $route['default_controller'] = 'main';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

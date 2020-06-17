@@ -139,10 +139,11 @@ class Customer extends CBS_Controller
 			
 			$records			= $records_info['records'];
 			$display_records	= $records_info['display_records'];
-			$primary_key 		= 'type_id';
+			$primary_key 		= 'customer_id';
 
 			foreach($records as $record)
 			{
+				$avatar = $this->_construct_avatar($record);
 				$hash_id	= $this->encrypt($record[$primary_key]);
 				$salt		= gen_salt();
 				$actions	= "";
@@ -151,11 +152,10 @@ class Customer extends CBS_Controller
 				if( $this->permission_edit )
 				{
 
-					$token	  = in_salt($hash_id . '/' . $this->security_action_edit, $salt);
-					$url   	  = $hash_id . '/' . $salt . '/' . $token . '/' . $this->security_action_edit;
-					
+					$token	= in_salt($hash_id . '/' . $this->security_action_edit, $salt);
+					$url	= $hash_id . '/' . $salt . '/' . $token . '/' . $this->security_action_edit;
 
-					$actions.= "<a href='#modal_edit' onclick=\"modal_edit_init('".$url."','','Edit GL Sort Code')\"><i class='grey-text material-icons tooltipped' data-position='bottom' data-delay='50' data-tooltip='Edit'>mode_edit</i></a>";
+					$actions.= "<a href='#' onclick=\"content_form('".$url."','customer/form')\"><i class='grey-text material-icons tooltipped' data-position='bottom' data-delay='50' data-tooltip='Edit'>mode_edit</i></a>";
 				}
 
 				if( $this->permission_delete )
@@ -163,16 +163,17 @@ class Customer extends CBS_Controller
 					$token	  = in_salt($hash_id . '/' . $this->security_action_delete, $salt);
 					$url   	  = $hash_id . '/' . $salt . '/' . $token . '/' . $this->security_action_delete;
 
-					$onclick = 'content_delete("gl type", "'.$url.'")';			
+					$onclick = 'content_delete("customer", "'.$url.'")';			
 							
 					$actions.= "<a href='javascript:;' onclick='".$onclick."' class='tooltipped' data-tooltip='Delete' data-position='bottom' data-delay='50'><i class='grey-text material-icons'>delete</i></a>";
 				}
 
 
 				$table_data[] = array(
-					$record['type_code'],
-					$record['type_name'],
-					$record['position'],
+					$avatar.$record["title_name"],
+					$record['first_name'],
+					$record['last_name'],
+					$record['birth_date'],
 					"<div class='table-actions'>" . $actions . "</div>"
 				);
 			}				
@@ -200,6 +201,27 @@ class Customer extends CBS_Controller
 			)
 		);
  	}
+
+ 	private function _construct_avatar($record)
+	{
+		try 
+		{
+			$photo_path = base_url() . PATH_UPLOAD_CUSTOMER;
+			$img_src 	= $photo_path.'avatar.jpg';
+			if( isset($record['photo']) AND !empty($record['photo']) )
+			{
+				$img_src = $photo_path.$record['photo'];
+			}
+			$img = '<img class="avatar" width="20" height="20" src="'.$img_src.'" data-name="" /> ';
+			
+			return '<span class="table-avatar-wrapper">' . $img .'</span>';
+
+		}
+		catch(Exception $e)
+		{
+			throw $e;
+		}
+	}
 
  	public function form($hash_id, $salt, $token, $security_action)
 	{
@@ -269,6 +291,8 @@ class Customer extends CBS_Controller
 			$token			 = in_salt($hash_id . '/' . $security_action, $salt);
 			$security		 = $hash_id . '/' . $salt . '/' . $token . '/' . $security_action;
 			$data['security']= $security;
+			$data['customer_id']  = $hash_id;
+
 		} catch (PDOException $e) {
 			$msg = $this->get_user_message($e);
 			$this->error_index($m);
@@ -318,7 +342,7 @@ class Customer extends CBS_Controller
 
 					$msg = $this->lang->line('data_saved');
 					$audit_action[] = AUDIT_INSERT;
-					$audit_schema[] = DB_CBS;
+					$audit_schema[] = DB_SCBS;
 					$audit_table[] = CBS_Model::CBS_TABLE_GL_TYPES;
 					$prev_detail[] = array();
 					$curr_detail[] = array($fields);
@@ -347,7 +371,7 @@ class Customer extends CBS_Controller
 					// Audit trail
 					$msg = $this->lang->line('data_saved');
 					$audit_action[] = AUDIT_INSERT;
-					$audit_schema[] = DB_CBS;
+					$audit_schema[] = DB_SCBS;
 					$audit_table[] = CBS_Model::CBS_TABLE_GL_TYPES;
 					$prev_detail[] = array($previous);
 					$curr_detail[] = array($fields);
@@ -426,7 +450,7 @@ class Customer extends CBS_Controller
 
 			$audit_action[]	= AUDIT_DELETE;
 			$audit_table[]	= CBS_Model::CBS_TABLE_GL_TYPES;
-			$audit_schema[]	= DB_CBS;
+			$audit_schema[]	= DB_SCBS;
 			$prev_detail[]	= array($record);
 			$curr_detail[]	= array();
 			$activity		= $record["type_name"] . " has been deleted in the system.";

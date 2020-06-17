@@ -66,18 +66,24 @@ class Customer_information extends CBS_Controller
 		$this->load->model('customer_model', 'model');
 	}
 
-	public function index()
+	public function index($hash_id)
 	{
 		try {
 			$data 			= array();
 			$resources 		= array();
 
 			$resources['load_css']	= array(CSS_SELECTIZE ,CSS_LABELAUTY, CSS_DATETIMEPICKER, CSS_UPLOAD);
-			$resources['load_js']	= array(JS_SELECTIZE, JS_LABELAUTY,JS_DATETIMEPICKER, JS_UPLOAD, $this->module_js);
+			$resources['load_js']	= array(JS_SELECTIZE, JS_LABELAUTY,JS_DATETIMEPICKER, JS_UPLOAD, JS_FORMDEFAULTVALUE, $this->module_js);
 			$resources['loaded_init'] = array(
 				"Customer_information.init();",
 				"Customer_information.save();"
 			);
+
+			$customer_id = $this->decrypt($hash_id);
+			if( $customer_id )
+			{
+				$data['customer'] = $this->model->get_customer_information($customer_id);
+			} 
 
 			// Pass all reference tables
 			$references = $this->get_reference_tables();
@@ -192,19 +198,17 @@ class Customer_information extends CBS_Controller
 
 		          	  	// Insert Address
 			         	$fields['res_address']['customer_id'] = $customer_id;
-			          	$fields['res_address']['address_type_id'] = 1;
 			          	$this->model->insert_data(CBS_Model::CBS_TABLE_CUSTOMER_ADDRESSES, $fields['res_address']);
 
 			          	if (isset($validated_data['per_region'])) {
 			            	$fields['per_address']['customer_id'] = $customer_id;
-			            	$fields['per_address']['address_type_id'] = PERMANENT_ADDRESS;
 			           		$this->model->insert_data(CBS_Model::CBS_TABLE_CUSTOMER_ADDRESSES, $fields['per_address']);
 			          	}
 					}
 
 					$msg = $this->lang->line('data_saved');
 					$audit_action[] = AUDIT_INSERT;
-					$audit_schema[] = DB_CBS;
+					$audit_schema[] = DB_SCBS;
 					$audit_table[] = CBS_Model::CBS_TABLE_GL_TYPES;
 					$prev_detail[] = array();
 					$curr_detail[] = array($fields['customer']);
@@ -222,7 +226,7 @@ class Customer_information extends CBS_Controller
 					// Audit trail
 					$msg = $this->lang->line('data_saved');
 					$audit_action[] = AUDIT_INSERT;
-					$audit_schema[] = DB_CBS;
+					$audit_schema[] = DB_SCBS;
 					$audit_table[] = CBS_Model::CBS_TABLE_GL_TYPES;
 					$prev_detail[] = array($previous);
 					$curr_detail[] = array($fields);
@@ -262,184 +266,24 @@ class Customer_information extends CBS_Controller
 		);
 	}
 
-	public function process_modal($hash_id, $salt, $token, $security_action)
-	{
-		try
-		{
-
-			$data 		= $resources = array();
-			$security 	= "";
-			$id 		= $this->decrypt($hash_id);
-
-			// Load resources
-			$resources['load_css']	= array(CSS_SELECTIZE ,CSS_LABELAUTY);
-			$resources['load_js']	= array(JS_SELECTIZE, JS_LABELAUTY, $this->module_js);
-
-			// Loaded Init
-			$resources['loaded_init'] = array(
-				"Type.add();",
-				"Type.edit();"
-			);
-
-			switch($security_action)
-			{
-				case $this->security_action_add:
-					if( ! empty($id) )
-						throw new Exception($this->lang->line('err_unauthorized_add'));
-
-					if($this->permission_add === FALSE)
-						throw new Exception($this->lang->line('err_unauthorized_add'));
-
-					$modal 			  = $this->controller;
-				break;
-
-				case $this->security_action_edit:
-					if( empty($id) )
-						throw new Exception($this->lang->line('err_unauthorized_add'));
-
-					if($this->permission_edit === FALSE)
-						throw new Exception($this->lang->line('err_unauthorized_add'));
-
-					$data['types'] = $this->model->select_data(array("*"), CBS_Model::CBS_TABLE_GL_TYPES, FALSE, array('type_id'=>$id));
-					$modal 		   = $this->controller;
-				break;
-
-				case $this->security_action_view:
-					if( empty($id) )
-						throw new Exception($this->lang->line('err_unauthorized_add'));
-
-					if($this->permission_view === FALSE)
-						throw new Exception($this->lang->line('err_unauthorized_add'));
-
-					$modal 				= $this->controller;
-				break;
-
-				}
-
-				// START: Regenerate security variables
-				$salt		= gen_salt();
-				$token		= in_salt($hash_id . '/' . $security_action, $salt);
-				$security	= $hash_id . '/' . $salt . '/' . $token . '/' . $security_action;
-				// END: Construct security variables
-			}
-			catch(PDOException $e)
-			{
-				print_r($e);
-				$data['exception']	= $e;
-				$data['message']	= $this->get_user_message($e);
-			}
-			catch(Exception $e)
-			{
-				print_r($e);
-				$data['exception']	= $e;
-				$data['message']	= $this->rlog_error($e, TRUE);
-			}
-
-			$data['security']			= $security;
-
-			$this->load->view('modals/'.$modal, $data);
-			$this->load_resources->get_resource($resources);
-	}
-
-	public function process_delete()
-	{
-		try
-		{
-
-			$params 		 = get_params();
-			$params['security']	= $params['param_1'];
-
-			$security 	 	 = explode("/",$params['param_1']);
-			$hash_id 		 = $security[0];
-			$salt     		 = $security[1];
-			$token    		 = $security[2];
-			$security_action = $security[3];
-
-			CBS_Model::beginTransaction();
-			$where 		= array('type_id' => $this->decrypt($hash_id));
-			$record     = $this->model->select_data(array('*'), CBS_Model::CBS_TABLE_GL_TYPES, FALSE, $where);
-			$type_id    = isset($record['type_id']) ? $record['type_id'] : 0;
-
-			switch($security_action)
-			{
-				case $this->security_action_delete:
-					if( empty($type_id) )
-						throw new Exception($this->lang->line('err_unauthorized_access'));
-
-					if($this->permission_delete === FALSE)
-						throw new Exception($this->lang->line('err_unauthorized_delete'));
-
-					$this->model->delete_data(CBS_Model::CBS_TABLE_GL_TYPES, array('type_id' => $type_id));
-
-					$msg  = $this->lang->line('data_deleted');
-				break;
-
-				default:
-				throw new Exception($this->lang->line('err_unauthorized_access'));
-				break;
-			}
-
-			$audit_action[]	= AUDIT_DELETE;
-			$audit_table[]	= CBS_Model::CBS_TABLE_GL_TYPES;
-			$audit_schema[]	= DB_CBS;
-			$prev_detail[]	= array($record);
-			$curr_detail[]	= array();
-			$activity		= $record["type_name"] . " has been deleted in the system.";
-			
-			// $this->audit_trail->log_audit_trail($activity, $this->module_code, $prev_detail, $curr_detail, $audit_action, $audit_table, $audit_schema);
-
-			CBS_Model::commit();
-			$msg 	= $this->lang->line('data_deleted');
-			$status = SUCCESS;
-
-		}
-		catch(PDOException $e)
-		{
-			print_r($e);
-			CBS_Model::rollback();
-			$this->rlog_error($e);
-			$status = ERROR;
-			$msg 	= $this->get_user_message($e);
-		}
-		catch(Exception $e)
-		{
-			print_r($e);
-			CBS_Model::rollback();
-
-			$this->rlog_error($e);
-			$status = ERROR;
-			$msg = $e->getMessage();
-		}
-
-		$info = array(
-			"status"			=> $status,
-			"msg"				=> $msg,
-			"reload"			=> 'datatable',
-			"datatable_options" => $this->table_options
-
-		);
-
-		echo json_encode($info);
-	}
-
-
 	public function _validate_form(&$params) {
 		try 
 		{
 			$this->validate_security($params);
 
 			$fields = array();
-			$fields['height'] = 'Height';
-			$fields['weight'] = 'Weight';
-			$fields['mobile_no'] = 'Mobile No.';
+			$fields['title_id'] = 'Title';
 			$fields['last_name'] = 'Last Name';
 			$fields['first_name'] = 'First Name';
 			$fields['birth_date'] = 'Birth Date';
-			// $fields['religion_id'] = 'Religion';
 			$fields['birth_place'] = 'Birth Place';
+			// $fields['religion_id'] = 'Religion';
 			$fields['blood_type_id'] = 'Blood Type';
 			$fields['civil_status_id'] = 'Civil Status';
 			$fields['citizenship_type'] = 'Citizenship Type';
+			$fields['mobile_no'] = 'Mobile No.';
+			$fields['height'] = 'Height';
+			$fields['weight'] = 'Weight';
 
 			$fields['res_region'] = 'Residential Region';
 			if ($params['res_citymuni'] != '0|00') {
@@ -470,6 +314,11 @@ class Customer_information extends CBS_Controller
 	public function _validate_inputs($params) {
 		try {
 			$validation = array();
+
+			$validation['title_id'] = array (
+				'name' => 'Title',
+				'data_type' => 'string'
+			);
 
 			$validation['last_name'] = array (
 				'name' => 'Last Name',
@@ -703,6 +552,7 @@ class Customer_information extends CBS_Controller
 			if (empty($validated_data['religion_id']))
 				$validated_data['religion_id'] = NULL;
 
+			$fields['customer']['title_id'] = $validated_data['title_id'];
 			$fields['customer']['last_name'] = array(strtoupper($validated_data['last_name']), 'ENCRYPT');
 			$fields['customer']['first_name'] = array(strtoupper($validated_data['first_name']), 'ENCRYPT');
 			$fields['customer']['middle_name'] = array(strtoupper($validated_data['middle_name']), 'ENCRYPT');
@@ -762,7 +612,8 @@ class Customer_information extends CBS_Controller
 				'barangay_code' => (!EMPTY($validated_data['res_barangay'])) ? $validated_data['res_barangay'] : NULL,
 				'postal_number' => $validated_data['res_zipcode'],
 				'citymuni_code' => $res_citymuni[1],
-				'district_code' => $res_citymuni[0]
+				'district_code' => $res_citymuni[0],
+				'address_type'=>'R'
 			);
 
 			if (isset($validated_data['per_region'])) 
@@ -777,7 +628,8 @@ class Customer_information extends CBS_Controller
 					'barangay_code' => (!EMPTY($validated_data['per_barangay'])) ? $validated_data['per_barangay'] : NULL,
 					'postal_number' => $validated_data['per_zipcode'],
 					'citymuni_code' => $per_citymuni[1],
-					'district_code' => $per_citymuni[0]
+					'district_code' => $per_citymuni[0],
+					'address_type'=>'P'
 				);
 			}
 			return $fields;
