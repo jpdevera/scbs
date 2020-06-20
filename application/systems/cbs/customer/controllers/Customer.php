@@ -18,6 +18,7 @@ class Customer extends CBS_Controller
 		$this->controller 	= strtolower(__CLASS__);
 		$this->path 		= $this->module_folder.'/'.$this->controller.'/get_data_list';
 		$this->module_js    = HMVC_FOLDER .'/'. SYSTEM_CBS .'/'.  $this->module_folder.'/'.$this->controller;
+		$this->module_js_relationships    = HMVC_FOLDER .'/'. SYSTEM_CBS .'/'.  $this->module_folder.'/customer_relationships';
 
 		// init datatable
 		$this->table_options 	= array(
@@ -234,9 +235,28 @@ class Customer extends CBS_Controller
 			$id 		= $this->decrypt($hash_id);
 
 			$resources['load_css']	= array(CSS_SELECTIZE ,CSS_LABELAUTY, CSS_DATETIMEPICKER, CSS_UPLOAD);
-			$resources['load_js']	= array(JS_SELECTIZE, JS_LABELAUTY,JS_DATETIMEPICKER, JS_UPLOAD, $this->module_js);
+			$resources['load_js']	= array(JS_SELECTIZE, JS_LABELAUTY,JS_DATETIMEPICKER, JS_UPLOAD, JS_ADD_ROW, $this->module_js, $this->module_js_relationships);
 			$resources['loaded_init'] = array(
-				'Customer.init();'
+				'Customer.init();',
+				'Customer_relationships.init();',
+				'Customer_relationships.addRow();'
+			);
+
+			//Load modal
+			$resources['load_materialize_modal'] = array(
+				'modal_customer' => array(
+					'size' 	=> 'lg',
+					'title' => 'Search Customer',
+					'modal_style' => 'modal-icon',
+					'modal_header_icon' => 'search',
+					'module' => $this->module_folder,
+					'method' => 'process_modal',
+					'controller' => 'customer_relationships',
+					'modal_footer' => TRUE,
+					'custom_button' => array(
+						'Select'	=> array('type' => 'button', 'action' => 'Saving', 'id' => 'btn-select')
+					)
+		        )
 			);
 
 			$resources['upload'] = array(
@@ -302,6 +322,13 @@ class Customer extends CBS_Controller
 			$this->error_index($msg);
 		}
 
+		// Pass all reference tables
+		$data['relationship_types'] = $this->model->select_data(
+			array('*'), 
+			CBS_Model::CBS_TABLE_CONFIG_RELATIONSHIP_TYPES,
+			TRUE
+		);
+
 		// Get all tabs
 		$tabs   = ['business', 'codes', 'employment', 'ids', 'information', 'relationships'];
 		foreach ($tabs as $key => $value) 
@@ -309,6 +336,9 @@ class Customer extends CBS_Controller
 			$tab_name = $this->controller.'_'.$value;
 			$data[$tab_name]   = $this->load->view('tabs/'.$tab_name, $data, TRUE);	
 		}
+
+		// print_r($data);
+		// die();
 
 		// Load form
 		$this->template->load('forms/'.$this->controller, $data, $resources);	

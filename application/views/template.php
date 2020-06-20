@@ -369,19 +369,17 @@ $log_in_dur 						= get_setting(LOGIN, "auto_log_inactivity_duration");
 			</main>
 		</section>
 
-		<footer class="page-footer transparent">
-			<div class="footer-copyright">
-				<div class="left">
-					<ul class="footer-links">
-						<li><a href="#"><i class="flaticon-information68"></i> About</a></li>
-						<li><a href="#"><i class="flaticon-lifesaver5"></i> Help</a></li>
-					</ul>
-				</div>
-				<div class="right">
-					Powered by <a href="www.asiagate.com" target="_blank" class="font-bold">LGU 360 by Asiagate Networks, Inc.</a>
-				</div>
-			</div>
-		</footer>
+		  <footer class="page-footer gradient-45deg-light-blue-cyan">
+        <div class="footer-copyright">
+          <div class="container">
+            <span>Copyright ©
+              <script type="text/javascript">
+                document.write(new Date().getFullYear());
+              </script> <a class="grey-text text-lighten-2" href="http://themeforest.net/user/pixinvent/portfolio?ref=pixinvent" target="_blank">PIXINVENT</a> All rights reserved.</span>
+            <span class="right hide-on-small-only"> Design and Developed by <a class="grey-text text-lighten-2" href="https://pixinvent.com/">PIXINVENT</a></span>
+          </div>
+        </div>
+    </footer>
 	</div>
 
 
@@ -544,6 +542,16 @@ $log_in_dur 						= get_setting(LOGIN, "auto_log_inactivity_duration");
 
 		<?php endif; ?>
 	</script>
-		
+		  <footer class="page-footer gradient-45deg-light-blue-cyan">
+        <div class="footer-copyright">
+          <div class="container">
+            <span>Copyright ©
+              <script type="text/javascript">
+                document.write(new Date().getFullYear());
+              </script> <a class="grey-text text-lighten-2" href="http://themeforest.net/user/pixinvent/portfolio?ref=pixinvent" target="_blank">PIXINVENT</a> All rights reserved.</span>
+            <span class="right hide-on-small-only"> Design and Developed by <a class="grey-text text-lighten-2" href="https://pixinvent.com/">PIXINVENT</a></span>
+          </div>
+        </div>
+    </footer>
 </body>
 </html>

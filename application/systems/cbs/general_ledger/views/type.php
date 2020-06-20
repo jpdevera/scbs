@@ -3,9 +3,6 @@
 		<div class="table-cell valign-middle s6"><h5>GL Type</h5></div>
 		<div class="table-cell valign-middle right-align s6">
 			<div class="inline p-l-xs">
-				<!-- <button class="btn waves-effect waves-light green lighten-2" onclick="content_form('<?php echo $security; ?>', 'order_list/form')">
-					<i class="material-icons p-b-xxs">library_add</i> <span> Create GL Type<span>
-				</button> -->
 
 				<button data-target="modal_add" class="btn waves-effect waves-light green lighten-2 modal_add_trigger" name="add_type" onclick="modal_add_init('<?php echo $security ?>',this, 'Add GL Type')" type="button"><i class="material-icons">library_add</i>Add GL Type</button>
 			</div>

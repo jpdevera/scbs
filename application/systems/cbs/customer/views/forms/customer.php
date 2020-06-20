@@ -34,7 +34,7 @@
           <li class="tab"><a id="customer_information" class="" href="#tab_customer_information" onclick="load_index('tab_customer_information', 'customer_information/index/<?=$customer_id?>', '<?php echo 'customer'?>')">
             <i class="material-icons">person</i> Profile Information</a></li>
           <li class="tab">
-            <a id="customer_relationships" class="" href="#tab_customer_relationships"onclick="load_index('tab_customer_relationships', 'customer_relationships/index/<?=$customer_id?>', '<?php echo 'customer'?>')">
+            <a id="customer_relationships" class="" href="#tab_customer_relationships" onclick="//load_index('tab_customer_relationships', 'customer_relationships/index/<?=$customer_id?>', '<?php //echo 'customer'?>')">
               <i class="material-icons">accessibility</i> Relationship
             </a>
           </li>
@@ -65,7 +65,7 @@
 
   <div class="col s9 p-l-n">
       <div id="tab_customer_information" class="tab-col"></div>
-      <div id="tab_customer_relationships" class="tab-col"></div>
+      <div id="tab_customer_relationships" class="tab-col"><?=$customer_relationships?></div>
       <div id="tab_customer_codes" class="tab-col"><?=$customer_codes?></div>
       <div id="tab_customer_employment" class="tab-col"><?=$customer_employment?></div>
       <div id="tab_customer_business" class="tab-col"><?=$customer_business?></div>
